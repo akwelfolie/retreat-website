@@ -21,9 +21,8 @@ export const ServicesHero = () => {
           <div className="z-10 grid gap-x-8 lg:absolute lg:grid-cols-2">
             <div>
               <p className="max-w-lg text-xl text-dark-300 sm:max-w-3xl lg:mx-auto">
-                Elevating businesses with expertly designed and executed digital
-                strategies. Crator is here to help you conquer the online space
-                one pexel at a time.
+                [Placeholder text — this section will describe the retreat experience, workshops, and themes.]
+
               </p>
               <div className="mt-8 sm:flex sm:justify-start">
                 <PrimaryButton

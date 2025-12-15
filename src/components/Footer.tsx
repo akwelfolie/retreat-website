@@ -9,7 +9,7 @@ const contact = {
     zip: '90001',
   },
   phone: '(415) 555-1234',
-  email: 'hello@crator.com',
+  email: 'hello@unleashedretreat.com', // placeholder
 }
 
 const footerLinks = [
@@ -29,7 +29,7 @@ export const Footer = () => {
           <div className="flex items-center">
             <Link href="/" className="group text-2xl font-black lg:block">
               <span className="text-white transition duration-200 ease-in-out group-hover:text-dark-300">
-                Crator{' '}
+                Unleashed{' '}
               </span>
               <span className="text-dark-300 transition duration-200 ease-in-out group-hover:text-white">
                 Studio
@@ -37,7 +37,7 @@ export const Footer = () => {
             </Link>
           </div>
           <div className="mt-6 text-lg text-dark-300 md:mt-8">
-            © {new Date().getFullYear()} Crator Studio.
+            © {new Date().getFullYear()} Unleashed.
             <br /> All rights reserved.
           </div>
         </div>

@@ -9,14 +9,12 @@ import { PrimaryButton } from '@/components/buttons/PrimaryButton'
 const navbar = {
   navigation: [
     { label: 'Home', href: '/' },
-    { label: 'Services', href: '/services' },
     { label: 'About', href: '/about' },
-    { label: 'Work', href: '/work' },
-    { label: 'Case study', href: '/work/nedia' },
+    { label: 'Tickets', href: '/tickets' },
   ],
   action: {
-    label: "Let's talk",
-    href: '/contact',
+    label: 'Buy Ticket',
+    href: '/tickets',
   },
 }
 
@@ -89,10 +87,7 @@ export const Navbar = () => {
               className="group block text-2xl font-black md:hidden lg:block"
             >
               <span className="text-white transition duration-200 ease-in-out group-hover:text-dark-300">
-                Crator{' '}
-              </span>
-              <span className="text-dark-300 transition duration-200 ease-in-out group-hover:text-white">
-                Studio
+                Unleashed
               </span>
             </Link>
 
@@ -102,10 +97,7 @@ export const Navbar = () => {
               className="group hidden text-3xl font-black md:block lg:hidden"
             >
               <span className="text-white transition duration-200 ease-in-out group-hover:text-dark-300">
-                C
-              </span>
-              <span className="text-dark-300 transition duration-200 ease-in-out group-hover:text-white">
-                S
+                U
               </span>
             </Link>
           </div>

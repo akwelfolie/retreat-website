@@ -30,9 +30,10 @@ export const HomeHero = () => {
                 Let’s make your product a success
               </h1>
               <p className="mt-6 text-xl text-dark-300">
-                Crator is your partner in digital innovation. We fuse strategic
-                thinking with standout design and development to deliver
-                uniquely tailored solutions.
+                Unleashed is a women’s empowerment retreat designed to help 
+                participants reconnect with their confidence, embodiment, 
+                sensuality, and authentic self through workshops, 
+                movement, and guided experiences.
               </p>
             </div>
             {/* Hero buttons */}
@@ -50,7 +51,7 @@ export const HomeHero = () => {
           <div className="relative mx-auto mt-12 flex w-full max-w-xl items-center justify-center sm:mt-16 lg:mt-0 lg:max-w-none">
             <Image
               src={heroImage}
-              alt="Crator studio office"
+              alt="Unleashed retreat atmosphere"
               priority
               className="z-30 h-full w-auto rounded-3xl object-cover shadow-md"
               sizes="(min-width: 1280px) 36.5rem, (min-width: 1024px) calc(50vw - 5rem), (min-width: 640px) 36rem, calc(100vw - 4rem)"

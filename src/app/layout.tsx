@@ -8,9 +8,9 @@ import { Footer } from '@/components/Footer'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  title: 'Crator - The best digital agency on the internet',
+  title: 'Unleashed — Women’s Empowerment Retreat',
   description:
-    "Crator is a digital agency with a focus on creative, interactive and innovative design and development. Our team of designers, developers and strategists work together to create customized solutions that are unique to each client's needs.",
+    "Unleashed is a women’s empowerment retreat focused on embodiment, confidence, sensuality, and self-expression through workshops, speakers, and immersive experiences.",
 }
 
 export default function RootLayout({

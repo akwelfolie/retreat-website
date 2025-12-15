@@ -25,28 +25,28 @@ const testimonials = [
     name: 'Katy Perry',
     jobTitle: 'CEO, Spotify',
     testimonial:
-      "Working with Crator was a game-changer. Their creative vision truly amplified our brand's potential.",
+    "Testimonials and participant feedback will be added here after the first retreat.",
     image: testimonialImage1,
   },
   {
     name: 'Henry Krasner',
     jobTitle: 'CEO, Twitter',
     testimonial:
-      "Crator's innovative design solutions played a key role in our product's successful launch.",
+    "This section will highlight real experiences from Unleashed attendees.",
     image: testimonialImage2,
   },
   {
     name: 'Bob Foster',
     jobTitle: 'CEO, Amazon',
     testimonial:
-      "Crator's team is exceptional. Their commitment to quality exceeded our highest expectations.",
+      "Authentic voices and reflections will live here.",
     image: testimonialImage3,
   },
   {
     name: 'Ema Roberts',
     jobTitle: 'Founder, Dropbox',
     testimonial:
-      "From concept to execution, Crator's approach was seamlessly integrated and highly efficient.",
+      "Whatever.",
     image: testimonialImage4,
   },
 ]
