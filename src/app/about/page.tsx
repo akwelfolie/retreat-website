@@ -6,9 +6,9 @@ import { Team } from '@/components/Team'
 import { CallToAction } from '@/components/CallToAction'
 
 export const metadata = {
-  title: 'About us - Crator',
+  title: 'About us - Unleashed',
   description:
-    "We're a creative, strategic and technically awesome web design agency. Our design team are experts, our developers are clever and our strategies are proven.",
+    "[Placeholder — this page will introduce the vision behind Unleashed, its founders, and the intention of the retreat.]",
 }
 
 export default function AboutPage() {

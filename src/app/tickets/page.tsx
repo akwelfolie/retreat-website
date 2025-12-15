@@ -61,9 +61,9 @@ const formFields = [
 ]
 
 export const metadata = {
-  title: 'Contact us - Crator',
+  title: 'Tickets — Unleashed',
   description:
-    'Get in touch with our team to discuss how we can help bring your creative vision to life. Reach out to us for collaborative, innovative, and strategic web design and development services.',
+    '[Placeholder — ticket details, pricing, and booking information will be available here.]',
 }
 
 export default function ContactPage() {

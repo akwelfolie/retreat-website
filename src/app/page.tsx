@@ -2,7 +2,6 @@ import { HomeHero } from '@/components/HomeHero'
 import { LogoCloud } from '@/components/LogoCloud'
 import { ServicesOverview } from '@/components/ServicesOverview'
 import { Process } from '@/components/Process'
-import { FeaturedWork } from '@/components/FeaturedWork'
 import { SocialProof } from '@/components/SocialProof'
 import { CallToAction } from '@/components/CallToAction'
 
@@ -55,7 +54,6 @@ export default function HomePage() {
             </h2>
           </div>
 
-          <FeaturedWork />
         </div>
       </section>
 
