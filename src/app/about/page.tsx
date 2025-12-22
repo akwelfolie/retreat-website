@@ -1,6 +1,6 @@
 import { AboutHero } from '@/components/AboutHero'
 import { SocialProof } from '@/components/SocialProof'
-import { FeaturesAlternatingWithIcons } from '@/components/FeaturesAlternatingWithIcons'
+import { SchedulePreview } from '@/components/SchedulePreview'
 import { Values } from '@/components/Values'
 import { Team } from '@/components/Team'
 import { CallToAction } from '@/components/CallToAction'
@@ -28,7 +28,7 @@ export default function AboutPage() {
         </svg>
       </div>
 
-      <FeaturesAlternatingWithIcons />
+      <SchedulePreview />
 
       {/* Diagonal section separator */}
       <div className="relative h-16 w-full bg-dark-800 md:h-32 lg:h-48">

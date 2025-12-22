@@ -15,15 +15,26 @@ export const CallToAction = () => {
           <polygon points="0,0 100,0 0,100" />
         </svg>
         <div className="absolute inset-y-0 left-1/2 z-10 h-full w-1/2 rounded-r-3xl bg-dark-800" />
+
         {/* CTA content */}
         <div className="relative z-30 mx-auto flex flex-col items-center justify-center px-4 text-center sm:px-16 lg:flex-row lg:text-left">
-          <div className="max-w-lg text-2xl font-bold sm:text-4xl lg:w-1/2">
+          <div className="max-w-lg lg:w-1/2">
+            <p className="mb-3 text-sm font-medium tracking-wide text-dark-300">
+              February 21–22, 2026 · Chicago, IL
+            </p>
             <h5 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-              Let's make something great together.
+              Join us for Unleashed
             </h5>
+            <p className="mt-4 text-xl text-dark-300">
+              Two days of connection, embodiment, and exploration — designed to
+              leave a lasting impact long after the weekend ends.
+            </p>
           </div>
+
           <div className="mt-10 flex max-w-lg justify-center lg:mt-0 lg:w-1/2 lg:justify-end">
-            <PrimaryButton href="#0">Let's connect</PrimaryButton>
+            <PrimaryButton href="/tickets">
+              Buy your ticket
+            </PrimaryButton>
           </div>
         </div>
       </div>

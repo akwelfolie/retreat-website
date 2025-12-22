@@ -1,44 +1,79 @@
 import Image from 'next/image'
 import clsx from 'clsx'
-import image1 from '/public/stock/features-alternating-simple-01.jpg'
-import image2 from '/public/stock/features-alternating-simple-02.jpg'
-import image3 from '/public/stock/features-alternating-simple-03.jpg'
+import image1 from '/public/stock/UL-example-image-1920x1280.png'
 
 const features = [
   {
-    tagline: 'Product development',
-    headline: 'Innovative digital solutions',
-    text: "We specialize in crafting top-tier digital products that are perfectly tailored to your brand's needs. From ideation to execution, we turn ideas into tangible realities.",
+    tagline: 'What this is',
+    headline: 'Break the barriers. Own your embodiment.',
+    text:
+      "Unleashed aims to break down limiting beliefs and barriers holding women and women-aligned individuals back from owning their most embodied, authentic expressions of themselves and their sexuality.",
     image: {
       src: image1,
-      alt: 'Casual work meeting',
+      alt: 'Unleashed retreat atmosphere',
     },
   },
   {
-    tagline: 'Design',
-    headline: 'Designing for better user experiences',
-    text: 'Our approach leverages the power of aesthetics to create unparalleled user experiences. By balancing beauty and functionality, we make the complex simple, and the ordinary extraordinary.',
+    tagline: 'What this is',
+    headline: 'A container for connection — built to last.',
+    text:
+      "The experience curates a unique container for the participants to connect, create and play. Unlike typical retreat experiences which often feel fleeting, Unleashed gives its participants new knowledge and awareness to integrate into their day to day lives, with the hopes of fostering new relationships among the participants that too continue beyond the weekend.",
     image: {
-      src: image2,
-      alt: 'Customer Journey Map',
+      src: image1,
+      alt: 'Women connecting in a retreat setting',
     },
   },
   {
-    tagline: 'Optimization',
-    headline: 'State of the art performance',
-    text: "We're committed to maximizing efficiency and performance through the use of cutting-edge technologies. We strive to ensure that each solution we provide is optimized for success.",
+    tagline: "Who it's for",
+    headline: 'Who Unleashed welcomes',
+    text:
+      "Unleashed welcomes all women (21+), including trans women, as well as non-binary and gender-nonconforming individuals who feel connected to womanhood. This retreat is for every stage of their life or sexual journey whether exploring desire for the first time, deepening pleasure, healing shame, or seeking community.\n\n" +
+      'We are seeking women who are curious to learn more about themselves and others, who value supportive connections with other women, and who feel comfortable being vulnerable within a safe container.',
     image: {
-      src: image3,
-      alt: 'Communicating on slack',
+      src: image1,
+      alt: 'Supportive group setting',
+    },
+  },
+  {
+    tagline: 'Safety & boundaries',
+    headline: 'A trauma-informed, respectful container',
+    text:
+      'Unleashed is a trauma-informed experience. Although there will be mental health providers on site to assist with grounding and containment, we are not providing mental health services.',
+    image: {
+      src: image1, // placeholder — swap later if you want a calmer / neutral image
+      alt: 'Safe and respectful retreat environment',
+    },
+  },
+  {
+    tagline: "Who it's not for",
+    headline: 'Who this retreat is not open to',
+    text:
+      'Racism, homophobia, transphobia, misogyny, slut-shaming, kink-shaming and discrimination or bullying of any kind will not be tolerated at Unleashed, and will warrant automatic dismissal from the retreat, without refund.\n\n' +
+      'This retreat is not open to cisgender men, although we hope to provide an opportunity for a similar experience for men in the future.',
+    image: {
+      src: image1,
+      alt: 'Unleashed retreat details',
     },
   },
 ]
+
+function RenderParagraphs({ text }: { text: string }) {
+  return (
+    <>
+      {text.split('\n\n').map((paragraph, idx) => (
+        <p key={idx} className={clsx(idx > 0 && 'mt-5', 'text-dark-300 text-xl')}>
+          {paragraph}
+        </p>
+      ))}
+    </>
+  )
+}
 
 export const SimpleFeaturesAlternating = () => {
   return (
     <section className="bg-dark-800 pb-10 pt-10 md:pb-12 md:pt-20 lg:pt-36">
       {/* Features container */}
-      <div className="max-w-(--breakpoint-xl) mx-auto w-full">
+      <div className="mx-auto w-full max-w-(--breakpoint-xl)">
         {/* Feature */}
         {features.map((feature, index) => (
           <div
@@ -56,21 +91,24 @@ export const SimpleFeaturesAlternating = () => {
               )}
             >
               <div>
-                <p className="bg-linear-to-r from-dark-600 to-dark-700 inline-flex items-center justify-center rounded-r-full rounded-tl-full px-6 py-2 text-sm font-medium tracking-wide text-white">
+                <p className="inline-flex items-center justify-center rounded-r-full rounded-tl-full bg-linear-to-r from-dark-600 to-dark-700 px-6 py-2 text-sm font-medium tracking-wide text-white">
                   {feature.tagline}
                 </p>
               </div>
+
               <h3 className="mt-4 text-3xl font-extrabold text-white sm:text-4xl md:mt-6 lg:text-5xl">
                 {feature.headline}
               </h3>
-              <p className="text-dark-300 mt-4 text-xl md:mt-6">
-                {feature.text}
-              </p>
+
+              <div className="mt-4 md:mt-6">
+                <RenderParagraphs text={feature.text} />
+              </div>
             </div>
+
             {/* Feature image */}
             <div
               className={clsx(
-                'aspect-12/11 relative mt-10 w-full md:mt-0',
+                'relative mt-10 aspect-12/11 w-full md:mt-0',
                 index % 2 === 0
                   ? 'md:order-1 md:rounded-r-3xl lg:rounded-l-3xl'
                   : 'md:rounded-l-3xl lg:rounded-r-3xl',

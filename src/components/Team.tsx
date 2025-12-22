@@ -16,63 +16,57 @@ const team: {
   socials: { name: IconName; href: string }[]
 }[] = [
   {
-    name: 'Kaylen Meyer',
-    job: 'CEO',
+    name: 'Nicole Sonnefeldt, MA',
+    job: 'Co-Founder',
     image: staffImage1,
     socials: [
       { name: 'instagram', href: '#0' },
       { name: 'facebook', href: '#0' },
-      { name: 'twitter', href: '#0' },
     ],
   },
   {
-    name: 'Coriss Ambady',
-    job: 'Lead Developer',
+    name: 'Ashley Summers',
+    job: 'Co-Founder',
     image: staffImage2,
     socials: [
       { name: 'instagram', href: '#0' },
       { name: 'facebook', href: '#0' },
-      { name: 'twitter', href: '#0' },
     ],
   },
   {
-    name: 'Lester Mccall',
-    job: 'Senior Designer',
+    name: 'Maya Chen',
+    job: 'Somatic Practitioner',
     image: staffImage3,
     socials: [
       { name: 'instagram', href: '#0' },
       { name: 'facebook', href: '#0' },
-      { name: 'twitter', href: '#0' },
     ],
   },
   {
-    name: 'Misha Mustafa',
-    job: 'Studio Artist',
+    name: 'Jordan Ellis',
+    job: 'Sex Educator',
     image: staffImage4,
     socials: [
       { name: 'instagram', href: '#0' },
       { name: 'facebook', href: '#0' },
-      { name: 'twitter', href: '#0' },
     ],
   },
   {
-    name: 'Stefan Stefancik',
-    job: 'Designer',
+    name: 'Renee Thompson',
+    job: 'Embodiment Coach',
     image: staffImage5,
     socials: [
       { name: 'instagram', href: '#0' },
       { name: 'facebook', href: '#0' },
-      { name: 'twitter', href: '#0' },
     ],
   },
   {
-    name: 'Vivien Smith',
-    job: 'Developer',
+    name: 'TBD',
+    job: 'Guest Speaker',
     image: staffImage6,
     socials: [
       { name: 'instagram', href: '#0' },
       { name: 'facebook', href: '#0' },
-      { name: 'twitter', href: '#0' },
     ],
   },
 ]
@@ -84,14 +78,14 @@ export const Team = () => {
         {/* Section text */}
         <div className="mx-auto w-full max-w-xl text-center md:max-w-2xl lg:max-w-3xl">
           <p className="inline-flex items-center justify-center rounded-r-full rounded-tl-full bg-linear-to-r from-dark-600 to-dark-700 px-6 py-2 text-sm font-medium tracking-wide text-white">
-            The team
+            Who will guide you – TODO: revise this text
           </p>
           <h2 className="mt-6 text-3xl font-extrabold text-white sm:text-4xl md:text-5xl">
-            Decades of experience in design and development
+            Meet the voices of Unleashed – TODO: revise this text
           </h2>
           <p className="mt-6 text-xl text-dark-300">
-            Our diverse team unites industry veterans and innovative minds, all
-            committed to delivering transformative digital experiences.
+            Our speakers and guides bring diverse backgrounds in embodiment, sexuality,
+            education, and community building — all aligned around safety, curiosity, and care. – TODO: revise this text
           </p>
         </div>
 

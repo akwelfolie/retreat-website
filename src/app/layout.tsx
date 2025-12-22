@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={clsx('font-sans', inter.variable)}>
         <Navbar />
-        <main className="bg-dark-900">{children}</main>
+        <main className="bg-void-900">{children}</main>
         <Footer />
       </body>
     </html>
