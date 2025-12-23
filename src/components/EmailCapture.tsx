@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { PrimaryButton } from '@/components/buttons/PrimaryButton'
+import { Chip } from './Chip'
 
 type EmailCaptureProps = {
   tagline?: string
@@ -35,17 +36,17 @@ export const EmailCapture = ({
   return (
     <section className="px-4 py-12 sm:px-6 md:py-16 lg:px-8">
       <div className="mx-auto max-w-(--breakpoint-xl)">
-        <div className="mx-auto w-full rounded-3xl bg-dark-700 px-4 py-12 shadow-xl sm:p-16 lg:p-14 xl:p-16">
+        <div className="mx-auto w-full rounded-3xl bg-void-700 border border-void-700 hover:border-gold-700/20 px-4 py-12 shadow-xl sm:p-16 lg:p-14 xl:p-16">
           <div className="w-full text-left">
-            <p className="inline-flex items-center justify-center rounded-r-full rounded-tl-full bg-linear-to-r from-dark-600 to-dark-700 px-6 py-2 text-sm font-medium tracking-wide text-white">
+            <Chip>
               {tagline}
-            </p>
+            </Chip> 
 
             <div className="mt-4 md:mt-5">
               <h2 className="text-4xl font-extrabold text-white sm:text-5xl">
                 {headline}
               </h2>
-              <p className="mt-3 max-w-2xl text-xl text-dark-300 md:mt-5">
+              <p className="mt-3 max-w-2xl text-xl text-void-200 md:mt-5">
                 {description}
               </p>
             </div>
@@ -54,7 +55,7 @@ export const EmailCapture = ({
           <form onSubmit={handleSubmit} className="mt-10">
             <label
               htmlFor="email"
-              className="ml-0.5 text-sm font-medium text-dark-300"
+              className="ml-0.5 text-sm font-medium text-void-200"
             >
               Email *
             </label>
@@ -67,14 +68,13 @@ export const EmailCapture = ({
                 placeholder="you@email.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="h-14 w-full flex-1 rounded-2xl border-2 border-solid border-dark-800 bg-dark-800 p-4 text-sm font-medium text-white outline-hidden transition duration-200 ease-in-out focus:border-dark-600 focus:outline-hidden"
+                className="h-14 w-full flex-1 rounded-2xl border-2 border-solid border-void-800 bg-void-800 p-4 text-sm font-medium text-white outline-hidden transition duration-200 ease-in-out focus:border-void-600 focus:outline-hidden"
                 required
                 disabled={status !== 'idle'}
               />
 
               <PrimaryButton
                 type="submit"
-                className="h-14"
                 disabled={status !== 'idle'}
               >
                 {status === 'submitting'
@@ -86,12 +86,12 @@ export const EmailCapture = ({
             </div>
 
             {status === 'success' && (
-              <p className="mt-4 text-sm text-dark-300">
+              <p className="mt-4 text-sm text-void-200">
                 You’re signed up. Updates coming soon.
               </p>
             )}
 
-            <p className="mt-4 text-xs text-dark-300/80">
+            <p className="mt-4 text-xs text-void-200/80">
               We’ll only email you about Unleashed. Unsubscribe anytime.
             </p>
           </form>

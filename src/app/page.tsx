@@ -23,20 +23,12 @@ export default function HomePage() {
           <polygon points="0,0 0,100 100,100" />
         </svg>
       </div>
-      <SimpleFeaturesAlternating />
 
-{/* Diagonal section separator */}
-{/* <div className="relative h-16 w-full md:h-32 lg:h-48">
-  <svg
-    className="absolute h-full w-full text-dark-800"
-    preserveAspectRatio="none"
-    viewBox="0 0 100 100"
-    fill="currentcolor"
-  >
-    <polygon points="0,0 0,100 100,100" />
-  </svg>
-</div> */}
-<div className="relative h-16 w-full bg-void-800 md:h-32 lg:h-48">
+      <section className="bg-void-800">
+        <SimpleFeaturesAlternating />
+      </section>
+
+      <div className="relative h-16 w-full bg-void-800 md:h-32 lg:h-48">
         <svg
           className="absolute h-full w-full text-void-900"
           preserveAspectRatio="none"
@@ -46,37 +38,29 @@ export default function HomePage() {
           <polygon points="0,100 100,100 100,0" />
         </svg>
       </div>
+
       <EmailCapture />
 
 
+      <section className="bg-void-900">
+        <ServiceList />
+      </section>
 
-      <ServiceList />
-
-      {/* Diagonal section separator
-      <div className="relative h-16 w-full bg-dark-800 md:h-32 lg:h-48">
+      {/* Diagonal section separator */}
+      <div className="relative h-16 w-full md:h-32 lg:h-48">
         <svg
-          className="absolute h-full w-full text-dark-900"
+          className="absolute h-full w-full text-void-800"
           preserveAspectRatio="none"
           viewBox="0 0 100 100"
           fill="currentcolor"
         >
-          <polygon points="0,100 100,100 100,0" />
+          <polygon points="0,0 0,100 100,100" />
         </svg>
-      </div> */}
+      </div>
 
-      {/* Diagonal section separator */}
-<div className="relative h-16 w-full md:h-32 lg:h-48">
-  <svg
-    className="absolute h-full w-full text-void-800"
-    preserveAspectRatio="none"
-    viewBox="0 0 100 100"
-    fill="currentcolor"
-  >
-    <polygon points="0,0 0,100 100,100" />
-  </svg>
-</div>
-
-      <TopicsAndThemes />
+      <section className="bg-void-800">
+        <TopicsAndThemes />      
+      </section>
 
       <div className="relative h-16 w-full bg-void-800 md:h-32 lg:h-48">
         <svg
@@ -93,18 +77,10 @@ export default function HomePage() {
         <Team />
       </section>
 
-      {/* Diagonal section separator */}
-      {/* <div className="relative h-16 w-full bg-void-800 md:h-32 lg:h-48">
-        <svg
-          className="absolute h-full w-full text-dark-900"
-          preserveAspectRatio="none"
-          viewBox="0 0 100 100"
-          fill="currentcolor"
-        >
-          <polygon points="0,100 100,100 100,0" />
-        </svg>
-      </div> */}
-      <SchedulePreview/>
+      <section className="bg-void-800">
+        <SchedulePreview/>
+      </section>
+
       <div className="relative h-16 w-full bg-void-800 md:h-32 lg:h-48">
         <svg
           className="absolute h-full w-full text-void-900"

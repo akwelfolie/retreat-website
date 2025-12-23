@@ -1,4 +1,5 @@
 import clsx from 'clsx'
+import { Chip } from './Chip'
 
 const topics = [
   'Community building, unlearning “female rivalry”',
@@ -31,12 +32,12 @@ const columns = splitIntoColumns(topics)
 
 export const TopicsAndThemes = () => {
   return (
-    <section className="bg-dark-800 px-4 py-10 sm:px-6 md:py-12 lg:px-8">
+    <section className="px-4 py-10 sm:px-6 md:py-12 lg:px-8">
       {/* Section text */}
       <div className="mx-auto max-w-xl text-center md:max-w-2xl lg:max-w-(--breakpoint-xl) lg:text-left">
-        <p className="inline-flex items-center justify-center rounded-r-full rounded-tl-full bg-linear-to-r from-dark-600 to-dark-700 px-6 py-2 text-sm font-medium tracking-wide text-white">
+        <Chip>
           Topics & Themes
-        </p>
+        </Chip> 
 
         <div className="mt-6 grid w-full gap-6 lg:grid-cols-5">
           <div className="lg:col-span-3">
@@ -45,7 +46,7 @@ export const TopicsAndThemes = () => {
             </h2>
           </div>
           <div className="lg:col-span-2">
-            <p className="text-xl text-dark-300">
+            <p className="text-xl text-void-200">
               These are themes that will show up throughout the weekend — not
               rigid “sessions”.
             </p>
@@ -66,14 +67,20 @@ export const TopicsAndThemes = () => {
               )}
             >
               <div className="space-y-6">
-                {col.items.map((topic, index) => (
-                  <div
-                    key={`topic-${colIndex}-${index}`}
-                    className="rounded-3xl bg-dark-700 px-8 py-6 shadow-xl sm:px-10"
-                  >
-                    <p className="text-lg font-semibold text-white">{topic}</p>
-                  </div>
-                ))}
+              {col.items.map((topic, index) => (
+                <div
+                  key={`topic-${colIndex}-${index}`}
+                  className={`
+                    rounded-3xl bg-void-500 px-8 py-6 shadow-xl sm:px-10
+                    ring-1 ring-white/10
+                    transition-all duration-300
+                    hover:-translate-y-3
+                    ${index % 2 === 0 ? 'hover:bg-blue-800/80' : 'hover:bg-pink-800/80'}
+                  `}
+                >
+                  <p className="text-lg font-semibold text-void-100">{topic}</p>
+                </div>
+              ))}
               </div>
             </div>
           ))}

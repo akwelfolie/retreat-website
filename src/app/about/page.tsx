@@ -19,7 +19,7 @@ export default function AboutPage() {
       {/* Diagonal section separator */}
       <div className="relative h-16 w-full md:h-32 lg:h-48">
         <svg
-          className="absolute h-full w-full text-dark-800"
+          className="absolute h-full w-full text-void-800"
           preserveAspectRatio="none"
           viewBox="0 0 100 100"
           fill="currentcolor"
@@ -31,9 +31,9 @@ export default function AboutPage() {
       <SchedulePreview />
 
       {/* Diagonal section separator */}
-      <div className="relative h-16 w-full bg-dark-800 md:h-32 lg:h-48">
+      <div className="relative h-16 w-full bg-void-800 md:h-32 lg:h-48">
         <svg
-          className="absolute h-full w-full text-dark-900"
+          className="absolute h-full w-full text-void-900"
           preserveAspectRatio="none"
           viewBox="0 0 100 100"
           fill="currentcolor"

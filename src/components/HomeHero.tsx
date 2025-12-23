@@ -7,23 +7,23 @@ export const HomeHero = () => {
   return (
     <section className="mx-auto max-w-(--breakpoint-2xl) px-4 pb-12 pt-2 sm:px-6 md:pb-16 lg:px-8">
       {/* Hero card */}
-      <div className="relative rounded-3xl bg-void-700 shadow-xl sm:overflow-hidden">
-        {/* Right background diagonal */}
+      <div className="relative rounded-3xl bg-void-500 border border-void-500 hover:border-gold-600/30 shadow-xl sm:overflow-hidden">
+      {/* Right background diagonal */}
         <svg
-          className="absolute inset-y-0 right-1/4 z-20 h-full w-1/4 text-void-700"
+          className="absolute inset-y-0 right-1/4 z-20 h-full w-1/4 text-void-500"
           preserveAspectRatio="none"
           viewBox="0 0 100 100"
           fill="currentcolor"
         >
           <polygon points="0,0 100,0 0,100" />
         </svg>
-        <div className="absolute inset-y-0 left-1/2 z-10 h-full w-1/2 rounded-r-3xl bg-void-800" />
+        <div className="absolute inset-y-0 left-1/2 z-10 h-full w-1/2 rounded-r-3xl bg-void-700" />
 
         {/* Hero card content */}
         <div className="relative mx-auto max-w-(--breakpoint-xl) px-4 py-16 sm:px-6 sm:py-24 lg:grid lg:auto-rows-max lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-32 xl:gap-x-12">
           {/* Text */}
           <div className="flex flex-col items-center justify-center lg:items-start">
-            <p className="z-30 inline-flex items-center justify-center rounded-r-full rounded-tl-full bg-linear-to-r from-void-800 to-void-900 px-6 py-2 text-sm font-medium tracking-wide text-white">
+            <p className="z-30 inline-flex items-center justify-center rounded-r-full rounded-tl-full bg-linear-to-r from-blue-700 to-pink-800 px-6 py-2 text-base font-medium tracking-wide text-white/90">
               February 20 &amp; 21, 2026 · Chicago, IL
             </p>
 
@@ -36,7 +36,7 @@ export const HomeHero = () => {
                 A women’s empowerment and sensual awakening retreat
               </p>
 
-              <p className="mt-6 text-xl text-void-300">
+              <p className="mt-6 text-xl text-void-200">
                 A holistic experience promoting radical reflection, expression,
                 and connection — for all woman-aligned individuals.
               </p>
@@ -61,7 +61,7 @@ export const HomeHero = () => {
               src={heroImage}
               alt="Unleashed retreat atmosphere"
               priority
-              className="z-30 h-full w-auto rounded-3xl object-cover shadow-md"
+              className="z-30 h-full w-auto rounded-3xl ring-1 ring-void-300/20 object-cover shadow-md "
               sizes="(min-width: 1280px) 36.5rem, (min-width: 1024px) calc(50vw - 5rem), (min-width: 640px) 36rem, calc(100vw - 4rem)"
             />
           </div>

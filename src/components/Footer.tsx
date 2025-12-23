@@ -22,21 +22,21 @@ const footerLinks = [
 
 export const Footer = () => {
   return (
-    <footer className="bg-dark-900 px-4 py-12 sm:px-6 md:py-16 lg:px-8">
+    <footer className="bg-void-900 px-4 py-12 sm:px-6 md:py-16 lg:px-8">
       <div className="mx-auto grid gap-8 sm:max-w-3xl md:grid-cols-3 md:gap-y-12 lg:max-w-(--breakpoint-xl) lg:grid-cols-4">
         {/* Logo and copyright text */}
         <div className="flex flex-col lg:mx-auto">
           <div className="flex items-center">
             <Link href="/" className="group text-2xl font-black lg:block">
-              <span className="text-white transition duration-200 ease-in-out group-hover:text-dark-300">
+              <span className="text-white transition duration-200 ease-in-out group-hover:text-void-300">
                 Unleashed{' '}
               </span>
-              <span className="text-dark-300 transition duration-200 ease-in-out group-hover:text-white">
+              <span className="text-void-300 transition duration-200 ease-in-out group-hover:text-white">
                 Studio
               </span>
             </Link>
           </div>
-          <div className="mt-6 text-lg text-dark-300 md:mt-8">
+          <div className="mt-6 text-lg text-void-300 md:mt-8">
             © {new Date().getFullYear()} Unleashed.
             <br /> All rights reserved.
           </div>
@@ -44,14 +44,14 @@ export const Footer = () => {
         {/* Contact information */}
         <div className="lg:mx-auto">
           <h6 className="text-xl font-semibold text-white">Get in touch</h6>
-          <p className="mt-2 text-lg text-dark-300">
+          <p className="mt-2 text-lg text-void-300">
             {contact.address.street}
             <br />
             {contact.address.city}, {contact.address.state}{' '}
             {contact.address.zip}
           </p>
-          <p className="mt-6 text-lg text-dark-300">{contact.phone}</p>
-          <p className="text-lg text-dark-300">{contact.email}</p>
+          <p className="mt-6 text-lg text-void-300">{contact.phone}</p>
+          <p className="text-lg text-void-300">{contact.email}</p>
         </div>
         {/* Site links */}
         <div className="lg:mx-auto">
@@ -60,7 +60,7 @@ export const Footer = () => {
             {footerLinks.map((link, index) => (
               <li
                 key={`footer-links-${index}`}
-                className="font-medium text-dark-300 hover:text-white"
+                className="font-medium text-void-300 hover:text-white"
               >
                 <Link href={link.href}>{link.label}</Link>
               </li>
@@ -72,7 +72,7 @@ export const Footer = () => {
           <h6 className="text-xl font-semibold text-white">
             Follow us on social media
           </h6>
-          <p className="mt-2 text-lg text-dark-300">
+          <p className="mt-2 text-lg text-void-300">
             Stay connected and updated on our latest projects.
           </p>
           <div className="mt-4 w-full lg:mt-6">

@@ -4,16 +4,16 @@
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
-  --color-dark-100: #e9e9ea;
-  --color-dark-200: #d3d2d4;
-  --color-dark-300: #c2c6dd;
-  --color-dark-400: #999cb4;
-  --color-dark-500: #4f4d55;
-  --color-dark-600: #333139;
-  --color-dark-700: #23202a;
-  --color-dark-800: #1e1b24;
-  --color-dark-900: #19181f;
-  --color-dark-950: #0e1012;
+  --color-void-100: #e9e9ea;
+  --color-void-200: #d3d2d4;
+  --color-void-300: #c2c6dd;
+  --color-void-400: #999cb4;
+  --color-void-500: #4f4d55;
+  --color-void-600: #333139;
+  --color-void-700: #23202a;
+  --color-void-800: #1e1b24;
+  --color-void-900: #19181f;
+  --color-void-950: #0e1012;
 
 
   --color-blue-100: #d2edf0;
@@ -75,6 +75,7 @@
   ::before,
   ::backdrop,
   ::file-selector-button {
-    border-color: var(--color-gray-200, currentcolor);
+    border-color: var(--color-void-200, currentcolor);
   }
 }
+

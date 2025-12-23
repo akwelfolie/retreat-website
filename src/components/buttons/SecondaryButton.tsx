@@ -25,7 +25,7 @@ const sizeStyles = {
 export function SecondaryButton({
   className,
   size = 'lg',
-  gradient = 'from-dark-800 to-dark-900',
+  gradient = 'from-pink-600 to-pink-700/20',
   children,
   ...props
 }: PrimaryButtonProps) {

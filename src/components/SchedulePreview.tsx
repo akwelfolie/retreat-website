@@ -11,11 +11,12 @@ import {
   IconSparkles,
 } from '@tabler/icons-react'
 import day1Image from '/public/stock/UL-example-image-640x960.png'
+import { Chip } from './Chip'
 
 const features = [
   {
-    tagline: 'Schedule',
-    headline: 'Day 1: Saturday, February 21, 2026',
+    tagline: 'Day 1',
+    headline: 'Saturday, February 21, 2026',
     text: 'Unleashing together',
     image: {
       src: day1Image,
@@ -42,8 +43,8 @@ const features = [
     ],
   },
   {
-    tagline: 'Schedule',
-    headline: 'Day 2: Sunday, February 22, 2026',
+    tagline: 'Day 2',
+    headline: 'Sunday, February 22, 2026',
     text: 'Breaking down barriers & building new beliefs',
     image: {
       src: day1Image,
@@ -72,7 +73,7 @@ const features = [
 
 export const SchedulePreview = () => {
   return (
-    <section className="bg-dark-800 px-4 pb-10 sm:px-6 md:pb-16 md:pt-12 lg:px-8">
+    <section className="px-4 pb-10 sm:px-6 md:pb-16 md:pt-12 lg:px-8">
       {/* Features container */}
       <div className="mx-auto w-full max-w-(--breakpoint-xl)">
         {features.map((feature, i) => (
@@ -86,15 +87,15 @@ export const SchedulePreview = () => {
             {/* Feature text with icons */}
             <div className={clsx(i % 2 === 1 && 'lg:order-2', 'col-span-2')}>
               <div className="text-center lg:text-left">
-                <p className="inline-flex items-center justify-center rounded-r-full rounded-tl-full bg-linear-to-r from-dark-600 to-dark-700 px-6 py-2 text-sm font-medium tracking-wide text-white">
+                <Chip>
                   {feature.tagline}
-                </p>
+                </Chip> 
 
                 <h2 className="mt-4 text-3xl font-extrabold text-white sm:text-4xl md:text-5xl lg:mt-6">
                   {feature.headline}
                 </h2>
 
-                <p className="mt-4 text-xl text-dark-300 lg:mt-6">
+                <p className="mt-4 text-xl text-void-200 lg:mt-6">
                   {feature.text}
                 </p>
 
@@ -106,9 +107,9 @@ export const SchedulePreview = () => {
                     >
                       <div className="flex flex-col items-center sm:flex-row">
                         {item.icon?(
-                          <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-linear-to-r from-dark-600 to-dark-700">
+                          <div className="flex h-12 w-12 items-center justify-center rounded-3xl bg-linear-to-r from-void-400 to-void-500">
                           <item.icon
-                            className="h-6 w-6 text-dark-300"
+                            className="h-6 w-6 text-gold-600"
                             stroke={1.5}
                           />
                         </div>):null}
@@ -117,7 +118,7 @@ export const SchedulePreview = () => {
                         </div>
                       </div>
                       {item.text ? (
-                        <p className="mt-1 text-lg leading-relaxed text-dark-300 sm:mt-3">
+                        <p className="mt-1 text-lg leading-relaxed text-void-200 sm:mt-3">
                           {item.text}
                         </p>
                       ) : null}
@@ -133,15 +134,15 @@ export const SchedulePreview = () => {
                       className="flex items-start gap-4"
                     >
                       {item.icon ? (
-                        <div className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-linear-to-r from-dark-600 to-dark-700">
-                        <item.icon className="h-5 w-5 text-dark-300" stroke={1.5} />
+                        <div className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-3xl bg-linear-to-r from-void-400 to-void-500">
+                        <item.icon className="h-5 w-5 text-gold-600" stroke={1.5} />
                       </div>):null}
                       <div className="text-left">
                         <div className="mt-2 text-lg font-semibold text-white">
                           {item.label}
                         </div>
                         {item.text ? (
-                          <div className="mt-1 text-base text-dark-300">
+                          <div className="mt-1 text-base text-void-200">
                             {item.text}
                           </div>
                         ) : null}
@@ -151,7 +152,7 @@ export const SchedulePreview = () => {
                 </div>
 
                 {i === features.length - 1 && (
-                  <p className="mt-10 text-sm text-dark-300">
+                  <p className="mt-10 text-sm text-void-200">
                     **Schedule subject to change
                   </p>
                 )}
@@ -162,7 +163,7 @@ export const SchedulePreview = () => {
             <div className="col-span-1 mt-10 flex items-center lg:order-1 lg:mt-0">
               <div className="relative aspect-2/3 w-full rounded-3xl text-center shadow-xl">
                 <Image
-                  className="absolute inset-0 size-full rounded-3xl object-cover object-center align-middle"
+                  className="absolute inset-0 size-full rounded-3xl ring-1 ring-void-300/20 object-cover object-center align-middle"
                   src={feature.image.src}
                   alt={feature.image.alt}
                   fill

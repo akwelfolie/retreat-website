@@ -8,6 +8,7 @@ import staffImage5 from '/public/stock/team/team-05.jpg'
 import staffImage6 from '/public/stock/team/team-06.jpg'
 import type { IconName } from '@/components/SocialIcon'
 import type { StaticImageData } from 'next/image'
+import { Chip } from './Chip'
 
 const team: {
   name: string
@@ -77,13 +78,13 @@ export const Team = () => {
       <div className="mx-auto max-w-(--breakpoint-xl)">
         {/* Section text */}
         <div className="mx-auto w-full max-w-xl text-center md:max-w-2xl lg:max-w-3xl">
-          <p className="inline-flex items-center justify-center rounded-r-full rounded-tl-full bg-linear-to-r from-dark-600 to-dark-700 px-6 py-2 text-sm font-medium tracking-wide text-white">
-            Who will guide you – TODO: revise this text
-          </p>
+          <Chip>
+            Who will guide you
+          </Chip> 
           <h2 className="mt-6 text-3xl font-extrabold text-white sm:text-4xl md:text-5xl">
             Meet the voices of Unleashed – TODO: revise this text
           </h2>
-          <p className="mt-6 text-xl text-dark-300">
+          <p className="mt-6 text-xl text-void-200">
             Our speakers and guides bring diverse backgrounds in embodiment, sexuality,
             education, and community building — all aligned around safety, curiosity, and care. – TODO: revise this text
           </p>
@@ -99,14 +100,14 @@ export const Team = () => {
               <Image
                 src={member.image}
                 alt={member.name}
-                className="h-64 w-64 rounded-3xl object-cover object-center shadow-xl"
+                className="h-64 w-64 rounded-3xl ring-1 ring-void-300/20 hover:ring-1 hover:ring-gold-700 hover:-translate-y-2 object-cover object-center shadow-xl"
                 sizes="16rem"
               />
               <div className="mt-4 text-center">
                 <div className="text-xl font-semibold text-white">
                   {member.name}
                 </div>
-                <div className="text-lg font-medium text-dark-400">
+                <div className="text-lg font-medium text-void-300">
                   {member.job}
                 </div>
 

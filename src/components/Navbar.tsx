@@ -64,7 +64,7 @@ export const Navbar = () => {
 
               <PrimaryButton
                 href={navbar.action.href}
-                className="h-14 text-lg hover:bg-void-700"
+                className="h-14 text-lg"
               >
                 {navbar.action.label}
               </PrimaryButton>
@@ -76,7 +76,7 @@ export const Navbar = () => {
   }
 
   return (
-    <header className="bg-void-700">
+    <header className="bg-void-900">
       <nav className="mx-auto flex max-w-7xl items-center px-4 py-6 sm:px-6 lg:px-8">
         <div className="flex w-full items-center justify-between">
           {/* Logo */}
@@ -122,7 +122,6 @@ export const Navbar = () => {
           <div className="hidden md:block">
             <PrimaryButton
               href={navbar.action.href}
-              className="hover:bg-void-700"
             >
               {navbar.action.label}
             </PrimaryButton>

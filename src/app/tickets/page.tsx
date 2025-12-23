@@ -75,7 +75,7 @@ export default function ContactPage() {
             {/* Section header */}
             <div>
               <div className="w-full text-left sm:text-center lg:text-left">
-                <p className="inline-flex items-center justify-center rounded-r-full rounded-tl-full bg-linear-to-r from-dark-600 to-dark-700 px-6 py-2 text-sm font-medium tracking-wide text-white">
+                <p className="inline-flex items-center justify-center rounded-r-full rounded-tl-full bg-linear-to-r from-void-600 to-void-700 px-6 py-2 text-sm font-medium tracking-wide text-white">
                   Contact
                 </p>
               </div>
@@ -83,7 +83,7 @@ export default function ContactPage() {
                 <h1 className="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl">
                   Get in touch
                 </h1>
-                <p className="mx-auto mt-3 max-w-lg text-xl text-dark-300 sm:max-w-2xl md:mt-5">
+                <p className="mx-auto mt-3 max-w-lg text-xl text-void-300 sm:max-w-2xl md:mt-5">
                   We'd love to hear from you. Fill in the form and we'll get
                   back to you shortly.
                 </p>
@@ -96,7 +96,7 @@ export default function ContactPage() {
                   <h5 className="text-lg font-bold text-white">
                     {address.city}
                   </h5>
-                  <p className="mt-1 text-base text-dark-300">
+                  <p className="mt-1 text-base text-void-300">
                     {address.street}
                     <br />
                     {address.city}, {address.state} {address.zip}
@@ -119,7 +119,7 @@ export default function ContactPage() {
           </div>
           {/* Contact form card */}
           <div className="mt-12 w-full lg:mt-0">
-            <div className="mx-auto w-full rounded-3xl bg-dark-700 px-4 py-12 shadow-xl sm:p-16 lg:ml-auto lg:mr-0 lg:p-14 xl:p-16">
+            <div className="mx-auto w-full rounded-3xl bg-void-700 px-4 py-12 shadow-xl sm:p-16 lg:ml-auto lg:mr-0 lg:p-14 xl:p-16">
               {/* Contact form */}
               <form action="#">
                 {formFields.map((field, index) => (
@@ -129,7 +129,7 @@ export default function ContactPage() {
                   >
                     <label
                       htmlFor={field.name}
-                      className="ml-0.5 text-sm font-medium text-dark-300"
+                      className="ml-0.5 text-sm font-medium text-void-300"
                     >
                       {field.label}
                     </label>
@@ -140,7 +140,7 @@ export default function ContactPage() {
                         name={field.name}
                         placeholder={field.placeholder}
                         rows={5}
-                        className="mt-2 w-full rounded-2xl border-2 border-solid border-dark-800 bg-dark-800 p-4 text-sm font-medium text-white outline-hidden transition duration-200 ease-in-out focus:border-dark-600 focus:outline-hidden"
+                        className="mt-2 w-full rounded-2xl border-2 border-solid border-void-800 bg-void-800 p-4 text-sm font-medium text-white outline-hidden transition duration-200 ease-in-out focus:border-void-600 focus:outline-hidden"
                         required={field.required}
                       />
                     )}
@@ -151,7 +151,7 @@ export default function ContactPage() {
                         type={field.type}
                         name={field.name}
                         placeholder={field.placeholder}
-                        className="mt-2 h-14 w-full rounded-2xl border-2 border-solid border-dark-800 bg-dark-800 p-4 text-sm font-medium text-white outline-hidden transition duration-200 ease-in-out focus:border-dark-600 focus:outline-hidden"
+                        className="mt-2 h-14 w-full rounded-2xl border-2 border-solid border-void-800 bg-void-800 p-4 text-sm font-medium text-white outline-hidden transition duration-200 ease-in-out focus:border-void-600 focus:outline-hidden"
                         required={field.required}
                       />
                     )}

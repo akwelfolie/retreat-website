@@ -19,7 +19,9 @@ export function SocialLink({
   return (
     <Link
       className={clsx(
-        'group flex items-center justify-center rounded-full bg-dark-700 text-dark-300 transition duration-300 ease-in-out hover:bg-white',
+        'group flex items-center justify-center rounded-full',
+        'bg-void-600/60 ring-1 ring-white/10 text-void-200 transition duration-300 ease-in-out',
+        'hover:bg-linear-to-r hover:from-blue-700 hover:to-pink-800 hover:text-white',
         size === 'lg' ? 'h-12 w-12' : 'h-10 w-10',
         className,
       )}
@@ -28,7 +30,7 @@ export function SocialLink({
       <SocialIcon
         name={icon}
         className={clsx(
-          'transition duration-300 ease-in-out group-hover:text-dark-900',
+          'transition duration-300 ease-in-out group-hover:text-white',
           size === 'lg' ? 'h-6 w-6' : 'h-5 w-5',
         )}
       />

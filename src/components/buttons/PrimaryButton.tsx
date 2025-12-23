@@ -10,12 +10,12 @@ type PrimaryButtonProps = {
 )
 
 export function PrimaryButton({
-  className = 'hover:bg-dark-900 h-14',
+  className = 'hover:bg-blue-800 h-14',
   children,
   ...props
 }: PrimaryButtonProps) {
   const baseClassName =
-    'duration-250 text-dark-900 flex w-auto items-center justify-center rounded-full bg-white px-8 py-3 font-semibold leading-snug transition ease-in-out hover:text-white focus:outline-hidden cursor-pointer'
+    'duration-250 text-void-900 flex w-auto items-center justify-center rounded-full bg-blue-400 px-8 py-3 font-semibold leading-snug transition ease-in-out hover:text-white focus:outline-hidden cursor-pointer'
 
   if (props.href) {
     return (

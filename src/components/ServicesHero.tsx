@@ -5,11 +5,11 @@ import image2 from '/public/stock/hero-services-02.jpg'
 
 export const ServicesHero = () => {
   return (
-    <section className="bg-dark-900 px-4 pb-10 pt-12 sm:px-6 md:pb-20 md:pt-16 lg:px-8 lg:pb-64">
+    <section className="bg-void-900 px-4 pb-10 pt-12 sm:px-6 md:pb-20 md:pt-16 lg:px-8 lg:pb-64">
       <div className="mx-auto max-w-(--breakpoint-xl)">
         {/* Hero header */}
         <div>
-          <p className="inline-flex items-center justify-center rounded-r-full rounded-tl-full bg-linear-to-r from-dark-600 to-dark-700 px-6 py-2 text-sm font-medium tracking-wide text-white">
+          <p className="inline-flex items-center justify-center rounded-r-full rounded-tl-full bg-linear-to-r from-void-600 to-void-700 px-6 py-2 text-sm font-medium tracking-wide text-white">
             Our services
           </p>
           <h1 className="mt-6 text-left text-4xl font-extrabold text-white sm:text-5xl md:text-6xl">
@@ -20,13 +20,13 @@ export const ServicesHero = () => {
         <div className="relative mt-6 md:mt-8 lg:mt-12 xl:mt-16">
           <div className="z-10 grid gap-x-8 lg:absolute lg:grid-cols-2">
             <div>
-              <p className="max-w-lg text-xl text-dark-300 sm:max-w-3xl lg:mx-auto">
+              <p className="max-w-lg text-xl text-void-300 sm:max-w-3xl lg:mx-auto">
                 [Placeholder text — this section will describe the retreat experience, workshops, and themes.]
 
               </p>
               <div className="mt-8 sm:flex sm:justify-start">
                 <PrimaryButton
-                  className="h-14 hover:bg-dark-700"
+                  className="h-14 hover:bg-void-700"
                   href="/contact"
                 >
                   Let's get started
