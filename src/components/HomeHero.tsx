@@ -1,7 +1,8 @@
 import Image from 'next/image'
-import { PrimaryButton } from '@/components/buttons/PrimaryButton'
-import { SecondaryButton } from '@/components/buttons/SecondaryButton'
+import { PrimaryButton } from '@/components/ui/buttons/PrimaryButton'
+import { SecondaryButton } from '@/components/ui/buttons/SecondaryButton'
 import heroImage from '/public/stock/UL-hero-home.png'
+import { LINKS } from '@/config/links'
 
 export const HomeHero = () => {
   return (
@@ -44,7 +45,7 @@ export const HomeHero = () => {
 
             {/* CTA buttons */}
             <div className="z-30 mt-10 sm:flex sm:justify-center lg:justify-start">
-              <PrimaryButton href="/tickets">Buy Ticket</PrimaryButton>
+              <PrimaryButton href={LINKS.tickets}>Buy Tickets</PrimaryButton>
 
               <SecondaryButton
                 className="ml-0 mt-5 sm:ml-4 sm:mt-0"

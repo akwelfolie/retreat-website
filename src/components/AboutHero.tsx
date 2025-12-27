@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import teamImage from '/public/stock/team/team.jpg'
+import teamImage from '/public/stock/UL-hero-home.png'
+import { Chip } from './ui/Chip'
 
 export const AboutHero = () => {
   return (
@@ -7,22 +8,22 @@ export const AboutHero = () => {
       <div className="mx-auto max-w-(--breakpoint-xl)">
         {/* Hero text */}
         <div className="mx-auto w-full max-w-4xl text-center lg:max-w-5xl">
-          <p className="inline-flex items-center justify-center rounded-r-full rounded-tl-full bg-linear-to-r from-void-600 to-void-700 px-6 py-2 text-sm font-medium tracking-wide text-white">
-            About us
-          </p>
+          <Chip>            
+            Our story
+          </Chip>
           <h1 className="mt-4 text-4xl font-extrabold text-white sm:text-5xl md:mt-5 md:text-6xl">
-            A small creative team excited to create beautiful things
+            Unleashed is guided by lived experience, not theory
           </h1>
-          <p className="mx-auto mt-4 max-w-lg text-xl text-void-300 md:mt-5 md:max-w-3xl">
-            Born out of a shared passion for design and innovation, we're a
-            dedicated team committed to turning visions into impactful digital
-            realities.
+          <p className="mx-auto mt-4 max-w-lg text-xl text-void-200 md:mt-5 md:max-w-3xl">
+            Unleashed grew out of years of work in embodiment, sexuality, education, 
+            and community building — and a shared belief that spaces like this 
+            should be intentional, safe, and deeply human.
           </p>
         </div>
         {/* Hero image */}
-        <div className="mx-auto mt-12 max-w-(--breakpoint-lg) rounded-3xl shadow-xl">
+        <div className="mx-auto mt-12 max-w-(--breakpoint-lg) text-center rounded-3xl shadow-xl">
           <Image
-            className="rounded-3xl"
+            className="block mx-auto rounded-3xl ring-1 ring-void-300/20 "
             src={teamImage}
             alt="Agency team"
             sizes="(min-width: 1024px) 64rem, 100vw"

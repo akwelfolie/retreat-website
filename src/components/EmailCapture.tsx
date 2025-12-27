@@ -1,8 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import { PrimaryButton } from '@/components/buttons/PrimaryButton'
-import { Chip } from './Chip'
+import { PrimaryButton } from '@/components/ui/buttons/PrimaryButton'
+import { Chip } from './ui/Chip'
 
 type EmailCaptureProps = {
   tagline?: string

@@ -1,9 +1,9 @@
 import { AboutHero } from '@/components/AboutHero'
 import { SocialProof } from '@/components/SocialProof'
-import { SchedulePreview } from '@/components/SchedulePreview'
-import { Values } from '@/components/Values'
-import { Team } from '@/components/Team'
 import { CallToAction } from '@/components/CallToAction'
+import { Founders } from '@/components/Founders'
+import { SpeakerDetails } from '@/components/SpeakerDetails'
+import { ValuesAndSafety } from '@/components/ValuesAndSafety'
 
 export const metadata = {
   title: 'About us - Unleashed',
@@ -16,35 +16,12 @@ export default function AboutPage() {
     <>
       <AboutHero />
 
-      {/* Diagonal section separator */}
-      <div className="relative h-16 w-full md:h-32 lg:h-48">
-        <svg
-          className="absolute h-full w-full text-void-800"
-          preserveAspectRatio="none"
-          viewBox="0 0 100 100"
-          fill="currentcolor"
-        >
-          <polygon points="0,0 0,100 100,100" />
-        </svg>
-      </div>
+      <Founders />
 
-      <SchedulePreview />
+      <SpeakerDetails/>
 
-      {/* Diagonal section separator */}
-      <div className="relative h-16 w-full bg-void-800 md:h-32 lg:h-48">
-        <svg
-          className="absolute h-full w-full text-void-900"
-          preserveAspectRatio="none"
-          viewBox="0 0 100 100"
-          fill="currentcolor"
-        >
-          <polygon points="0,100 100,100 100,0" />
-        </svg>
-      </div>
+      <ValuesAndSafety />
 
-      <Values />
-      <Team />
-      <SocialProof />
       <CallToAction />
     </>
   )

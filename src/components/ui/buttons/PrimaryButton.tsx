@@ -4,6 +4,7 @@ import clsx from 'clsx'
 type PrimaryButtonProps = {
   className?: string
   children: React.ReactNode
+  external?: boolean
 } & (
   | (React.ButtonHTMLAttributes<HTMLButtonElement> & { href?: never })
   | LinkProps
@@ -12,6 +13,7 @@ type PrimaryButtonProps = {
 export function PrimaryButton({
   className = 'hover:bg-blue-800 h-14',
   children,
+  external = false,
   ...props
 }: PrimaryButtonProps) {
   const baseClassName =

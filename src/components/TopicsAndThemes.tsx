@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import { Chip } from './Chip'
+import { Chip } from './ui/Chip'
 
 const topics = [
   'Community building, unlearning “female rivalry”',

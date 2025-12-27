@@ -1,76 +1,9 @@
 import Image from 'next/image'
 import { SocialLink } from '@/components/SocialLink'
-import staffImage1 from '/public/stock/team/team-01.jpg'
-import staffImage2 from '/public/stock/team/team-02.jpg'
-import staffImage3 from '/public/stock/team/team-03.jpg'
-import staffImage4 from '/public/stock/team/team-04.jpg'
-import staffImage5 from '/public/stock/team/team-05.jpg'
-import staffImage6 from '/public/stock/team/team-06.jpg'
-import type { IconName } from '@/components/SocialIcon'
-import type { StaticImageData } from 'next/image'
-import { Chip } from './Chip'
+import { Chip } from './ui/Chip'
+import { getAllPeople } from '@/content/people'
 
-const team: {
-  name: string
-  job: string
-  image: StaticImageData
-  socials: { name: IconName; href: string }[]
-}[] = [
-  {
-    name: 'Nicole Sonnefeldt, MA',
-    job: 'Co-Founder',
-    image: staffImage1,
-    socials: [
-      { name: 'instagram', href: '#0' },
-      { name: 'facebook', href: '#0' },
-    ],
-  },
-  {
-    name: 'Ashley Summers',
-    job: 'Co-Founder',
-    image: staffImage2,
-    socials: [
-      { name: 'instagram', href: '#0' },
-      { name: 'facebook', href: '#0' },
-    ],
-  },
-  {
-    name: 'Maya Chen',
-    job: 'Somatic Practitioner',
-    image: staffImage3,
-    socials: [
-      { name: 'instagram', href: '#0' },
-      { name: 'facebook', href: '#0' },
-    ],
-  },
-  {
-    name: 'Jordan Ellis',
-    job: 'Sex Educator',
-    image: staffImage4,
-    socials: [
-      { name: 'instagram', href: '#0' },
-      { name: 'facebook', href: '#0' },
-    ],
-  },
-  {
-    name: 'Renee Thompson',
-    job: 'Embodiment Coach',
-    image: staffImage5,
-    socials: [
-      { name: 'instagram', href: '#0' },
-      { name: 'facebook', href: '#0' },
-    ],
-  },
-  {
-    name: 'TBD',
-    job: 'Guest Speaker',
-    image: staffImage6,
-    socials: [
-      { name: 'instagram', href: '#0' },
-      { name: 'facebook', href: '#0' },
-    ],
-  },
-]
+const team = getAllPeople()
 
 export const Team = () => {
   return (
@@ -98,7 +31,7 @@ export const Team = () => {
               className="flex flex-col items-center"
             >
               <Image
-                src={member.image}
+                src={member.squareImage}
                 alt={member.name}
                 className="h-64 w-64 rounded-3xl ring-1 ring-void-300/20 hover:ring-1 hover:ring-gold-700 hover:-translate-y-2 object-cover object-center shadow-xl"
                 sizes="16rem"
@@ -108,7 +41,7 @@ export const Team = () => {
                   {member.name}
                 </div>
                 <div className="text-lg font-medium text-void-300">
-                  {member.job}
+                  {member.role}
                 </div>
 
                 {/* Social media links */}

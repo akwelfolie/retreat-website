@@ -11,7 +11,7 @@ import {
   IconSparkles,
 } from '@tabler/icons-react'
 import day1Image from '/public/stock/UL-example-image-640x960.png'
-import { Chip } from './Chip'
+import { Chip } from './ui/Chip'
 
 const features = [
   {

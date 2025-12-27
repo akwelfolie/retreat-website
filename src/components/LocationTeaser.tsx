@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import clsx from 'clsx'
 import squareImage1 from '/public/stock/UL-hero-home.png' 
-import { Chip } from './Chip'
+import { Chip } from './ui/Chip'
 
 type LocationTeaserProps = {
   flip?: boolean // optional: put image on left if true

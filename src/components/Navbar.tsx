@@ -4,17 +4,19 @@ import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import clsx from 'clsx'
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
-import { PrimaryButton } from '@/components/buttons/PrimaryButton'
+import { PrimaryButton } from '@/components/ui/buttons/PrimaryButton'
+import { LINKS } from '@/config/links'
+
 
 const navbar = {
   navigation: [
     { label: 'Home', href: '/' },
     { label: 'About', href: '/about' },
-    { label: 'Tickets', href: '/tickets' },
+    { label: 'Tickets', href: LINKS.tickets },
   ],
   action: {
     label: 'Buy Ticket',
-    href: '/tickets',
+    href: LINKS.tickets,
   },
 }
 

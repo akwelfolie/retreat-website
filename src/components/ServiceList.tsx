@@ -4,8 +4,9 @@ import {
   IconUsers,
   IconRipple,
 } from '@tabler/icons-react'
-import { SecondaryButton } from '@/components/buttons/SecondaryButton'
-import { Chip } from './Chip'
+import { SecondaryButton } from '@/components/ui/buttons/SecondaryButton'
+import { Chip } from './ui/Chip'
+import { LINKS } from '@/config/links'
 
 const experiences = [
   {
@@ -51,7 +52,7 @@ export const ServiceList = () => {
                 <div className="mt-8 flex text-left lg:mt-10">
                   <SecondaryButton
                     size="sm"
-                    href="/tickets"
+                    href={LINKS.tickets}
                   >
                     Buy Tickets
                   </SecondaryButton>

@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import { PrimaryButton } from '@/components/buttons/PrimaryButton'
+import { PrimaryButton } from '@/components/ui/buttons/PrimaryButton'
 import { SocialLink } from '@/components/SocialLink'
 
 const addresses = [

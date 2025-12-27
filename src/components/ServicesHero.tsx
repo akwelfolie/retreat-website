@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { PrimaryButton } from '@/components/buttons/PrimaryButton'
+import { PrimaryButton } from '@/components/ui/buttons/PrimaryButton'
 import image1 from '/public/stock/hero-services-01.jpg'
 import image2 from '/public/stock/hero-services-02.jpg'
 
