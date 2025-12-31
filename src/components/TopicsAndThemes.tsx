@@ -71,11 +71,10 @@ export const TopicsAndThemes = () => {
                 <div
                   key={`topic-${colIndex}-${index}`}
                   className={`
-                    rounded-3xl bg-void-500 px-8 py-6 shadow-xl sm:px-10
+                    rounded-3xl px-8 py-6 shadow-xl sm:px-10
                     ring-1 ring-white/10
                     transition-all duration-300
-                    hover:-translate-y-3
-                    ${index % 2 === 0 ? 'hover:bg-blue-800/80' : 'hover:bg-pink-800/80'}
+                    ${index % 2 === 0 ? 'bg-blue-800/80' : 'bg-pink-800/80'}
                   `}
                 >
                   <p className="text-lg font-semibold text-void-100">{topic}</p>

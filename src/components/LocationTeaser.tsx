@@ -1,6 +1,4 @@
-import Image from 'next/image'
 import clsx from 'clsx'
-import squareImage1 from '/public/stock/UL-hero-home.png' 
 import { Chip } from './ui/Chip'
 
 type LocationTeaserProps = {
@@ -12,10 +10,6 @@ export const LocationTeaser = ({ flip = false }: LocationTeaserProps) => {
     tagline: 'Location',
     headline: 'Hotel L7 by LOTTE — Chicago, IL',
     text: `A boutique hotel just steps from the Chicago Riverwalk, the location combines modern flair and luxe amenities with local, creative spirit. There will be areas for rest and relaxation within the retreat space, and hotel rooms available for attendees who choose to stay overnight available at a discounted rate.`,
-    image: {
-      src: squareImage1,
-      alt: 'Hotel preview',
-    },
   }
 
   return (
@@ -49,37 +43,16 @@ export const LocationTeaser = ({ flip = false }: LocationTeaserProps) => {
           {/* Image */}
           <div
             className={clsx(
-              'relative mx-auto mt-10 flex w-full max-w-lg items-center justify-center lg:mt-0 lg:max-w-none',
+              'relative mx-auto mt-10 w-full max-w-lg lg:mt-0 lg:max-w-none',
               flip && 'lg:order-1',
             )}
           >
-            {/* Background card */}
-            <div
-              className={clsx(
-                'absolute size-full rounded-3xl bg-void-700 sm:top-8 lg:top-4 2xl:top-10',
-                flip
-                  ? 'sm:right-8 lg:right-4 2xl:right-10'
-                  : 'sm:left-8 lg:left-4 2xl:left-10',
-              )}
-            >
-              <svg
-                className="absolute inset-y-0 right-1/4 top-0 z-20 h-full w-1/4 text-void-700"
-                preserveAspectRatio="none"
-                viewBox="0 0 100 100"
-                fill="currentcolor"
-              >
-                <polygon points="0,0 100,0 0,100" />
-              </svg>
-              <div className="absolute inset-y-0 left-1/2 z-10 h-full w-1/2 rounded-r-3xl bg-void-800" />
-            </div>
-
-            <div className="relative aspect-3/2 w-full">
-              <Image
-                src={feature.image.src}
-                alt={feature.image.alt}
-                fill
-                className="absolute inset-0 z-30 size-full ring-1 ring-void-300/20 rounded-3xl object-cover shadow-xl"
-                sizes="(min-width: 1280px) 38.5rem, (min-width: 1024px) calc(50vw - 3.5rem), (min-width: 640px) 32rem, calc(100vw - 2rem)"
+            <div className="overflow-hidden rounded-3xl shadow-xl ring-1 ring-void-300/20">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19926.2305808777!2d-87.64205682198806!3d41.88714970212759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2d8ecd8e0915%3A0x8076598c2b7bc59a!2sL7%20CHICAGO%20BY%20LOTTE!5e0!3m2!1sen!2sus!4v1767194490908!5m2!1sen!2sus"
+                className="h-[450px] w-full border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
               />
             </div>
           </div>

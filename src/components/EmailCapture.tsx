@@ -13,8 +13,8 @@ type EmailCaptureProps = {
 
 export const EmailCapture = ({
   tagline = 'Stay in the loop',
-  headline = 'Get retreat updates',
-  description = 'Sign up to receive speaker announcements, schedule updates, and important details.',
+  headline = 'This is your permission to Unleash',
+  description = 'Join our mailing list for exclusive updates & offerings.',
   submitLabel = 'Notify me',
 }: EmailCaptureProps) => {
   const [email, setEmail] = useState('')
@@ -36,7 +36,7 @@ export const EmailCapture = ({
   return (
     <section className="px-4 py-12 sm:px-6 md:py-16 lg:px-8">
       <div className="mx-auto max-w-(--breakpoint-xl)">
-        <div className="mx-auto w-full rounded-3xl bg-void-700 border border-void-700 hover:border-gold-700/20 px-4 py-12 shadow-xl sm:p-16 lg:p-14 xl:p-16">
+        <div className="mx-auto w-full rounded-3xl bg-void-700 border border-gold-700/20 px-4 py-12 shadow-xl sm:p-16 lg:p-14 xl:p-16">
           <div className="w-full text-left">
             <Chip>
               {tagline}

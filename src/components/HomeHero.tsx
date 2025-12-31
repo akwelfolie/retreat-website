@@ -8,7 +8,7 @@ export const HomeHero = () => {
   return (
     <section className="mx-auto max-w-(--breakpoint-2xl) px-4 pb-12 pt-2 sm:px-6 md:pb-16 lg:px-8">
       {/* Hero card */}
-      <div className="relative rounded-3xl bg-void-500 border border-void-500 hover:border-gold-600/30 shadow-xl sm:overflow-hidden">
+      <div className="relative rounded-3xl bg-void-500 border border-gold-600/30 shadow-xl sm:overflow-hidden">
       {/* Right background diagonal */}
         <svg
           className="absolute inset-y-0 right-1/4 z-20 h-full w-1/4 text-void-500"

@@ -33,7 +33,7 @@ export const Team = () => {
               <Image
                 src={member.squareImage}
                 alt={member.name}
-                className="h-64 w-64 rounded-3xl ring-1 ring-void-300/20 hover:ring-1 hover:ring-gold-700 hover:-translate-y-2 object-cover object-center shadow-xl"
+                className="h-64 w-64 rounded-3xl ring-1 ring-void-300/20 object-cover object-center shadow-xl"
                 sizes="16rem"
               />
               <div className="mt-4 text-center">
