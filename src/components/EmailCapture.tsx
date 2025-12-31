@@ -18,20 +18,33 @@ export const EmailCapture = ({
   submitLabel = 'Notify me',
 }: EmailCaptureProps) => {
   const [email, setEmail] = useState('')
-  const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle')
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle')
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     if (!email.trim()) return
-
+  
     setStatus('submitting')
-
-    // TODO (later): call your API (POST /api/signup) and handle errors.
-    // For now, just simulate success.
-    await new Promise((r) => setTimeout(r, 400))
-
-    setStatus('success')
+  
+    try {
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      })
+  
+      if (!res.ok) {
+        const data = await res.json()
+        throw new Error(data?.error || 'Subscription failed')
+      }
+  
+      setStatus('success')
+    } catch (err) {
+      console.error(err)
+      setStatus('error')
+    }
   }
+  
 
   return (
     <section className="px-4 py-12 sm:px-6 md:py-16 lg:px-8">
