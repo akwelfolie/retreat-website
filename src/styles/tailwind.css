@@ -1,41 +1,30 @@
 @import 'tailwindcss';
 
 @theme {
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif,
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
-  --color-void-100: #e9e9ea;
-  --color-void-200: #d3d2d4;
-  --color-void-300: #c2c6dd;
-  --color-void-400: #999cb4;
-  --color-void-500: #4f4d55;
-  --color-void-600: #333139;
-  --color-void-700: #23202a;
-  --color-void-800: #1e1b24;
-  --color-void-900: #19181f;
-  --color-void-950: #0e1012;
+
+  --color-blue-100: #ced7d8;
+  --color-blue-200: #9daeb0;
+  --color-blue-300: #6c8689;
+  --color-blue-400: #3b5d61;
+  --color-blue-500: #0a353a; /* base */
+  --color-blue-600: #082a2e;
+  --color-blue-700: #062023;
+  --color-blue-800: #041517;
+  --color-blue-900: #020b0c;
 
 
-  --color-blue-100: #d2edf0;
-  --color-blue-200: #a5dbe1;
-  --color-blue-300: #79cad1;
-  --color-blue-400: #4cb8c2;
-  --color-blue-500: #1fa6b3; /* base */
-  --color-blue-600: #19858f;
-  --color-blue-700: #13646b;
-  --color-blue-800: #0c4248;
-  --color-blue-900: #062124;
-
-
-  --color-pink-100: #f2d1e1;
-  --color-pink-200: #e6a3c4;
-  --color-pink-300: #d974a6;
-  --color-pink-400: #cd4689;
-  --color-pink-500: #c0186b; /* base */
-  --color-pink-600: #9a1356;
-  --color-pink-700: #730e40;
-  --color-pink-800: #4d0a2b;
-  --color-pink-900: #260515;
+  --color-pink-100: #deced6;
+  --color-pink-200: #be9dad;
+  --color-pink-300: #9d6d85;
+  --color-pink-400: #7d3c5c;
+  --color-pink-500: #5c0b33; /* base */
+  --color-pink-600: #4a0929;
+  --color-pink-700: #37071f;
+  --color-pink-800: #250414;
+  --color-pink-900: #12020a;
 
 
   --color-gold-100: #f6efd7;

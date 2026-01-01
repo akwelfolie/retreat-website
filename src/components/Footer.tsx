@@ -1,23 +1,21 @@
 import Link from 'next/link'
 import { SocialLink } from '@/components/SocialLink'
+import { LINKS } from '@/config/links'
 
 const contact = {
   address: {
-    street: '123 W. Kanye Street',
-    city: 'Los Angeles',
-    state: 'CA',
-    zip: '90001',
+    street: 'Based out of',
+    city: 'Chicago',
+    state: 'IL',
   },
-  phone: '(415) 555-1234',
-  email: 'hello@unleashedretreat.com', // placeholder
+  phone: '(708) 522-3520',
+  email: 'info@thisisunleashed.com',
 }
 
 const footerLinks = [
   { label: 'Home', href: '/' },
-  { label: 'Services', href: '/services' },
+  { label: 'Tickets', href: LINKS.tickets },
   { label: 'About', href: '/about' },
-  { label: 'Work', href: '/work' },
-  { label: 'Contact us', href: '/contact' },
 ]
 
 export const Footer = () => {
@@ -29,10 +27,7 @@ export const Footer = () => {
           <div className="flex items-center">
             <Link href="/" className="group text-2xl font-black lg:block">
               <span className="text-white transition duration-200 ease-in-out group-hover:text-void-300">
-                Unleashed{' '}
-              </span>
-              <span className="text-void-300 transition duration-200 ease-in-out group-hover:text-white">
-                Studio
+                Unleashed
               </span>
             </Link>
           </div>
@@ -47,8 +42,7 @@ export const Footer = () => {
           <p className="mt-2 text-lg text-void-300">
             {contact.address.street}
             <br />
-            {contact.address.city}, {contact.address.state}{' '}
-            {contact.address.zip}
+            {contact.address.city}, {contact.address.state}
           </p>
           <p className="mt-6 text-lg text-void-300">{contact.phone}</p>
           <p className="text-lg text-void-300">{contact.email}</p>
@@ -73,14 +67,12 @@ export const Footer = () => {
             Follow us on social media
           </h6>
           <p className="mt-2 text-lg text-void-300">
-            Stay connected and updated on our latest projects.
+            Stay connected and updated on our latest gatherings.
           </p>
           <div className="mt-4 w-full lg:mt-6">
             {/* Social links container */}
             <div className="flex justify-start space-x-4">
-              <SocialLink href="#0" icon="instagram" />
-              <SocialLink href="#0" icon="facebook" />
-              <SocialLink href="#0" icon="twitter" />
+              <SocialLink href="https://www.instagram.com/unleashedmovement" icon="instagram" />
             </div>
           </div>
         </div>

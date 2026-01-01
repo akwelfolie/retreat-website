@@ -133,7 +133,7 @@ export const EmailCapture = ({
           {isSuccess && (
             <div className="mt-10">
               <p className="text-lg text-void-100">
-                You’re in! Check your email to confirm.
+                You’re in!
               </p>
               <p className="mt-3 text-xs text-void-200/80">
                 We’ll only email you about Unleashed. Unsubscribe anytime.

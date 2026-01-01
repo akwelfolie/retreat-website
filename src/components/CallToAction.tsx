@@ -5,7 +5,7 @@ export const CallToAction = () => {
   return (
     <section className="mx-auto max-w-(--breakpoint-2xl) px-4 py-12 sm:px-6 md:py-16 lg:px-8">
       {/* CTA card */}
-      <div className="relative rounded-3xl bg-void-500 border border-void-500 hover:border-gold-600/30 py-16 lg:py-20 shadow-xl sm:overflow-hidden">
+      <div className="relative rounded-3xl bg-void-500 border border-gold-600/30 py-16 lg:py-20 shadow-xl sm:overflow-hidden">
         {/* Right background diagonal */}
         <svg
           className="absolute inset-y-0 right-1/4 z-20 h-full w-1/4 text-void-500"
