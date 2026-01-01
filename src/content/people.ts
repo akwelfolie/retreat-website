@@ -1,13 +1,16 @@
 import type { StaticImageData } from 'next/image'
 import type { IconName } from '@/components/SocialIcon'
 import imagePlaceholder from '/public/stock/UL-hero-home.png'
-import imageHeadshot from '/public/stock/headshot-placeholder.jpg'
 import squareAlbeGutierrez from '/public/stock/speakers/square-albe-gutierrez.png'
-import squareJosephineLauer from '/public/stock/speakers/square-josephine-lauer.png'
-import squareSophiaChase from '/public/stock/speakers/square-sophia-chase.png'
+import bigAlbe from '/public/stock/speakers/big-albe.png'
+import squareJosephineLauer from '/public/stock/speakers/square-josephine.jpg'
+import bigJosephine from '/public/stock/speakers/big-josephine.jpg'
+import squareSophiaChase from '/public/stock/speakers/square-lady-sophia.jpeg'
+import bigSophia from '/public/stock/speakers/big-lady-sophia.jpeg'
 import squareNishi from '/public/stock/speakers/square-nishi.png'
 import bigNishi from '/public/stock/speakers/big-nishi.png'
 import squareNicole from '/public/stock/speakers/square-nicole.jpg'
+import bigNicole from '/public/stock/speakers/big-nicole.png'
 import squareAsh from '/public/stock/speakers/square-ash.jpg'
 
 export type Social = { name: IconName; href: string }
@@ -25,7 +28,7 @@ export const founders: Person[] = [
   {
     name: 'Nicole Sonnefeldt, MA (she/her)',
     role: 'Co-Founder',
-    bigImage: imagePlaceholder,
+    bigImage: bigNicole,
     squareImage: squareNicole,
     socials: [
       { name: 'instagram', href: 'https://www.instagram.com/freeformcoaching/' },
@@ -49,7 +52,7 @@ export const speakers: Person[] = [
   {
     name: 'Mistress Sophia Chase, MSW (she/her)',
     role: 'Pro-Domme',
-    bigImage: imagePlaceholder,
+    bigImage: bigSophia,
     squareImage: squareSophiaChase,
     socials: [
       { name: 'instagram', href: 'https://www.instagram.com/dominasophiachicago/' },
@@ -61,7 +64,7 @@ export const speakers: Person[] = [
   {
     name: 'Albe Gutierrez (Ms. Albe), MAATC (she/her/ella)',
     role: 'Opening, Workshop Presenter',
-    bigImage: imagePlaceholder,
+    bigImage: bigAlbe,
     squareImage: squareAlbeGutierrez,
     socials: [
     ],
@@ -99,7 +102,7 @@ export const speakers: Person[] = [
   {
     name: 'Josephine Lauer',
     role: 'Somatic Intimacy Coach & Tantra Practitioner',
-    bigImage: imagePlaceholder,
+    bigImage: bigJosephine,
     squareImage: squareJosephineLauer,
     socials: [
       { name: 'instagram', href: 'https://www.instagram.com/templeofloha' },

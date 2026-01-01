@@ -16,7 +16,7 @@ const contact = {
 const footerLinks = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
-  { label: 'Tickets', href: LINKS.tickets },
+  { label: 'Tickets', href: "/tickets" },
 ]
 
 export const Footer = () => {

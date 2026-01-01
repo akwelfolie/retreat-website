@@ -14,7 +14,7 @@ const navbar = {
   navigation: [
     { label: 'Home', href: '/' },
     { label: 'About', href: '/about' },
-    { label: 'Tickets', href: LINKS.tickets },
+    { label: 'Tickets', href: "/tickets" },
   ],
   action: {
     label: 'Buy Ticket',

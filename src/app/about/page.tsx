@@ -8,7 +8,7 @@ import { ValuesAndSafety } from '@/components/ValuesAndSafety'
 export const metadata = {
   title: 'About us - Unleashed',
   description:
-    "[Placeholder — this page will introduce the vision behind Unleashed, its founders, and the intention of the retreat.]",
+    "[This page will introduce the vision behind Unleashed, its founders, and the intention of the retreat.]",
 }
 
 export default function AboutPage() {

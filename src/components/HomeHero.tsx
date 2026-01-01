@@ -45,7 +45,7 @@ export const HomeHero = () => {
 
             {/* CTA buttons */}
             <div className="z-30 mt-10 sm:flex sm:justify-center lg:justify-start">
-              <PrimaryButton href={LINKS.tickets}>Buy Tickets</PrimaryButton>
+              <PrimaryButton href="/tickets">Buy Tickets</PrimaryButton>
 
               <SecondaryButton
                 className="ml-0 mt-5 sm:ml-4 sm:mt-0"

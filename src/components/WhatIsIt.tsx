@@ -3,10 +3,13 @@ import clsx from 'clsx'
 import { Chip } from './ui/Chip'
 import image1 from '/public/stock/UL-example-image-1920x1280.png'
 import imgBreakBarriers from '/public/stock/break-barrier.png'
+import imgThreeGirls from '/public/stock/threegirls.png'
+import imgMeg from '/public/stock/meg.png'
+import imgNoa from '/public/stock/noa.png'
 
 const features = [
   {
-    tagline: 'What this is',
+    tagline: 'The Goal',
     headline: 'Break the barriers. Own your embodiment.',
     text: "Unleashed aims to break down limiting beliefs and barriers holding women and women-aligned individuals back from owning their most embodied, authentic expressions of themselves and their sexuality.",
     image: {
@@ -15,11 +18,11 @@ const features = [
     },
   },
   {
-    tagline: 'What this is',
+    tagline: 'The Experience',
     headline: 'A container for connection — built to last.',
     text: "The experience curates a unique container for the participants to connect, create and play. Unlike typical retreat experiences which often feel fleeting, Unleashed gives its participants new knowledge and awareness to integrate into their day to day lives, with the hopes of fostering new relationships among the participants that too continue beyond the weekend.",
     image: {
-      src: image1,
+      src: imgThreeGirls,
       alt: 'Women connecting in a retreat setting',
     },
   },
@@ -27,25 +30,25 @@ const features = [
     tagline: "Who it's for",
     headline: 'Who Unleashed welcomes.',
     text:
-      "Unleashed welcomes all women (21+), including trans women, as well as non-binary and gender-nonconforming individuals who feel connected to womanhood. This retreat is for every stage of their life or sexual journey whether exploring desire for the first time, deepening pleasure, healing shame, or seeking community.\n\n" +
-      'We are seeking women who are curious to learn more about themselves and others, who value supportive connections with other women, and who feel comfortable being vulnerable within a safe container.',
+      "Unleashed welcomes all women (21+), including trans women &  non-binary and gender-nonconforming individuals who feel connected to womanhood. Unleashed is for women in every stage of life and sexual journey - whether exploring desire for the first time, deepening pleasure, healing shame, or seeking community.\n\n" +
+      'If you are curious to learn more about yourself and others, you value supportive connections with other women, and feel comfortable being vulnerable within a safe container - this is for you.',
     image: {
-      src: image1,
+      src: imgMeg,
       alt: 'Supportive group setting',
     },
   },
   {
-    tagline: 'Safety & boundaries',
-    headline: 'A trauma-informed, respectful container.',
-    text: 'Unleashed is a trauma-informed experience. Although there will be mental health providers on site to assist with grounding and containment, we are not providing mental health services.',
+    tagline: 'Emotional Safety',
+    headline: 'A safe container for exploration.',
+    text: "We know that unlearning shame can feel heavy, so we've made Unleashed a trauma-informed experience. Although there will be mental health providers on site to assist with grounding and containment, we are not providing mental health services.",
     image: {
-      src: image1,
+      src: imgNoa,
       alt: 'Safe and respectful retreat environment',
     },
   },
   {
-    tagline: "Who it's not for",
-    headline: 'Who this retreat is not open to.',
+    tagline: "Commitment to our Values",
+    headline: 'Caring for each other.',
     text:
       'Racism, homophobia, transphobia, misogyny, slut-shaming, kink-shaming and discrimination or bullying of any kind will not be tolerated at Unleashed, and will warrant automatic dismissal from the retreat, without refund.\n\n' +
       'This retreat is not open to cisgender men, although we hope to provide an opportunity for a similar experience for men in the future.',
