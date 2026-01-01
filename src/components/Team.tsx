@@ -15,11 +15,11 @@ export const Team = () => {
             Who will guide you
           </Chip> 
           <h2 className="mt-6 text-3xl font-extrabold text-white sm:text-4xl md:text-5xl">
-            Meet the voices of Unleashed – TODO: revise this text
+            Meet the voices of Unleashed
           </h2>
           <p className="mt-6 text-xl text-void-200">
             Our speakers and guides bring diverse backgrounds in embodiment, sexuality,
-            education, and community building — all aligned around safety, curiosity, and care. – TODO: revise this text
+            education, and community building — all aligned around safety, curiosity, and care.
           </p>
         </div>
 

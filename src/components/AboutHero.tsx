@@ -49,8 +49,8 @@ export const AboutHero = () => {
           <div
             id={contentId}
             className={clsx(
-              'mx-auto overflow-hidden transition-[max-height,opacity,margin] duration-300 ease-in-out',
-              open ? 'mt-8 max-h-[1200px] opacity-100' : 'mt-0 max-h-0 opacity-0',
+              'mx-auto overflow-y-auto transition-[max-height,opacity,margin] duration-300 ease-in-out',
+              open ? 'mt-8 max-h-[1500px] opacity-100' : 'mt-0 max-h-0 opacity-0',
             )}
           >
             <div className="mx-auto max-w-3xl rounded-3xl bg-void-500 px-6 py-8 text-left shadow-xl ring-1 ring-white/10 sm:px-8 sm:py-10">

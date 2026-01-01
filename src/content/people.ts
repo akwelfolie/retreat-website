@@ -34,13 +34,13 @@ export const founders: Person[] = [
   },
   {
     name: 'Ashley Summers',
-    role: 'Co-Founder & Photographer',
+    role: 'Co-Founder',
     bigImage: imagePlaceholder,
     squareImage: imageHeadshot,
     socials: [
       { name: 'instagram', href: 'https://www.instagram.com/ashleysummersphotography' },
     ],
-    bio: 'Long bio here. 4–7 sentences.',
+    bio: 'Ash Summers is a Chicago-based creative with a background in special events and certification as a recreation therapist. For the past 11 years she has run her photography business with Chicago as her home base. She believes in freedom of expression through photography, videography, and living out loud. She saw a need for others to have a safe space in a community setting to explore topics that she is passionate about including unapologetically going for what you want in all areas of life. Her work and ethos centers on connection, authenticity, and real human moments.',
   },
 ]
 
