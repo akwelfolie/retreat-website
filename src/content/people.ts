@@ -76,13 +76,13 @@ export const speakers: Person[] = [
     bio: 'Short bio 2–3 sentences.',
   },
   {
-    name: 'Nishi',
-    role: 'Therapist',
+    name: 'Shanta “Nishi” Kanukollu, Ph. D',
+    role: 'Psychotherapist',
     bigImage: bigNishi,
     squareImage: squareNishi,
     socials: [
     ],
-    bio: 'Short bio 2–3 sentences.',
+    bio: 'Dr. K is a trauma-informed psychotherapist who works with individuals from diverse cultural backgrounds, with a focus on communities of color. She values therapy as a collaborative, relational process and strives to create a compassionate space where clients can explore vulnerability while recognizing their strengths. As a first-generation Indian-American woman, Dr. K brings a culturally responsive lens to her work and has a particular interest in supporting South Asian individuals navigating depression, anxiety, trauma, marginalization, and intergenerational stress.',
   },
   {
     name: 'Dr. Kres Ashford, PsyD, LCPC, CST',

@@ -47,15 +47,15 @@ export const SpeakerDetails = () => {
               <div
                 key={`speaker-${index}`}
                 className="
-    grid items-stretch gap-6 rounded-3xl
-    bg-void-500/40 p-6 shadow-xl ring-1 ring-white/10
-    h-auto
-    md:h-[520px]
-    lg:h-[560px]
-    lg:grid-cols-12
-    lg:gap-10
-    lg:p-10
-  "
+                  grid items-stretch gap-6 rounded-3xl
+                  bg-void-500/40 p-6 shadow-xl ring-1 ring-white/10
+                  h-auto
+                  md:h-[560px]
+                  lg:h-[600px]
+                  lg:grid-cols-12
+                  lg:gap-10
+                  lg:p-10
+                "
               >
                 {/* Image */}
                 <div
