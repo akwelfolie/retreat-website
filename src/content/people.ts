@@ -7,7 +7,8 @@ import squareJosephineLauer from '/public/stock/speakers/square-josephine-lauer.
 import squareSophiaChase from '/public/stock/speakers/square-sophia-chase.png'
 import squareNishi from '/public/stock/speakers/square-nishi.png'
 import bigNishi from '/public/stock/speakers/big-nishi.png'
-import squareNicole from '/public/stock/speakers/big-nicole-sonne.png'
+import squareNicole from '/public/stock/speakers/square-nicole.jpg'
+import squareAsh from '/public/stock/speakers/square-ash.jpg'
 
 export type Social = { name: IconName; href: string }
 
@@ -36,7 +37,7 @@ export const founders: Person[] = [
     name: 'Ashley Summers',
     role: 'Co-Founder',
     bigImage: imagePlaceholder,
-    squareImage: imageHeadshot,
+    squareImage: squareAsh,
     socials: [
       { name: 'instagram', href: 'https://www.instagram.com/ashleysummersphotography' },
     ],
@@ -66,15 +67,15 @@ export const speakers: Person[] = [
     ],
     bio: "Albe Gutierrez (she/her/ella), Ms. Albe, is a bilingual psychotherapist and art therapist at Chicago Therapy Collective with over a decade of clinical experience within hospitals, community organizations and substance use treatment centers and a decade more of teaching experience as a fine arts, movement and burlesque instructor. She maintains a focus on LGBTQ+ community needs and resourcing, particularly for other trans women of color by providing therapy, surgical readiness letter writing, and arts activism.",
   },
-  {
-    name: 'Meg',
-    role: 'Rigger/Shibari Performer',
-    bigImage: imagePlaceholder,
-    squareImage: imageHeadshot,
-    socials: [
-    ],
-    bio: 'Short bio 2–3 sentences.',
-  },
+  // {
+  //   name: 'Meg',
+  //   role: 'Rigger/Shibari Performer',
+  //   bigImage: imagePlaceholder,
+  //   squareImage: imageHeadshot,
+  //   socials: [
+  //   ],
+  //   bio: 'Short bio 2–3 sentences.',
+  // },
   {
     name: 'Shanta “Nishi” Kanukollu, Ph. D',
     role: 'Psychotherapist',
@@ -84,17 +85,17 @@ export const speakers: Person[] = [
     ],
     bio: 'Dr. K is a trauma-informed psychotherapist who works with individuals from diverse cultural backgrounds, with a focus on communities of color. She values therapy as a collaborative, relational process and strives to create a compassionate space where clients can explore vulnerability while recognizing their strengths. As a first-generation Indian-American woman, Dr. K brings a culturally responsive lens to her work and has a particular interest in supporting South Asian individuals navigating depression, anxiety, trauma, marginalization, and intergenerational stress.',
   },
-  {
-    name: 'Dr. Kres Ashford, PsyD, LCPC, CST',
-    role: 'Relationship & Sex Therapist',
-    bigImage: imagePlaceholder,
-    squareImage: imageHeadshot,
-    socials: [
-      { name: 'instagram', href: 'https://www.instagram.com/dreatpraykink/' },
-      { name: 'website', href: 'https://www.mindbodyintimacystudio.com' },
-    ],
-    bio: 'Short bio 2–3 sentences.',
-  },
+  // {
+  //   name: 'Dr. Kres Ashford, PsyD, LCPC, CST',
+  //   role: 'Relationship & Sex Therapist',
+  //   bigImage: imagePlaceholder,
+  //   squareImage: imageHeadshot,
+  //   socials: [
+  //     { name: 'instagram', href: 'https://www.instagram.com/dreatpraykink/' },
+  //     { name: 'website', href: 'https://www.mindbodyintimacystudio.com' },
+  //   ],
+  //   bio: 'Short bio 2–3 sentences.',
+  // },
   {
     name: 'Josephine Lauer',
     role: 'Somatic Intimacy Coach & Tantra Practitioner',

@@ -6,6 +6,8 @@ import clsx from 'clsx'
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
 import { PrimaryButton } from '@/components/ui/buttons/PrimaryButton'
 import { LINKS } from '@/config/links'
+import Image from 'next/image'
+import logo from '/public/stock/logo.png'
 
 
 const navbar = {
@@ -83,25 +85,24 @@ export const Navbar = () => {
         <div className="flex w-full items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            {/* Large logo */}
-            <Link
-              href="/"
-              className="group block text-2xl font-black md:hidden lg:block"
-            >
-              <span className="text-white transition duration-200 ease-in-out group-hover:text-void-300">
-                Unleashed
-              </span>
-            </Link>
+          <Link
+            href="/"
+            className="group flex items-center gap-3"
+          >
+            <Image
+              src={logo}
+              alt="Unleashed logo"
+              width={96}
+              height={96}
+              priority
+              className="rounded-sm"
+            />
 
-            {/* Small logo for mobile screens */}
-            <Link
-              href="/"
-              className="group hidden text-3xl font-black md:block lg:hidden"
-            >
-              <span className="text-white transition duration-200 ease-in-out group-hover:text-void-300">
-                U
-              </span>
-            </Link>
+          <span className="text-2xl font-black transition duration-200 ease-in-out">
+            <span className="text-pink-400 group-hover:text-pink-200">Un</span>
+            <span className="text-blue-400 group-hover:text-blue-200">leashed</span>
+          </span>
+          </Link>
           </div>
 
           {/* Main menu for large screens */}

@@ -2,8 +2,8 @@
 
 import { useId, useState } from 'react'
 import Image from 'next/image'
+import ashNicolePic from '/public/stock/ash-and-nicole.png'
 import clsx from 'clsx'
-import teamImage from '/public/stock/UL-hero-home.png'
 import { Chip } from './ui/Chip'
 import { SecondaryButton } from '@/components/ui/buttons/SecondaryButton'
 
@@ -103,7 +103,7 @@ export const AboutHero = () => {
         <div className="mx-auto mt-12 max-w-(--breakpoint-lg) text-center rounded-3xl shadow-xl">
           <Image
             className="block mx-auto rounded-3xl ring-1 ring-void-300/20"
-            src={teamImage}
+            src={ashNicolePic}
             alt="Ash and Nicole"
             sizes="(min-width: 1024px) 64rem, 100vw"
             priority

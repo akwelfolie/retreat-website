@@ -9,6 +9,7 @@ const contact = {
     state: 'IL',
   },
   phone: '(708) 522-3520',
+  phone2: '(773) 494-6776',
   email: 'info@thisisunleashed.com',
 }
 
@@ -45,6 +46,7 @@ export const Footer = () => {
             {contact.address.city}, {contact.address.state}
           </p>
           <p className="mt-6 text-lg text-void-300">{contact.phone}</p>
+          <p className="text-lg text-void-300">{contact.phone2}</p>
           <p className="text-lg text-void-300">{contact.email}</p>
         </div>
         {/* Site links */}

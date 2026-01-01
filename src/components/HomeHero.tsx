@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { PrimaryButton } from '@/components/ui/buttons/PrimaryButton'
 import { SecondaryButton } from '@/components/ui/buttons/SecondaryButton'
-import heroImage from '/public/stock/UL-hero-home.png'
+import heroImage from '/public/stock/spiritual-church-2.png'
 import { LINKS } from '@/config/links'
 
 export const HomeHero = () => {

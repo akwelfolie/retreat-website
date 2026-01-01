@@ -2,6 +2,7 @@ import Image, { type StaticImageData } from 'next/image'
 import clsx from 'clsx'
 import { Chip } from './ui/Chip'
 import image1 from '/public/stock/UL-example-image-1920x1280.png'
+import imgBreakBarriers from '/public/stock/break-barrier.png'
 
 const features = [
   {
@@ -9,7 +10,7 @@ const features = [
     headline: 'Break the barriers. Own your embodiment.',
     text: "Unleashed aims to break down limiting beliefs and barriers holding women and women-aligned individuals back from owning their most embodied, authentic expressions of themselves and their sexuality.",
     image: {
-      src: image1,
+      src: imgBreakBarriers,
       alt: 'Unleashed retreat atmosphere',
     },
   },
