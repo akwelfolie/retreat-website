@@ -1,5 +1,4 @@
 import { AboutHero } from '@/components/AboutHero'
-import { SocialProof } from '@/components/SocialProof'
 import { CallToAction } from '@/components/CallToAction'
 import { Founders } from '@/components/Founders'
 import { SpeakerDetails } from '@/components/SpeakerDetails'
