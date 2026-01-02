@@ -13,8 +13,8 @@ import logo from '/public/stock/logo.png'
 const navbar = {
   navigation: [
     { label: 'Home', href: '/' },
+    { label: 'Details', href: "/details" },
     { label: 'About', href: '/about' },
-    { label: 'Tickets', href: "/tickets" },
   ],
   action: {
     label: 'Buy Ticket',

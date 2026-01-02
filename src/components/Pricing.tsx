@@ -4,17 +4,17 @@ import { IconTicket, IconSparkles, IconStar } from '@tabler/icons-react'
 const pricing = [
   {
     title: 'Early Bird',
-    price: '$425',
+    price: '$465',
     icon: IconSparkles,
   },
   {
     title: 'Second Release',
-    price: '$475',
+    price: '$515',
     icon: IconStar,
   },
   {
     title: 'Standard',
-    price: '$550',
+    price: '$595',
     icon: IconTicket,
   },
 ]

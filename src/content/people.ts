@@ -1,6 +1,5 @@
 import type { StaticImageData } from 'next/image'
 import type { IconName } from '@/components/SocialIcon'
-import imagePlaceholder from '/public/stock/UL-hero-home.png'
 import squareAlbeGutierrez from '/public/stock/speakers/square-albe-gutierrez.png'
 import bigAlbe from '/public/stock/speakers/big-albe.png'
 import squareJosephineLauer from '/public/stock/speakers/square-josephine.jpg'
@@ -12,6 +11,7 @@ import bigNishi from '/public/stock/speakers/big-nishi.png'
 import squareNicole from '/public/stock/speakers/square-nicole.jpg'
 import bigNicole from '/public/stock/speakers/big-nicole.png'
 import squareAsh from '/public/stock/speakers/square-ash.jpg'
+import bigAsh from '/public/stock/speakers/big-ash.jpeg'
 
 export type Social = { name: IconName; href: string }
 
@@ -39,7 +39,7 @@ export const founders: Person[] = [
   {
     name: 'Ashley Summers',
     role: 'Co-Founder',
-    bigImage: imagePlaceholder,
+    bigImage: bigAsh,
     squareImage: squareAsh,
     socials: [
       { name: 'instagram', href: 'https://www.instagram.com/ashleysummersphotography' },

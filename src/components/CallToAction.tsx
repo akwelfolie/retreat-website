@@ -1,5 +1,4 @@
 import { PrimaryButton } from '@/components/ui/buttons/PrimaryButton'
-import { LINKS } from '@/config/links'
 
 export const CallToAction = () => {
   return (
@@ -33,8 +32,8 @@ export const CallToAction = () => {
           </div>
 
           <div className="mt-10 flex max-w-lg justify-center lg:mt-0 lg:w-1/2 lg:justify-end">
-            <PrimaryButton href="/tickets">
-              Buy your ticket
+            <PrimaryButton href="/details">
+              Tickets & Details
             </PrimaryButton>
           </div>
         </div>

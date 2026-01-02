@@ -6,7 +6,6 @@ import {
 } from '@tabler/icons-react'
 import { SecondaryButton } from '@/components/ui/buttons/SecondaryButton'
 import { Chip } from './ui/Chip'
-import { LINKS } from '@/config/links'
 
 const experiences = [
   {
@@ -52,9 +51,9 @@ export const ServiceList = () => {
                 <div className="mt-8 flex text-left lg:mt-10">
                   <SecondaryButton
                     size="sm"
-                    href="/tickets"
+                    href="/details"
                   >
-                    Buy Tickets
+                    Tickets & Details
                   </SecondaryButton>
                 </div>
               </div>

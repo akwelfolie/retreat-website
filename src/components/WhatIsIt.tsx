@@ -6,6 +6,7 @@ import imgBreakBarriers from '/public/stock/break-barrier.png'
 import imgThreeGirls from '/public/stock/threegirls.png'
 import imgMeg from '/public/stock/meg.png'
 import imgNoa from '/public/stock/noa.png'
+import imgGroup from '/public/stock/retreat-group-shot.jpg'
 
 const features = [
   {
@@ -53,7 +54,7 @@ const features = [
       'Racism, homophobia, transphobia, misogyny, slut-shaming, kink-shaming and discrimination or bullying of any kind will not be tolerated at Unleashed, and will warrant automatic dismissal from the retreat, without refund.\n\n' +
       'This retreat is not open to cisgender men, although we hope to provide an opportunity for a similar experience for men in the future.',
     image: {
-      src: image1,
+      src: imgGroup,
       alt: 'Unleashed retreat details',
     },
   },

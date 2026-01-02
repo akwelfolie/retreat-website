@@ -10,7 +10,8 @@ import {
   IconMusic,
   IconSparkles,
 } from '@tabler/icons-react'
-import day1Image from '/public/stock/UL-example-image-640x960.png'
+import day1Image from '/public/stock/meditation.jpg'
+import day2Image from '/public/stock/speaking-room.jpg'
 import { Chip } from './ui/Chip'
 
 const features = [
@@ -47,7 +48,7 @@ const features = [
     headline: 'Sunday, February 22, 2026',
     text: 'Breaking down barriers & building new beliefs',
     image: {
-      src: day1Image,
+      src: day2Image,
       alt: 'Unleashed retreat schedule day 2',
     },
     items: [
