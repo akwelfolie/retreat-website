@@ -4,6 +4,8 @@ import '@/styles/tailwind.css'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
 import { montserrat } from './fonts'
+import { Analytics } from '@vercel/analytics/next';
+
 
 
 export const metadata: Metadata = {
@@ -21,7 +23,10 @@ export default function RootLayout({
     <html lang="en" className={montserrat.variable}>
       <body className={clsx('font-sans')}>
         <Navbar />
-        <main className="bg-void-900">{children}</main>
+          <main className="bg-void-900">
+            {children}
+            <Analytics />
+          </main>
         <Footer />
       </body>
     </html>
