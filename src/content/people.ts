@@ -11,7 +11,7 @@ import bigNishi from '/public/stock/speakers/big-nishi.png'
 import squareNicole from '/public/stock/speakers/square-nicole.jpg'
 import bigNicole from '/public/stock/speakers/big-nicole.png'
 import squareAsh from '/public/stock/speakers/square-ash.jpg'
-import bigAsh from '/public/stock/speakers/big-ash.jpeg'
+import bigAsh from '/public/stock/speakers/big-ash.png'
 
 export type Social = { name: IconName; href: string }
 
