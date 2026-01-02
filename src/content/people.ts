@@ -85,6 +85,8 @@ export const speakers: Person[] = [
     bigImage: bigNishi,
     squareImage: squareNishi,
     socials: [
+      {name: 'instagram', href: 'https://www.instagram.com/snk_therapy'},
+      {name: 'website', href: 'https://www.snktherapy.com/instagram'},
     ],
     bio: 'Dr. K is a trauma-informed psychotherapist who works with individuals from diverse cultural backgrounds, with a focus on communities of color. She values therapy as a collaborative, relational process and strives to create a compassionate space where clients can explore vulnerability while recognizing their strengths. As a first-generation Indian-American woman, Dr. K brings a culturally responsive lens to her work and has a particular interest in supporting South Asian individuals navigating depression, anxiety, trauma, marginalization, and intergenerational stress.',
   },
