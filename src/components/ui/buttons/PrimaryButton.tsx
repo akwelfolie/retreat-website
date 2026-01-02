@@ -1,0 +1,35 @@
+import Link, { LinkProps } from 'next/link'
+import clsx from 'clsx'
+
+type PrimaryButtonProps = {
+  className?: string
+  children: React.ReactNode
+  external?: boolean
+} & (
+  | (React.ButtonHTMLAttributes<HTMLButtonElement> & { href?: never })
+  | LinkProps
+)
+
+export function PrimaryButton({
+  className = 'hover:bg-blue-400 h-14',
+  children,
+  external = false,
+  ...props
+}: PrimaryButtonProps) {
+  const baseClassName =
+    'duration-250 text-void-900 flex w-auto items-center justify-center rounded-full bg-blue-500 px-8 py-3 font-semibold leading-snug transition ease-in-out text-white focus:outline-hidden cursor-pointer'
+
+  if (props.href) {
+    return (
+      <Link className={clsx(baseClassName, className)} {...props}>
+        {children}
+      </Link>
+    )
+  } else if (!('href' in props)) {
+    return (
+      <button className={clsx(baseClassName, className)} {...props}>
+        {children}
+      </button>
+    )
+  }
+}

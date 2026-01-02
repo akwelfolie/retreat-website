@@ -1,11 +1,10 @@
 import type { Metadata } from 'next'
 import clsx from 'clsx'
 import '@/styles/tailwind.css'
-import { Inter } from 'next/font/google'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
+import { montserrat } from './fonts'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
   title: 'Unleashed — Women’s Empowerment Retreat',
@@ -19,10 +18,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={clsx('font-sans', inter.variable)}>
+    <html lang="en" className={montserrat.variable}>
+      <body className={clsx('font-sans')}>
         <Navbar />
-        <main className="bg-dark-900">{children}</main>
+        <main className="bg-void-900">{children}</main>
         <Footer />
       </body>
     </html>

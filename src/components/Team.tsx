@@ -1,81 +1,9 @@
 import Image from 'next/image'
 import { SocialLink } from '@/components/SocialLink'
-import staffImage1 from '/public/stock/team/team-01.jpg'
-import staffImage2 from '/public/stock/team/team-02.jpg'
-import staffImage3 from '/public/stock/team/team-03.jpg'
-import staffImage4 from '/public/stock/team/team-04.jpg'
-import staffImage5 from '/public/stock/team/team-05.jpg'
-import staffImage6 from '/public/stock/team/team-06.jpg'
-import type { IconName } from '@/components/SocialIcon'
-import type { StaticImageData } from 'next/image'
+import { Chip } from './ui/Chip'
+import { getAllPeople } from '@/content/people'
 
-const team: {
-  name: string
-  job: string
-  image: StaticImageData
-  socials: { name: IconName; href: string }[]
-}[] = [
-  {
-    name: 'Kaylen Meyer',
-    job: 'CEO',
-    image: staffImage1,
-    socials: [
-      { name: 'instagram', href: '#0' },
-      { name: 'facebook', href: '#0' },
-      { name: 'twitter', href: '#0' },
-    ],
-  },
-  {
-    name: 'Coriss Ambady',
-    job: 'Lead Developer',
-    image: staffImage2,
-    socials: [
-      { name: 'instagram', href: '#0' },
-      { name: 'facebook', href: '#0' },
-      { name: 'twitter', href: '#0' },
-    ],
-  },
-  {
-    name: 'Lester Mccall',
-    job: 'Senior Designer',
-    image: staffImage3,
-    socials: [
-      { name: 'instagram', href: '#0' },
-      { name: 'facebook', href: '#0' },
-      { name: 'twitter', href: '#0' },
-    ],
-  },
-  {
-    name: 'Misha Mustafa',
-    job: 'Studio Artist',
-    image: staffImage4,
-    socials: [
-      { name: 'instagram', href: '#0' },
-      { name: 'facebook', href: '#0' },
-      { name: 'twitter', href: '#0' },
-    ],
-  },
-  {
-    name: 'Stefan Stefancik',
-    job: 'Designer',
-    image: staffImage5,
-    socials: [
-      { name: 'instagram', href: '#0' },
-      { name: 'facebook', href: '#0' },
-      { name: 'twitter', href: '#0' },
-    ],
-  },
-  {
-    name: 'Vivien Smith',
-    job: 'Developer',
-    image: staffImage6,
-    socials: [
-      { name: 'instagram', href: '#0' },
-      { name: 'facebook', href: '#0' },
-      { name: 'twitter', href: '#0' },
-    ],
-  },
-]
+const team = getAllPeople()
 
 export const Team = () => {
   return (
@@ -83,15 +11,15 @@ export const Team = () => {
       <div className="mx-auto max-w-(--breakpoint-xl)">
         {/* Section text */}
         <div className="mx-auto w-full max-w-xl text-center md:max-w-2xl lg:max-w-3xl">
-          <p className="inline-flex items-center justify-center rounded-r-full rounded-tl-full bg-linear-to-r from-dark-600 to-dark-700 px-6 py-2 text-sm font-medium tracking-wide text-white">
-            The team
-          </p>
+          <Chip>
+            Who will guide you
+          </Chip> 
           <h2 className="mt-6 text-3xl font-extrabold text-white sm:text-4xl md:text-5xl">
-            Decades of experience in design and development
+            Meet the voices of Unleashed
           </h2>
-          <p className="mt-6 text-xl text-dark-300">
-            Our diverse team unites industry veterans and innovative minds, all
-            committed to delivering transformative digital experiences.
+          <p className="mt-6 text-xl text-void-200">
+            Our speakers and guides bring diverse backgrounds in embodiment, sexuality,
+            education, and community building — all aligned around safety, curiosity, and care.
           </p>
         </div>
 
@@ -103,17 +31,17 @@ export const Team = () => {
               className="flex flex-col items-center"
             >
               <Image
-                src={member.image}
+                src={member.squareImage}
                 alt={member.name}
-                className="h-64 w-64 rounded-3xl object-cover object-center shadow-xl"
+                className="h-64 w-64 rounded-3xl ring-1 ring-void-300/20 object-cover object-center shadow-xl"
                 sizes="16rem"
               />
               <div className="mt-4 text-center">
                 <div className="text-xl font-semibold text-white">
                   {member.name}
                 </div>
-                <div className="text-lg font-medium text-dark-400">
-                  {member.job}
+                <div className="text-lg font-medium text-void-300">
+                  {member.role}
                 </div>
 
                 {/* Social media links */}
