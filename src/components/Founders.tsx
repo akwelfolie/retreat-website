@@ -57,7 +57,7 @@ export const Founders = () => {
                   />
 
                   {/* Mobile chip over image */}
-                  <div className="absolute left-6 top-6 lg:hidden">
+                  <div className="absolute left-2 top-2 lg:hidden">
                     <Chip>{founder.role}</Chip>
                   </div>
                 </div>

@@ -30,7 +30,6 @@ export const SpeakerDetails = () => {
       <div className="mx-auto w-full max-w-(--breakpoint-xl)">
         {/* Header (optional, but helps separate from Founders) */}
         <div className="mx-auto w-full max-w-3xl text-center">
-          <Chip>Speakers</Chip>
           <h2 className="mt-4 text-3xl font-extrabold text-white sm:text-4xl md:text-5xl">
             Meet the voices of Unleashed
           </h2>
@@ -47,7 +46,7 @@ export const SpeakerDetails = () => {
               <div
                 key={`speaker-${index}`}
                 className="
-                  grid items-stretch gap-6 rounded-3xl
+                  grid items-stretch gap-1 rounded-3xl
                   bg-void-500/40 p-6 shadow-xl ring-1 ring-white/10
                   h-auto
                   md:h-[560px]
@@ -58,27 +57,28 @@ export const SpeakerDetails = () => {
                 "
               >
                 {/* Image */}
-                <div
-                  className={clsx(
-                    'relative overflow-hidden rounded-3xl ring-1 ring-void-300/20 shadow-xl',
-                    'h-64 md:h-full lg:col-span-5',
-                    flipped ? 'lg:order-2' : 'lg:order-1',
-                  )}
-                >
-                  <Image
-                    src={speaker.bigImage}
-                    alt={speaker.name}
-                    fill
-                    className="object-cover object-center"
-                    sizes="(min-width: 1024px) 40vw, 100vw"
-                    priority={index === 0}
-                  />
-
-                  {/* Mobile chip over image */}
-                  <div className="absolute left-5 top-5 lg:hidden">
+                {/* Mobile chip ABOVE image (still inside card) */}
+                  <div className={clsx('lg:hidden ml-4', flipped ? 'lg:order-2' : 'lg:order-1')}>
                     <Chip>{speaker.role}</Chip>
                   </div>
-                </div>
+
+                  {/* Image */}
+                  <div
+                    className={clsx(
+                      'relative overflow-hidden rounded-3xl ring-1 ring-void-300/20 shadow-xl',
+                      'h-64 md:h-full lg:col-span-5',
+                      flipped ? 'lg:order-2' : 'lg:order-1',
+                    )}
+                  >
+                    <Image
+                      src={speaker.bigImage}
+                      alt={speaker.name}
+                      fill
+                      className="object-cover object-center"
+                      sizes="(min-width: 1024px) 40vw, 100vw"
+                      priority={index === 0}
+                    />
+                  </div>
 
                 {/* Text */}
                 <div

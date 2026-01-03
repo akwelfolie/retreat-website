@@ -63,7 +63,7 @@ export const speakers: Person[] = [
   },
   {
     name: 'Albe Gutierrez (Ms. Albe), MAATC (she/her/ella)',
-    role: 'Opening, Workshop Presenter',
+    role: 'Psychotherapist & Art Therapist',
     bigImage: bigAlbe,
     squareImage: squareAlbeGutierrez,
     socials: [
