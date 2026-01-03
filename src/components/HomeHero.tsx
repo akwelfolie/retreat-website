@@ -25,7 +25,7 @@ export const HomeHero = () => {
           {/* Text */}
           <div className="flex flex-col items-center justify-center lg:items-start">
             <p className="z-30 inline-flex items-center justify-center rounded-r-full rounded-tl-full bg-linear-to-r from-blue-700 to-pink-800 px-6 py-2 text-base font-medium tracking-wide text-white/90">
-              February 20 &amp; 21, 2026 · Chicago, IL
+              February 21 &amp; 22, 2026 · Chicago, IL
             </p>
 
             <div className="z-30 mx-auto mt-6 w-full max-w-lg text-center md:max-w-2xl lg:max-w-none lg:text-left">
