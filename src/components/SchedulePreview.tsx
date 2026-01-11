@@ -101,7 +101,7 @@ const sections: ScheduleSection[] = [
         time: '9:50–10:20 AM',
         title: 'Keynote: Letting Go of Shame, Becoming Unleashed',
         subtitle: 'A reflective, embodied exploration of self-trust and desire',
-        facilitator: 'Shanta “Nishi” Kanukollu, PhD (Dr. K)',
+        facilitator: 'Shanta Kanukollu, PhD (Dr. K)',
         icon: IconMicrophone,
       },
       {
@@ -221,7 +221,7 @@ const sections: ScheduleSection[] = [
         time: '4:15–5:00 PM',
         title: 'Closing Integration & Ritual',
         subtitle: 'Reflection, meaning-making, and real-world application',
-        facilitator: 'Nicole Sonnefeldt & Dr. Nishi',
+        facilitator: 'Nicole Sonnefeldt & Dr. Kanukollu',
         icon: IconUsers,
       },
     ],
