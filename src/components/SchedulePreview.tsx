@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import clsx from 'clsx'
 import {
   IconCalendarEvent,
@@ -7,26 +7,30 @@ import {
   IconTools,
   IconUsers,
   IconSparkles,
+  Icon,
+  IconProps,
 } from '@tabler/icons-react'
 import imgClosing from '/public/stock/meditation.jpg'
 import imgMorning from '/public/stock/speaking-room.jpg'
 import imgAfternoon from '/public/stock/group-hug.jpg'
 import { Chip } from './ui/Chip'
+import type {ForwardRefExoticComponent, RefAttributes } from 'react'
+
 
 type ScheduleItem = {
   time: string
   title: string
   subtitle?: string
   facilitator?: string
-  icon?: any
+  icon?: ForwardRefExoticComponent<IconProps & RefAttributes<Icon>>
 }
 
 type ScheduleSection = {
   tagline: string
   headline: string
   text: string
-  image: { src: any; alt: string }
-  topCards: { label: string; icon: any }[]
+  image: { src: StaticImageData; alt: string }
+  topCards: { label: string; icon: ForwardRefExoticComponent<IconProps & RefAttributes<Icon>> }[]
   items: ScheduleItem[]
   extra?: React.ReactNode
 }
