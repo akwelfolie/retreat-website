@@ -9,8 +9,8 @@ import { Chip } from './ui/Chip'
 
 const experiences = [
   {
-    title: 'Two full days',
-    text: "Unleashed provides two full days of holistic experiences focused on breaking down limiting beliefs about womanhood and sexuality, exploring and owning your own unique sensuality and desires, and creating supportive and lasting relationships.",
+    title: 'Breaking the script',
+    text: "Unleashed provides one full immersive day of holistic experiences focused on breaking down limiting beliefs about womanhood and sexuality, exploring and owning your own unique sensuality and desires, and creating supportive and lasting relationships.",
     icon: IconSparkles,
   },
   {
@@ -20,12 +20,12 @@ const experiences = [
   },
   {
     title: 'Connection & play',
-    text: 'The weekend is filled with opportunities to form new connections and rejuvenate existing ones- small group workshops which facilitate vulnerability and sharing, a community dinner to facilitate continued conversation, and a dance party to let loose and play.',
+    text: 'The event is filled with opportunities to form new connections and rejuvenate existing ones- small group workshops which facilitate vulnerability and sharing, a community dinner to facilitate continued conversation, and a dance party to let loose and play.',
     icon: IconUsers,
   },
   {
     title: 'Lasting impact',
-    text: 'Anyone who attends Unleashed should expect its impact to last long after the weekend ends.',
+    text: 'Anyone who attends Unleashed should expect its impact to last long after the retreat ends.',
     icon: IconHeart,
   },
 ]
@@ -44,7 +44,7 @@ export const ServiceList = () => {
                     What you’ll experience
                   </Chip> 
                   <h2 className="relative mt-6 w-full text-left text-3xl font-extrabold text-white sm:text-4xl md:text-5xl">
-                    A weekend designed to stay with you
+                    A retreat designed to stay with you
                   </h2>
                 </div>
 

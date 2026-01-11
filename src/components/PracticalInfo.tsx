@@ -3,18 +3,12 @@ import Link from 'next/link'
 import { Chip } from './ui/Chip'
 
 const includedItems = [
-  'Speakers',
-  'Immersive workshops',
-  'Saturday evening: dinner with performances, followed by DJ & dancing',
-  'Coffee, tea & snacks throughout both days',
+  'A powerhouse lineup blending licensed clinicians, somatic/intimacy practitioners, and consent-centered educators',
+  'Immersive workshops that look to release, embody, connect and integrate',
+  'Saturday evening UNLEASHED women-only dance party 7-10PM with special performances',
+  'Coffee, tea & snacks throughout the day',
   'Swag bag with goodies from our sponsors',
-  'Dinner catered by Perilla Steakhouse',
-]
-
-const notIncludedItems = [
-  'Lodging is not included in the ticket price',
-  'L7 has offered a block of rooms at a discounted rate for overnight stays',
-  'Transportation to and from the venue',
+  'Access to special rates for one-on-one appointments with presenters to deepen your journey',
 ]
 
 type CardProps = {
@@ -79,25 +73,6 @@ export const PracticalInfo = () => {
           </div>
         </div>
 
-        {/* WHAT'S NOT INCLUDED */}
-        <div className="mt-20">
-          <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-              What’s not included
-            </h2>
-            <p className="mt-4 text-xl text-void-200">
-              A few things to plan for separately.
-            </p>
-          </div>
-
-          <div className="mx-auto mt-10 grid max-w-(--breakpoint-xl) gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {notIncludedItems.map((item, index) => (
-              <InfoCard key={`not-included-${index}`} index={index}>
-                {item}
-              </InfoCard>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   )

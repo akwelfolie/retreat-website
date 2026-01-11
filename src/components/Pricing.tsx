@@ -4,18 +4,13 @@ import { IconTicket, IconSparkles, IconStar } from '@tabler/icons-react'
 const pricing = [
   {
     title: 'Early Bird',
-    price: '$465',
+    price: '$275*',
     icon: IconSparkles,
   },
   {
-    title: 'Second Release',
-    price: '$515',
-    icon: IconStar,
-  },
-  {
     title: 'Standard',
-    price: '$595',
-    icon: IconTicket,
+    price: '$325*',
+    icon: IconStar,
   },
 ]
 
@@ -28,7 +23,7 @@ export const Pricing = () => {
           <Chip>Pricing</Chip>
 
           <h2 className="mt-6 text-3xl font-extrabold text-white sm:text-4xl md:text-5xl">
-            Choose your ticket
+            Early birds tickets available now
           </h2>
 
           <p className="mt-6 text-xl text-void-200">
@@ -38,7 +33,7 @@ export const Pricing = () => {
         </div>
 
         {/* Pricing cards */}
-        <div className="mt-12 grid gap-y-8 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3 lg:gap-x-6 2xl:gap-x-12">
+        <div className="mt-12 grid gap-y-8 sm:grid-cols-2 lg:mt-16 lg:grid-cols-2 lg:gap-x-6 2xl:gap-x-12">
           {pricing.map((item, index) => (
             <div
               key={`pricing-${index}`}
@@ -59,6 +54,9 @@ export const Pricing = () => {
             </div>
           ))}
         </div>
+        <p className="mt-6 text-l text-void-200">
+            ** base price does not include taxes and processing fees.
+          </p>
       </div>
     </section>
   )

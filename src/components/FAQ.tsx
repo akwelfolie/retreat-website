@@ -40,7 +40,7 @@ const faqs: FaqItem[] = [
         discounted rate and limited scholarships to attend for free. If you’re
         interested, fill out{' '}
         <a
-          href="#0"
+          href="https://forms.gle/hLY62tzS1spkZJvD9"
           className="underline decoration-white/40 underline-offset-4 hover:decoration-white"
         >
           this form
@@ -71,8 +71,7 @@ const faqs: FaqItem[] = [
     question: 'Is this event ADA accessible?',
     answer: (
       <>
-        The venue is in accordance with federal and state laws for meeting ADA
-        standards and requirements. If you have a question about specific
+        Unfortunately the venue space is on second floor, so it is not fully ADA accessible. If you have a question about specific
         accommodations for programming, email{' '}
         <a
           href="mailto:info@thisisunleashed.com"

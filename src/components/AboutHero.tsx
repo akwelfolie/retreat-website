@@ -62,17 +62,17 @@ export const AboutHero = () => {
               </p>
 
               <p className="mt-5 text-lg leading-relaxed text-void-200">
-                Unleashed is a weekend long retreat for women from all walks of
+                Unleashed is a retreat for women from all walks of
                 life who are looking for a community where they are allowed the
                 audacity to be themselves — without walls, judgment or barriers —
                 but with empathy, care and support. Our programming doesn’t just
                 support personal growth and education, it also facilitates
                 forming supportive relationships that we hope continue beyond the
-                weekend.
+                retreat.
               </p>
 
               <p className="mt-5 text-lg leading-relaxed text-void-200">
-                Having our inaugural production of Unleashed in downtown Chicago,
+                Having our inaugural production of Unleashed in Chicago,
                 featuring a panel of women who live and work in the Chicago area,
                 felt important to honor the community that has supported us
                 through our own journeys of exploration and embodiment. Making

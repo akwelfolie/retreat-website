@@ -98,7 +98,7 @@ export const Navbar = () => {
               className="rounded-sm"
             />
 
-          <span className="text-2xl font-black transition duration-200 ease-in-out">
+          <span className="text-4xl font-black transition duration-200 ease-in-out">
             <span className="text-pink-400 group-hover:text-pink-200">Un</span>
             <span className="text-blue-400 group-hover:text-blue-200">leashed</span>
           </span>

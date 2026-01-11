@@ -34,7 +34,7 @@ export const SpeakerDetails = () => {
             Meet the voices of Unleashed
           </h2>
           <p className="mt-4 text-lg text-void-200 md:text-xl">
-            Practitioners and educators joining us for the weekend.
+            Practitioners and educators joining us for the retreat.
           </p>
         </div>
 
@@ -50,7 +50,7 @@ export const SpeakerDetails = () => {
                   bg-void-500/40 p-6 shadow-xl ring-1 ring-white/10
                   h-auto
                   md:h-[560px]
-                  lg:h-[600px]
+                  lg:h-[640px]
                   lg:grid-cols-12
                   lg:gap-10
                   lg:p-10

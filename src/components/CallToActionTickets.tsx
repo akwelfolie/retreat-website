@@ -24,10 +24,10 @@ export const CallToActionTickets = () => {
               Tickets available now · Limited capacity
             </p>
             <h5 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-              Tickets are live on Eventbrite
+              Tickets are live. Become Unleashed.
             </h5>
             <p className="mt-4 text-xl text-void-200">
-              Secure your spot for Unleashed — a two-day immersive retreat
+              Secure your spot for Unleashed — an immersive retreat
               designed for connection, embodiment, and self-expression.
             </p>
           </div>
@@ -36,7 +36,7 @@ export const CallToActionTickets = () => {
             <PrimaryButton
               href={LINKS.tickets}
             >
-              Go to Eventbrite
+              I want a ticket
             </PrimaryButton>
           </div>
         </div>

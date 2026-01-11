@@ -1,11 +1,10 @@
 import Image, { type StaticImageData } from 'next/image'
 import clsx from 'clsx'
 import { Chip } from './ui/Chip'
-import image1 from '/public/stock/UL-example-image-1920x1280.png'
 import imgBreakBarriers from '/public/stock/break-barrier.png'
-import imgThreeGirls from '/public/stock/threegirls.png'
+import imgAshAndNora from '/public/stock/ashandnora.png'
 import imgMeg from '/public/stock/meg.png'
-import imgNoa from '/public/stock/noa.png'
+import imgBecome from '/public/stock/become-unleashed.png'
 import imgGroup from '/public/stock/retreat-group-shot.jpg'
 
 const features = [
@@ -21,9 +20,9 @@ const features = [
   {
     tagline: 'The Experience',
     headline: 'A container for connection — built to last.',
-    text: "The experience curates a unique container for the participants to connect, create and play. Unlike typical retreat experiences which often feel fleeting, Unleashed gives its participants new knowledge and awareness to integrate into their day to day lives, with the hopes of fostering new relationships among the participants that too continue beyond the weekend.",
+    text: "This experience curates a unique container for the participants to connect, create and play. Unlike typical retreat experiences which often feel fleeting, Unleashed gives its participants new knowledge and awareness to integrate into their day to day lives, with the hopes of fostering new relationships among the participants that too continue beyond the retreat.",
     image: {
-      src: imgThreeGirls,
+      src: imgAshAndNora,
       alt: 'Women connecting in a retreat setting',
     },
   },
@@ -43,7 +42,7 @@ const features = [
     headline: 'A safe container for exploration.',
     text: "We know that unlearning shame can feel heavy, so we've made Unleashed a trauma-informed experience. Although there will be mental health providers on site to assist with grounding and containment, we are not providing mental health services.",
     image: {
-      src: imgNoa,
+      src: imgBecome,
       alt: 'Safe and respectful retreat environment',
     },
   },

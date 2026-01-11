@@ -47,7 +47,7 @@ export const TopicsAndThemes = () => {
           </div>
           <div className="lg:col-span-2">
             <p className="text-xl text-void-200">
-              These are themes that will show up throughout the weekend — not
+              These are themes that will show up throughout the day — not
               rigid “sessions”.
             </p>
           </div>

@@ -16,8 +16,8 @@ export default function ContactPage() {
   return (
     <>
       <TicketsHero/>
-      <Pricing/>
       <PracticalInfo />
+      <Pricing/>
       <FAQ/>
       <CallToActionTickets/>
     </>

@@ -8,8 +8,8 @@ type LocationTeaserProps = {
 export const LocationTeaser = ({ flip = false }: LocationTeaserProps) => {
   const feature = {
     tagline: 'Location',
-    headline: 'Hotel L7 by LOTTE — Chicago, IL',
-    text: `A boutique hotel just steps from the Chicago Riverwalk, the location combines modern flair and luxe amenities with local, creative spirit. There will be areas for rest and relaxation within the retreat space, and hotel rooms available for attendees who choose to stay overnight available at a discounted rate.`,
+    headline: 'Le Loft — Chicago, IL',
+    text: `This unique women-owned space in Logan Square combines modern flair and luxe amenities with local, creative spirit. There will be areas for rest and relaxation within the retreat space.`,
   }
 
   return (
@@ -49,7 +49,7 @@ export const LocationTeaser = ({ flip = false }: LocationTeaserProps) => {
           >
             <div className="overflow-hidden rounded-3xl shadow-xl ring-1 ring-void-300/20">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19926.2305808777!2d-87.64205682198806!3d41.88714970212759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2d8ecd8e0915%3A0x8076598c2b7bc59a!2sL7%20CHICAGO%20BY%20LOTTE!5e0!3m2!1sen!2sus!4v1767194490908!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.174875068614!2d-87.6906192879771!3d41.91059927111823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd38f072449f1%3A0x80885911b30de485!2sLe%20Loft!5e0!3m2!1sen!2sus!4v1768157770590!5m2!1sen!2sus"
                 className="h-[450px] w-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

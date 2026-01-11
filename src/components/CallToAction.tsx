@@ -20,14 +20,14 @@ export const CallToAction = () => {
         <div className="relative z-30 mx-auto flex flex-col items-center justify-center px-4 text-center sm:px-16 lg:flex-row lg:text-left">
           <div className="max-w-lg lg:w-1/2">
             <p className="mb-3 text-base font-medium tracking-wide text-void-200">
-              February 21–22, 2026 · Hotel L7 by LOTTE — Chicago, IL
+              February 21, 2026 · Le Loft — Chicago, IL
             </p>
             <h5 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
               Join us for Unleashed
             </h5>
             <p className="mt-4 text-xl text-void-200">
-              Two days of connection, embodiment, and exploration — designed to
-              leave a lasting impact long after the weekend ends.
+              A day of connection, embodiment, and exploration. Designed to
+              leave a lasting impact long after the retreat ends.
             </p>
           </div>
 

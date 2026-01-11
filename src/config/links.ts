@@ -1,3 +1,3 @@
 export const LINKS = {
-    tickets: 'https://www.eventbrite.com/e/unleashed-a-womens-empowerment-and-sensual-awakening-retreat-tickets-1979121256956',
+    tickets: 'https://www.tickettailor.com/events/ashleysummersphotography/2016971',
   }

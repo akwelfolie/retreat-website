@@ -13,14 +13,14 @@ export const TicketsHero = () => {
 
           <p className="mx-auto mt-4 max-w-lg text-xl text-void-200 md:mt-5 md:max-w-3xl">
             Pricing, what’s included, and everything you’ll want to know before
-            heading to Eventbrite.
+            buying a ticket and becoming UNLEASHED.
           </p>
 
           <SecondaryButton
             className="inline-flex mt-5 justify-center"
             href={LINKS.tickets}
             >
-            Go to Evenbrite
+            I want a ticket
           </SecondaryButton>
         </div>
       </div>
