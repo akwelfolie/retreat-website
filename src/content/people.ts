@@ -14,6 +14,7 @@ import squareAsh from '/public/stock/speakers/square-ash.jpg'
 import bigAsh from '/public/stock/speakers/big-ash.png'
 import squareDrKres from '/public/stock/speakers/square-drkres.jpg'
 import bigDrKres from '/public/stock/speakers/big-drkres.jpg'
+import bigCarissa from '/public/stock/speakers/big-carissa.png'
 
 export type Social = { name: IconName; href: string }
 
@@ -54,7 +55,7 @@ export const founders: Person[] = [
 
 export const speakers: Person[] = [
   {
-    name: 'Shanta “Nishi” Kanukollu, Ph. D (she/her)',
+    name: 'Shanta Kanukollu, Ph. D (she/her)',
     role: 'Psychotherapist',
     bigImage: bigNishi,
     squareImage: squareNishi,
@@ -96,15 +97,6 @@ export const speakers: Person[] = [
     ],
     bio: 'Dr. Kres Ashford, PsyD, LCPC, CST (she/her) is a licensed clinical psychologist, certified sex therapist, and relational wellness expert specializing in intimacy, attachment, and mind–body healing. She is the Founder and Clinical Director of Mind Body Intimacy Studio, a private practice devoted to helping individuals and couples build secure connection, embodied intimacy, and sustainable relational wellness through an integrative, trauma-aware lens. In addition to her private practice, Dr. Ashford serves as Associate Director of Sex & Relationship Programming at Practical Audacity, where she provides clinical leadership, program development, supervision, and curriculum design for innovative, relationship-centered mental-health initiatives. In this role, she supports both clinicians and clients in bridging therapeutic insight with real-world relational change.',
   },
-  // {
-  //   name: 'Meg',
-  //   role: 'Rigger/Shibari Performer',
-  //   bigImage: imagePlaceholder,
-  //   squareImage: imageHeadshot,
-  //   socials: [
-  //   ],
-  //   bio: 'Short bio 2–3 sentences.',
-  // },
   {
     name: 'Josephine Lauer (she/her)',
     role: 'Somatic Intimacy Coach & Tantra Practitioner',
@@ -115,6 +107,15 @@ export const speakers: Person[] = [
       { name: 'website', href: 'www.cur8chicago.com' },
     ],
     bio: "Josephine Lauer (she/her) is an Embodiment Guide, trauma-informed Somatic Intimacy Coach, Tantric Practitioner and Food Systems Consultant. She curates bold, brave, safe and sacred spaces for humans to explore their fullest, most authentic expressions, in order to achieve a more embodied existence via the harmonization of the mental, physical and emotional body. She is the founder of CUR8Chicago, a boutique consulting firm for embodied leaders, and Temple of Loha, an esoteric arts production house.  Josephine resides in Chicago, IL, is a Mother of 3 sons and travels often. Her podcast, Universal Intimacy, explores connections with the self, others, nature, and the cosmos via the intersection of Science, Spirituality and Sexuality.",
+  },
+  {
+    name: 'Carissa Aboubakare, WHNP-BC, MSCP (she/her)',
+    role: 'Nurse practitioner',
+    bigImage: bigCarissa,
+    squareImage: bigCarissa,
+    socials: [
+    ],
+    bio: "Carissa Aboubakare, WHNP-BC, MSCP (she/her) currently maintains a robust medical practice specializing in urogynecology, menopause, and female sexual function at the Medical College of Wisconsin. She is certified as a women's health nurse practitioner and is a Menopause Society certified practitioner. She additionally serves as the chair of the American Urogynecologic Society's Advanced Practice Provider course. As a lecturer at national medical conferences, she has covered topics that span incontinence, prolapse, menopause, and female sexual function. Her passion for empowering women to discover and maintain agency over their own physical and sexual selves drives her day-to-day medical practice. She fosters a sex-positive, kink-informed and affirming, LGBTQIA+ inclusive environment in her academic clinic setting, and is always at the ready to help with educating resident physicians and student advanced practice providers.",
   },
 ]
 
