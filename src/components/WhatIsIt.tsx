@@ -9,52 +9,30 @@ import imgGroup from '/public/stock/retreat-group-shot.jpg'
 
 const features = [
   {
-    tagline: 'The Goal',
-    headline: 'Break the barriers. Own your embodiment.',
-    text: "Unleashed aims to break down limiting beliefs and barriers holding women and women-aligned individuals back from owning their most embodied, authentic expressions of themselves and their sexuality.",
-    image: {
-      src: imgBreakBarriers,
-      alt: 'Unleashed retreat atmosphere',
-    },
-  },
-  {
     tagline: 'The Experience',
     headline: 'A container for connection — built to last.',
-    text: "This experience curates a unique container for the participants to connect, create and play. Unlike typical retreat experiences which often feel fleeting, Unleashed gives its participants new knowledge and awareness to integrate into their day to day lives, with the hopes of fostering new relationships among the participants that too continue beyond the retreat.",
+    text: 'Unleashed is a one-day immersive experience designed to help women move beyond internal limits and into embodied self-trust. Rather than offering a fleeting retreat high, it creates space for depth, connection, and honest exploration. Participants leave with experiences, language, and insight meant to integrate into real life — not stay contained to a single day.',
     image: {
-      src: imgAshAndNora,
+      src: imgBecome,
       alt: 'Women connecting in a retreat setting',
     },
   },
   {
     tagline: "Who it's for",
     headline: 'Who Unleashed welcomes.',
-    text:
-      "Unleashed welcomes all women (21+), including trans women &  non-binary and gender-nonconforming individuals who feel connected to womanhood. Unleashed is for women in every stage of life and sexual journey - whether exploring desire for the first time, deepening pleasure, healing shame, or seeking community.\n\n" +
-      'If you are curious to learn more about yourself and others, you value supportive connections with other women, and feel comfortable being vulnerable within a safe container - this is for you.',
+    text: 'Unleashed welcomes women 21+, including trans women and non-binary or gender-nonconforming individuals who feel connected to womanhood. This experience is for those at any stage of their journey — whether exploring desire for the first time, deepening embodiment, or seeking meaningful connection. Curiosity, openness, and a willingness to be present are the only prerequisites.',
     image: {
-      src: imgMeg,
+      src: imgBreakBarriers,
       alt: 'Supportive group setting',
     },
   },
   {
-    tagline: 'Emotional Safety',
-    headline: 'A safe container for exploration.',
-    text: "We know that unlearning shame can feel heavy, so we've made Unleashed a trauma-informed experience. Although there will be mental health providers on site to assist with grounding and containment, we are not providing mental health services.",
-    image: {
-      src: imgBecome,
-      alt: 'Safe and respectful retreat environment',
-    },
-  },
-  {
-    tagline: "Commitment to our Values",
-    headline: 'Caring for each other.',
-    text:
-      'Racism, homophobia, transphobia, misogyny, slut-shaming, kink-shaming and discrimination or bullying of any kind will not be tolerated at Unleashed, and will warrant automatic dismissal from the retreat, without refund.\n\n' +
-      'This retreat is not open to cisgender men, although we hope to provide an opportunity for a similar experience for men in the future.',
+    tagline: 'The Container',
+    headline: 'Trauma-informed. Consent-forward. Held with care.',
+    text: 'Unleashed is intentionally designed as a trauma-informed, consent-forward space. Emotional safety, autonomy, and respect are non-negotiable. Mental health providers will be on-site for grounding and support, and discrimination, boundary violations, or harmful behavior of any kind will result in immediate removal.',
     image: {
       src: imgGroup,
-      alt: 'Unleashed retreat details',
+      alt: 'Safe and respectful retreat environment',
     },
   },
 ] satisfies Array<{
@@ -81,7 +59,7 @@ function RenderParagraphs({ text }: { text: string }) {
 
 export const WhatIsIt = () => {
   return (
-    <section className="pb-10 pt-10 md:pb-12 md:pt-20 lg:pt-36">
+    <section className="pt-10 pb-10 md:pt-20 md:pb-12 lg:pt-36">
       <div className="mx-auto w-full max-w-(--breakpoint-xl)">
         {features.map((item, index) => (
           <div
@@ -125,7 +103,7 @@ export const WhatIsIt = () => {
                 fill
                 alt={item.image.alt}
                 className={clsx(
-                  'absolute inset-0 size-full ring-1 ring-void-300/20 object-cover object-center shadow-xl',
+                  'ring-void-300/20 absolute inset-0 size-full object-cover object-center shadow-xl ring-1',
                   index % 2 === 0
                     ? 'md:rounded-r-3xl lg:rounded-l-3xl'
                     : 'md:rounded-l-3xl lg:rounded-r-3xl',

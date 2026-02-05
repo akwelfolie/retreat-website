@@ -26,8 +26,9 @@ export const CallToAction = () => {
               Join us for Unleashed
             </h5>
             <p className="mt-4 text-xl text-void-200">
-              A day of connection, embodiment, and exploration. Designed to
-              leave a lasting impact long after the retreat ends.
+            A one-day immersion for women ready to step into embodied self-trust. 
+            Designed to
+            leave a lasting impact long after the retreat ends.
             </p>
           </div>
 

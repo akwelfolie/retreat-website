@@ -2,6 +2,7 @@ import { CallToActionTickets } from "@/components/CallToActionTickets"
 import { FAQ } from "@/components/FAQ"
 import { PracticalInfo } from "@/components/PracticalInfo"
 import { Pricing } from "@/components/Pricing"
+import {SchedulePreview} from "@/components/SchedulePreview"
 import { TicketsHero } from "@/components/TicketsHero"
 
 
@@ -17,6 +18,7 @@ export default function ContactPage() {
     <>
       <TicketsHero/>
       <PracticalInfo />
+      <SchedulePreview/>
       <Pricing/>
       <FAQ/>
       <CallToActionTickets/>

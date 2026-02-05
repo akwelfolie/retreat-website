@@ -33,6 +33,23 @@ const faqs: FaqItem[] = [
     ),
   },
   {
+    question: 'Is this event ADA accessible?',
+    answer: (
+      <>
+        Unfortunately the venue space is on second floor, so it is not fully ADA
+        accessible. If you have a question about specific accommodations for
+        programming, email{' '}
+        <a
+          href="mailto:info@thisisunleashed.com"
+          className="underline decoration-white/40 underline-offset-4 hover:decoration-white"
+        >
+          info@thisisunleashed.com
+        </a>
+        .
+      </>
+    ),
+  },
+  {
     question: 'Do you provide need-based discounts for the retreat?',
     answer: (
       <>
@@ -67,22 +84,6 @@ const faqs: FaqItem[] = [
       </>
     ),
   },
-  {
-    question: 'Is this event ADA accessible?',
-    answer: (
-      <>
-        Unfortunately the venue space is on second floor, so it is not fully ADA accessible. If you have a question about specific
-        accommodations for programming, email{' '}
-        <a
-          href="mailto:info@thisisunleashed.com"
-          className="underline decoration-white/40 underline-offset-4 hover:decoration-white"
-        >
-          info@thisisunleashed.com
-        </a>
-        .
-      </>
-    ),
-  },
 ]
 
 function PlusIcon({ open }: { open: boolean }) {
@@ -90,16 +91,16 @@ function PlusIcon({ open }: { open: boolean }) {
     <span
       className={clsx(
         'relative flex h-8 w-8 items-center justify-center rounded-2xl',
-        'bg-linear-to-r from-void-400 to-void-500 shadow-xl ring-1 ring-white/10',
+        'from-void-400 to-void-500 bg-linear-to-r shadow-xl ring-1 ring-white/10',
       )}
       aria-hidden="true"
     >
       {/* horizontal */}
-      <span className="absolute h-[2px] w-4 rounded-full bg-gold-600" />
+      <span className="bg-gold-600 absolute h-[2px] w-4 rounded-full" />
       {/* vertical (disappears when open) */}
       <span
         className={clsx(
-          'absolute w-[2px] h-4 rounded-full bg-gold-600 transition-opacity duration-200',
+          'bg-gold-600 absolute h-4 w-[2px] rounded-full transition-opacity duration-200',
           open ? 'opacity-0' : 'opacity-100',
         )}
       />
@@ -120,7 +121,7 @@ export const FAQ = () => {
           <h2 className="mt-6 text-3xl font-extrabold text-white sm:text-4xl md:text-5xl">
             Questions, answered
           </h2>
-          <p className="mt-6 text-xl text-void-200">
+          <p className="text-void-200 mt-6 text-xl">
             If you’re wondering it, someone else probably is too.
           </p>
         </div>
@@ -135,7 +136,7 @@ export const FAQ = () => {
               <div
                 key={`faq-${index}`}
                 className={clsx(
-                  'rounded-3xl bg-void-500 shadow-xl ring-1 ring-void-300/20',
+                  'bg-void-500 ring-void-300/20 rounded-3xl shadow-xl ring-1',
                   'transition-colors duration-200',
                 )}
               >
@@ -161,11 +162,13 @@ export const FAQ = () => {
                   id={contentId}
                   className={clsx(
                     'overflow-hidden px-6 transition-[max-height,opacity,padding] duration-300 ease-in-out sm:px-8',
-                    open ? 'max-h-[420px] pb-7 opacity-100' : 'max-h-0 pb-0 opacity-0',
+                    open
+                      ? 'max-h-[420px] pb-7 opacity-100'
+                      : 'max-h-0 pb-0 opacity-0',
                   )}
                 >
                   <div className="border-t border-white/10 pt-5">
-                    <p className="text-lg leading-relaxed text-void-200">
+                    <p className="text-void-200 text-lg leading-relaxed">
                       {item.answer}
                     </p>
                   </div>

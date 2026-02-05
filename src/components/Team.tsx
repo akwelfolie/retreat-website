@@ -7,19 +7,18 @@ const team = getAllPeople()
 
 export const Team = () => {
   return (
-    <section className="px-4 pb-14 pt-12 sm:px-6 md:pb-20 md:pt-16 lg:px-8">
+    <section className="px-4 pt-12 pb-14 sm:px-6 md:pt-16 md:pb-20 lg:px-8">
       <div className="mx-auto max-w-(--breakpoint-xl)">
         {/* Section text */}
         <div className="mx-auto w-full max-w-xl text-center md:max-w-2xl lg:max-w-3xl">
-          <Chip>
-            Who will guide you
-          </Chip> 
+          <Chip>Who will guide you</Chip>
           <h2 className="mt-6 text-3xl font-extrabold text-white sm:text-4xl md:text-5xl">
             Meet the voices of Unleashed
           </h2>
-          <p className="mt-6 text-xl text-void-200">
-            Our speakers and guides bring diverse backgrounds in embodiment, sexuality,
-            education, and community building — all aligned around safety, curiosity, and care.
+          <p className="text-void-200 mt-6 text-xl">
+            Our speakers and guides are licensed clinicians, somatic
+            practitioners, educators, and community leaders grounded in safety,
+            curiosity, and care.
           </p>
         </div>
 
@@ -33,14 +32,14 @@ export const Team = () => {
               <Image
                 src={member.squareImage}
                 alt={member.name}
-                className="h-64 w-64 rounded-3xl ring-1 ring-void-300/20 object-cover object-center shadow-xl"
+                className="ring-void-300/20 h-64 w-64 rounded-3xl object-cover object-center shadow-xl ring-1"
                 sizes="16rem"
               />
               <div className="mt-4 text-center">
                 <div className="text-xl font-semibold text-white">
                   {member.name}
                 </div>
-                <div className="text-lg font-medium text-void-300">
+                <div className="text-void-300 text-lg font-medium">
                   {member.role}
                 </div>
 
