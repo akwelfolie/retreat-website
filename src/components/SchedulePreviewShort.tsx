@@ -24,15 +24,21 @@ type Block = {
   sections: {
     tagline: string
     headline: string
-    items: { title: string; icon: IconComponent }[]
+    intro?: string
+    items: {
+      title: string
+      subtitle?: string
+      facilitator?: string
+      icon: IconComponent
+    }[]
+    themes?: string[]
   }[]
-  note?: string
 }
 
 const block: Block = {
-  title: 'One-day full immersion',
+  title: 'The experience: a day designed with intention',
   subtitle:
-    'A full-day immersive experience centered on embodiment, choice, and self-trust in a consent-centered, trauma-informed space.',
+    'A full-day immersive container designed to help you arrive in your body, reconnect with self-trust, and choose your depth with support.',
   image: { src: imgMorning, alt: 'Unleashed schedule preview' },
   highlights: [
     { label: 'Saturday, Feb 21, 2026', icon: IconCalendarEvent },
@@ -40,51 +46,64 @@ const block: Block = {
   ],
   sections: [
     {
-      tagline: 'Morning',
-      headline: 'Grounding and foundation',
+      tagline: 'The Morning',
+      headline: 'Gather + Move',
+      intro:
+        'A guided arc to ground, open, and connect before moving into deeper personal exploration.',
       items: [
         {
-          title: 'Opening ritual + grounding orientation',
+          title: 'Opening Ritual: Grounding + Collective Orientation',
+          facilitator: 'Albe Gutierrez, MAATC',
+          subtitle:
+            'A sound- and presence-based ritual to regulate the nervous system and arrive together.',
           icon: IconSparkles,
         },
         {
-          title: 'Keynote: reclaiming inner wisdom',
+          title: 'Unmasking the Self: Reclaiming Inner Wisdom',
+          facilitator: 'Dr. Shanta “Dr. K” Kanukollu, PhD',
+          subtitle:
+            'Releasing self-silencing and reconnecting with embodied intuition and self-trust.',
           icon: IconMicrophone,
         },
         {
-          title: 'Intimacy and attachment foundations',
+          title: 'Intimacy + Attachment Foundations',
+          facilitator: 'Dr. Kres Ashford, PsyD, LCPC, CST',
+          subtitle:
+            'A shared framework for attachment, desire, boundaries, and connection.',
           icon: IconUsers,
         },
         {
-          title: 'Sensual movement beyond sexuality',
+          title: 'Sensual Movement: Beyond Sexuality',
+          facilitator: 'Albe Gutierrez, MAATC',
+          subtitle:
+            'Exploring sensuality as embodied awareness and authentic expression.',
           icon: IconSparkles,
         },
       ],
     },
     {
-      tagline: 'Midday + Afternoon',
-      headline: 'Exploration and choice',
+      tagline: 'The Afternoon',
+      headline: 'Choose Your Depth',
+      intro:
+        'In the afternoon, the experience becomes yours to shape. You’ll choose from immersive, small-group workshops led by our facilitators.',
       items: [
         {
-          title: 'Lunch and rest (includes live Shibari demo)',
-          icon: IconClock,
-        },
-        {
-          title: '9 kink identities: desire, power, sensation',
-          icon: IconMicrophone,
-        },
-        {
-          title: 'Immersive workshop rotations',
+          title: 'Choose-your-path workshop rotations',
+          subtitle:
+            'This format honors your autonomy, curiosity, and capacity in the moment. No one-size-fits-all. No forcing. Just permission.',
           icon: IconTools,
         },
-        {
-          title: 'Closing sacred circle + integration',
-          icon: IconUsers,
-        },
+      ],
+      themes: [
+        'Releasing shame and self-judgment',
+        'Reconnecting to your body through movement',
+        'Redefining intimacy and self-trust',
+        'Rediscovering sensual and expressive self-connection',
+        'Unlearning people-pleasing and reclaiming your voice',
+        'Exploring the mind–body connection',
       ],
     },
   ],
-  note: 'This experience is not about doing everything. It’s about listening, choosing, and trusting your body. All sessions are optional.',
 }
 
 function Highlight({
@@ -104,18 +123,35 @@ function Highlight({
   )
 }
 
-function Row({ title, icon: IconCmp }: { title: string; icon: IconComponent }) {
+function Row({
+  title,
+  subtitle,
+  facilitator,
+  icon: IconCmp,
+}: {
+  title: string
+  subtitle?: string
+  facilitator?: string
+  icon: IconComponent
+}) {
   return (
-    <div className="flex items-center gap-4">
-      {/* removed mt-1 so icon and text align nicely */}
-      <div className="from-void-400 to-void-500 flex h-9 w-9 shrink-0 items-center justify-center rounded-3xl bg-linear-to-r">
+    <div className="flex items-start gap-4">
+      <div className="from-void-400 to-void-500 mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-3xl bg-linear-to-r">
         <IconCmp className="text-gold-600 h-4.5 w-4.5" stroke={1.5} />
       </div>
 
       <div className="min-w-0">
-        <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-          <div className="text-base font-semibold text-white">{title}</div>
-        </div>
+        <div className="text-base font-semibold text-white">{title}</div>
+
+        {facilitator ? (
+          <div className="text-void-200 mt-1 text-sm">{facilitator}</div>
+        ) : null}
+
+        {subtitle ? (
+          <div className="text-void-300 mt-2 text-sm leading-relaxed">
+            {subtitle}
+          </div>
+        ) : null}
       </div>
     </div>
   )
@@ -123,7 +159,7 @@ function Row({ title, icon: IconCmp }: { title: string; icon: IconComponent }) {
 
 export const SchedulePreviewShort = () => {
   return (
-    <section className="px-4 pb-10 sm:px-6 md:pb-16 md:pt-12 lg:px-8">
+    <section className="px-4 pb-10 sm:px-6 md:pt-12 md:pb-16 lg:px-8">
       <div className="mx-auto w-full max-w-(--breakpoint-xl)">
         {/* Header */}
         <div className="mx-auto w-full max-w-3xl text-center">
@@ -149,7 +185,6 @@ export const SchedulePreviewShort = () => {
 
           {/* Left */}
           <div className="lg:col-span-7">
-            {/* Two compact cards */}
             <div className="mt-2 space-y-6">
               {block.sections.map((s, i) => (
                 <div
@@ -159,33 +194,52 @@ export const SchedulePreviewShort = () => {
                     i % 2 === 0 ? 'bg-blue-800/45' : 'bg-pink-800/45',
                   )}
                 >
-                  <div className="text-void-100 text-sm font-bold tracking-wide">
+                  <div className="text-void-100 text-xl font-bold tracking-wide">
                     {s.tagline}
                   </div>
                   <div className="mt-1 text-xl font-extrabold text-white">
                     {s.headline}
                   </div>
 
-                  <div className="mt-6 space-y-4">
+                  {s.intro ? (
+                    <p className="text-void-200 mt-3 text-sm leading-relaxed">
+                      {s.intro}
+                    </p>
+                  ) : null}
+
+                  <div className="mt-6 space-y-5">
                     {s.items.map((it, j) => (
                       <Row
                         key={`sched-row-${i}-${j}`}
                         title={it.title}
+                        subtitle={it.subtitle}
+                        facilitator={it.facilitator}
                         icon={it.icon}
                       />
                     ))}
                   </div>
+
+                  {s.themes?.length ? (
+                    <div className="bg-void-700/40 mt-6 rounded-2xl p-5 ring-1 ring-white/10">
+                      <div className="text-sm font-bold tracking-wide text-white">
+                        Workshop themes
+                      </div>
+                      <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+                        {s.themes.map((t, k) => (
+                          <li
+                            key={`theme-${i}-${k}`}
+                            className="text-void-200 flex items-start gap-2 text-sm leading-relaxed"
+                          >
+                            <span className="bg-gold-600 mt-2 inline-block h-1.5 w-1.5 shrink-0 rounded-full" />
+                            <span>{t}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ) : null}
                 </div>
               ))}
             </div>
-
-            {block.note ? (
-              <div className="bg-void-700/50 mt-8 rounded-3xl p-5 shadow-xl ring-1 ring-white/10">
-                <p className="text-base font-semibold text-white">
-                  {block.note}
-                </p>
-              </div>
-            ) : null}
 
             <p className="text-void-200 mt-8 text-sm">
               **Schedule subject to change
@@ -193,7 +247,7 @@ export const SchedulePreviewShort = () => {
           </div>
 
           {/* Right image */}
-          <div className="lg:col-span-5">
+          <div className="flex items-center lg:col-span-5">
             <div className="ring-void-300/20 relative mx-auto aspect-2/3 w-full max-w-xl overflow-hidden rounded-3xl shadow-xl ring-1 lg:mx-0 lg:max-w-none">
               <Image
                 src={block.image.src}

@@ -7,17 +7,19 @@ import { ServiceList } from '@/components/ServiceList'
 import { Team } from '@/components/Team'
 import { SchedulePreviewShort } from '@/components/SchedulePreviewShort'
 import { LocationTeaser } from '@/components/LocationTeaser'
+import { WhyUnleashed } from '@/components/WhyUnleashed'
+import { SchedulePreview } from '@/components/SchedulePreview'
 
 export default function HomePage() {
   return (
     <>
       <HomeHero />
-      <EmailCapture />
-      <WhatIsIt />
-      <ServiceList />
-      {/* <TopicsAndThemes />    */}
-      <Team />
+      <WhyUnleashed />
       <SchedulePreviewShort />
+      <WhatIsIt />
+      <EmailCapture />
+      <ServiceList />
+      <Team />
       <LocationTeaser />
       <CallToAction />
     </>

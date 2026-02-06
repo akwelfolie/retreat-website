@@ -10,6 +10,15 @@ import imgGroup from '/public/stock/retreat-group-shot.jpg'
 const features = [
   {
     tagline: 'The Experience',
+    headline: 'What makes UNLEASHED different',
+    text: 'UNLEASHED is not a one-size-fits-all retreat. It’s a carefully held container that offers structure and choice, guidance and permission, depth and regulation. Come for the facilitators. Stay for the movement. Choose the depth that’s calling you.',
+    image: {
+      src: imgBecome,
+      alt: 'Women connecting in a retreat setting',
+    },
+  },
+  {
+    tagline: 'The Experience',
     headline: 'A container for connection — built to last.',
     text: 'Unleashed is a one-day immersive experience designed to help women move beyond internal limits and into embodied self-trust. Rather than offering a fleeting retreat high, it creates space for depth, connection, and honest exploration. Participants leave with experiences, language, and insight meant to integrate into real life — not stay contained to a single day.',
     image: {

@@ -122,14 +122,14 @@ export const speakers: Person[] = [
     ],
     bio: "Lady Sophia (she/her) is a globally recognized professional dominatrix of 17 years, sex educator and kink lecturer, and the owner of Chicago Dungeon Rentals. She works with men, women, non-binary people, and couples in BDSM sessions designed to support exploration through trust, communication, and skilled, intentional play. Grounded in her Master of Social Work from the University of Chicago, her approach is risk-aware, consent-forward, and trauma-informed. Her expertise and years of experience have led her being featured on Showtime and Netflix, kink consulting roles on film projects, and guest lectures at Northwestern and other universities. She has also advocated for sex workers' rights in Washington, DC, and is internationally recognized for the quality of her client work.",
   },
-  {
-    name: 'Carissa Aboubakare, WHNP-BC, MSCP (she/her)',
-    role: 'Nurse practitioner',
-    bigImage: bigCarissa,
-    squareImage: bigCarissa,
-    socials: [],
-    bio: "Carissa Aboubakare, WHNP-BC, MSCP (she/her) currently maintains a robust medical practice specializing in urogynecology, menopause, and female sexual function at the Medical College of Wisconsin. She is certified as a women's health nurse practitioner and is a Menopause Society certified practitioner. She additionally serves as the chair of the American Urogynecologic Society's Advanced Practice Provider course. As a lecturer at national medical conferences, she has covered topics that span incontinence, prolapse, menopause, and female sexual function. Her passion for empowering women to discover and maintain agency over their own physical and sexual selves drives her day-to-day medical practice. She fosters a sex-positive, kink-informed and affirming, LGBTQIA+ inclusive environment in her academic clinic setting, and is always at the ready to help with educating resident physicians and student advanced practice providers.",
-  },
+  // {
+  //   name: 'Carissa Aboubakare, WHNP-BC, MSCP (she/her)',
+  //   role: 'Nurse practitioner',
+  //   bigImage: bigCarissa,
+  //   squareImage: bigCarissa,
+  //   socials: [],
+  //   bio: "Carissa Aboubakare, WHNP-BC, MSCP (she/her) currently maintains a robust medical practice specializing in urogynecology, menopause, and female sexual function at the Medical College of Wisconsin. She is certified as a women's health nurse practitioner and is a Menopause Society certified practitioner. She additionally serves as the chair of the American Urogynecologic Society's Advanced Practice Provider course. As a lecturer at national medical conferences, she has covered topics that span incontinence, prolapse, menopause, and female sexual function. Her passion for empowering women to discover and maintain agency over their own physical and sexual selves drives her day-to-day medical practice. She fosters a sex-positive, kink-informed and affirming, LGBTQIA+ inclusive environment in her academic clinic setting, and is always at the ready to help with educating resident physicians and student advanced practice providers.",
+  // },
 ]
 
 // Getters (single source of truth)
