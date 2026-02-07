@@ -1,10 +1,10 @@
 export const WhyUnleashed = () => {
   return (
-    <section className="px-4 sm:px-6 md:py-20 lg:px-8">
+    <section className="px-4 pb-10 sm:px-6 md:py-20 lg:px-8">
       <div className="mx-auto max-w-4xl">
-        <div className="rounded-3xl bg-blue-800/60 p-8 shadow-xl ring-1 ring-white/10 sm:p-12">
+        <div className="rounded-3xl bg-blue-500/60 p-8 shadow-xl ring-1 ring-white/10 sm:p-12">
           <h2 className="text-center text-3xl font-extrabold text-white sm:text-4xl md:text-5xl">
-            Why Unleashed
+            Why UNLEASHED
           </h2>
 
           <div className="text-void-100 mt-8 space-y-6 text-center text-lg leading-relaxed sm:text-xl">

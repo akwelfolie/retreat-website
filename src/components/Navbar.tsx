@@ -9,11 +9,10 @@ import { LINKS } from '@/config/links'
 import Image from 'next/image'
 import logo from '/public/stock/logo.png'
 
-
 const navbar = {
   navigation: [
     { label: 'Home', href: '/' },
-    { label: 'Details', href: "/details" },
+    { label: 'Details', href: '/details' },
     { label: 'About', href: '/about' },
   ],
   action: {
@@ -31,10 +30,10 @@ export const Navbar = () => {
         className="group relative z-50 h-5 w-6 rotate-0 transform cursor-pointer transition duration-500 ease-in-out focus:outline-hidden"
         aria-label="Toggle Navigation"
       >
-        <span className="absolute left-0 top-0 block h-1 w-full rotate-0 transform rounded-full bg-void-300 opacity-100 transition-all duration-300 ease-in-out group-hover:bg-white group-data-open:left-1/2 group-data-open:top-2 group-data-open:w-0" />
-        <span className="absolute left-0 top-2 block h-1 w-full transform rounded-full bg-void-300 opacity-100 transition-all duration-300 ease-in-out group-hover:bg-white group-data-open:rotate-45" />
-        <span className="absolute left-0 top-2 block h-1 w-full transform rounded-full bg-void-300 opacity-100 transition-all duration-300 ease-in-out group-hover:bg-white group-data-open:-rotate-45" />
-        <span className="absolute left-0 top-4 block h-1 w-full rotate-0 transform rounded-full bg-void-300 opacity-100 transition-all duration-300 ease-in-out group-hover:bg-white group-data-open:left-1/2 group-data-open:top-2 group-data-open:w-0" />
+        <span className="bg-void-300 absolute top-0 left-0 block h-1 w-full rotate-0 transform rounded-full opacity-100 transition-all duration-300 ease-in-out group-hover:bg-white group-data-open:top-2 group-data-open:left-1/2 group-data-open:w-0" />
+        <span className="bg-void-300 absolute top-2 left-0 block h-1 w-full transform rounded-full opacity-100 transition-all duration-300 ease-in-out group-hover:bg-white group-data-open:rotate-45" />
+        <span className="bg-void-300 absolute top-2 left-0 block h-1 w-full transform rounded-full opacity-100 transition-all duration-300 ease-in-out group-hover:bg-white group-data-open:-rotate-45" />
+        <span className="bg-void-300 absolute top-4 left-0 block h-1 w-full rotate-0 transform rounded-full opacity-100 transition-all duration-300 ease-in-out group-hover:bg-white group-data-open:top-2 group-data-open:left-1/2 group-data-open:w-0" />
       </PopoverButton>
     )
   }
@@ -48,7 +47,7 @@ export const Navbar = () => {
           <PopoverPanel
             transition
             as="div"
-            className="absolute left-0 top-0 z-40 flex h-screen w-screen items-center justify-center bg-linear-to-tr from-blue-800 to-pink-900 data-closed:-translate-y-full data-closed:opacity-0 data-enter:duration-300 data-leave:duration-200 data-enter:ease-out data-leave:ease-in"
+            className="absolute top-0 left-0 z-40 flex h-screen w-screen items-center justify-center bg-linear-to-tr from-blue-800 to-pink-900 data-closed:-translate-y-full data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"
           >
             <div className="mx-auto flex w-full flex-col items-center justify-evenly space-y-8 p-4 text-xl">
               {navbar.navigation.map((link, index) => (
@@ -59,17 +58,14 @@ export const Navbar = () => {
                     'block rounded-full px-6 py-2 font-medium sm:inline-block',
                     pathname === link.href
                       ? 'bg-void-700 text-white'
-                      : 'text-void-300 transition duration-200 ease-in-out hover:bg-void-700 hover:text-white',
+                      : 'text-void-300 hover:bg-void-700 transition duration-200 ease-in-out hover:text-white',
                   )}
                 >
                   {link.label}
                 </Link>
               ))}
 
-              <PrimaryButton
-                href={navbar.action.href}
-                className="h-14 text-lg"
-              >
+              <PrimaryButton href={navbar.action.href} className="h-14 text-lg">
                 {navbar.action.label}
               </PrimaryButton>
             </div>
@@ -85,28 +81,29 @@ export const Navbar = () => {
         <div className="flex w-full items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-          <Link
-            href="/"
-            className="group flex items-center gap-3"
-          >
-            <Image
-              src={logo}
-              alt="Unleashed logo"
-              width={96}
-              height={96}
-              priority
-              className="rounded-sm"
-            />
+            <Link href="/" className="group flex items-center gap-3">
+              <Image
+                src={logo}
+                alt="Unleashed logo"
+                width={96}
+                height={96}
+                priority
+                className="rounded-sm"
+              />
 
-          <span className="text-4xl font-black transition duration-200 ease-in-out">
-            <span className="text-pink-400 group-hover:text-pink-200">Un</span>
-            <span className="text-blue-400 group-hover:text-blue-200">leashed</span>
-          </span>
-          </Link>
+              <span className="text-4xl font-black transition duration-200 ease-in-out">
+                <span className="text-pink-400 group-hover:text-pink-200">
+                  UN
+                </span>
+                <span className="text-blue-400 group-hover:text-blue-200">
+                  LEASHED
+                </span>
+              </span>
+            </Link>
           </div>
 
           {/* Main menu for large screens */}
-          <div className="hidden items-center justify-between text-xl font-medium text-void-300 md:flex md:space-x-0.5 md:text-base lg:space-x-2">
+          <div className="text-void-300 hidden items-center justify-between text-xl font-medium md:flex md:space-x-0.5 md:text-base lg:space-x-2">
             {navbar.navigation.map((link, index) => (
               <Link
                 href={link.href}
@@ -115,7 +112,7 @@ export const Navbar = () => {
                   'block rounded-full px-4 py-1 sm:inline-block',
                   pathname === link.href
                     ? 'bg-void-700 text-white'
-                    : 'duration-200 ease-in-out hover:bg-void-700 hover:text-white',
+                    : 'hover:bg-void-700 duration-200 ease-in-out hover:text-white',
                 )}
               >
                 {link.label}
@@ -123,9 +120,7 @@ export const Navbar = () => {
             ))}
           </div>
           <div className="hidden md:block">
-            <PrimaryButton
-              href={navbar.action.href}
-            >
+            <PrimaryButton href={navbar.action.href}>
               {navbar.action.label}
             </PrimaryButton>
           </div>

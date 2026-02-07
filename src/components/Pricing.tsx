@@ -27,7 +27,7 @@ export const Pricing = () => {
           </h2>
 
           <p className="text-void-200 mt-6 text-xl">
-            Led by licensed clinicians and expert practitioners, Unleashed is
+            Led by licensed clinicians and expert practitioners, UNLEASHED is
             held in an intentionally capped, consent-centered container designed
             for depth, safety, and real integration. All sessions are optional.
             You choose your level of participation throughout the day.

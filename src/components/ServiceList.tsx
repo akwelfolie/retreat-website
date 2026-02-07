@@ -10,7 +10,7 @@ import { Chip } from './ui/Chip'
 const experiences = [
   {
     title: 'Breaking the script',
-    text: "Unleashed provides one full immersive day of holistic experiences focused on breaking down limiting beliefs about womanhood and sexuality, exploring and owning your own unique sensuality and desires, and creating supportive and lasting relationships.",
+    text: 'UNLEASHED provides one full immersive day of holistic experiences focused on breaking down limiting beliefs about womanhood and sexuality, exploring and owning your own unique sensuality and desires, and creating supportive and lasting relationships.',
     icon: IconSparkles,
   },
   {
@@ -25,14 +25,14 @@ const experiences = [
   },
   {
     title: 'Lasting impact',
-    text: 'Anyone who attends Unleashed should expect its impact to last long after the retreat ends.',
+    text: 'Anyone who attends UNLEASHED should expect its impact to last long after the retreat ends.',
     icon: IconHeart,
   },
 ]
 
 export const ServiceList = () => {
   return (
-    <section className="px-4 pb-10 pt-10 sm:px-6 md:pb-12 md:pt-12 lg:px-8">
+    <section className="px-4 pt-10 pb-10 sm:px-6 md:pt-12 md:pb-12 lg:px-8">
       <div className="mx-auto flex w-full max-w-(--breakpoint-xl) flex-wrap items-center">
         <div className="flex w-full flex-wrap">
           {/* Section header with button */}
@@ -40,19 +40,14 @@ export const ServiceList = () => {
             <div className="relative flex w-full">
               <div className="relative flex w-full flex-wrap lg:flex-col">
                 <div className="relative w-full">
-                  <Chip>
-                    What you’ll experience
-                  </Chip> 
+                  <Chip>What you’ll experience</Chip>
                   <h2 className="relative mt-6 w-full text-left text-3xl font-extrabold text-white sm:text-4xl md:text-5xl">
                     A retreat designed to stay with you
                   </h2>
                 </div>
 
                 <div className="mt-8 flex text-left lg:mt-10">
-                  <SecondaryButton
-                    size="sm"
-                    href="/details"
-                  >
+                  <SecondaryButton size="sm" href="/details">
                     Tickets & Details
                   </SecondaryButton>
                 </div>
@@ -68,15 +63,15 @@ export const ServiceList = () => {
                   key={`experience-${index}`}
                   className="relative flex w-full flex-col"
                 >
-                  <span className="flex h-16 w-16 items-center justify-center rounded-3xl bg-linear-to-r from-void-400 to-void-500 shadow-xl">
-                    <item.icon className="h-8 w-8 text-gold-600" stroke={1.5} />
+                  <span className="from-void-400 to-void-500 flex h-16 w-16 items-center justify-center rounded-3xl bg-linear-to-r shadow-xl">
+                    <item.icon className="text-gold-600 h-8 w-8" stroke={1.5} />
                   </span>
 
                   <h4 className="mt-4 text-2xl font-semibold text-white">
                     {item.title}
                   </h4>
 
-                  <p className="mt-1 max-w-sm text-lg leading-relaxed text-void-200">
+                  <p className="text-void-200 mt-1 max-w-sm text-lg leading-relaxed">
                     {item.text}
                   </p>
                 </div>

@@ -31,7 +31,7 @@ export const SpeakerDetails = () => {
         {/* Header (optional, but helps separate from Founders) */}
         <div className="mx-auto w-full max-w-3xl text-center">
           <h2 className="mt-4 text-3xl font-extrabold text-white sm:text-4xl md:text-5xl">
-            Meet the voices of Unleashed
+            Meet the voices of UNLEASHED
           </h2>
           <p className="mt-4 text-lg text-void-200 md:text-xl">
             Practitioners and educators joining us for the retreat.

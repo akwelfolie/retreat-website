@@ -28,12 +28,12 @@ export const Footer = () => {
           <div className="flex items-center">
             <Link href="/" className="group text-2xl font-black lg:block">
               <span className="text-white transition duration-200 ease-in-out group-hover:text-void-300">
-                Unleashed
+                UNLEASHED
               </span>
             </Link>
           </div>
           <div className="mt-6 text-lg text-void-300 md:mt-8">
-            © {new Date().getFullYear()} Unleashed.
+            © {new Date().getFullYear()} UNLEASHED.
             <br /> All rights reserved.
           </div>
         </div>

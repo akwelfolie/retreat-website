@@ -19,7 +19,7 @@ export const AboutHero = () => {
           <Chip>Our story</Chip>
 
           <h1 className="mt-4 text-4xl font-extrabold text-white sm:text-5xl md:mt-5 md:text-6xl">
-            Unleashed is guided by lived experience, not theory
+            UNLEASHED is guided by lived experience, not theory
           </h1>
 
           <p className="mx-auto mt-4 max-w-lg text-xl text-void-200 md:mt-5 md:max-w-3xl">
@@ -62,7 +62,7 @@ export const AboutHero = () => {
               </p>
 
               <p className="mt-5 text-lg leading-relaxed text-void-200">
-                Unleashed is a retreat for women from all walks of
+                UNLEASHED is a retreat for women from all walks of
                 life who are looking for a community where they are allowed the
                 audacity to be themselves — without walls, judgment or barriers —
                 but with empathy, care and support. Our programming doesn’t just
@@ -72,7 +72,7 @@ export const AboutHero = () => {
               </p>
 
               <p className="mt-5 text-lg leading-relaxed text-void-200">
-                Having our inaugural production of Unleashed in Chicago,
+                Having our inaugural production of UNLEASHED in Chicago,
                 featuring a panel of women who live and work in the Chicago area,
                 felt important to honor the community that has supported us
                 through our own journeys of exploration and embodiment. Making
@@ -86,14 +86,14 @@ export const AboutHero = () => {
 
               <p className="mt-5 text-lg leading-relaxed text-void-200">
                 We can’t wait to share this with you and welcome you into our
-                community. We hope Unleashed inspires you to embrace every part
+                community. We hope UNLEASHED inspires you to embrace every part
                 of yourself and everyone you meet with open arms.
               </p>
 
               <p className="mt-8 text-lg font-semibold text-white">With love,</p>
               <p className="text-lg font-semibold text-white">Ash & Nicole</p>
               <p className="mt-1 text-sm text-void-300">
-                Your unhinged organizers of Unleashed
+                Your unhinged organizers of UNLEASHED
               </p>
             </div>
           </div>

@@ -58,7 +58,7 @@ export const ValuesAndSafety = () => {
             A container built on trust, consent, and care
           </h2>
           <p className="mt-6 text-xl text-void-200">
-            Unleashed is intentionally designed as a respectful, trauma-informed
+            UNLEASHED is intentionally designed as a respectful, trauma-informed
             space where autonomy, safety, and dignity come first.
           </p>
         </div>

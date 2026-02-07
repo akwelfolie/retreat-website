@@ -10,9 +10,8 @@ import {
   type Icon,
   type IconProps,
 } from '@tabler/icons-react'
-import imgMorning from '/public/stock/speaking-room.jpg'
-import imgAfternoon from '/public/stock/group-hug.jpg'
-import imgClosing from '/public/stock/meditation.jpg'
+import imgMorning from '/public/stock/smoke-color.jpg'
+import imgAfternoon from '/public/stock/fence.jpg'
 import { Chip } from './ui/Chip'
 import type { ForwardRefExoticComponent, RefAttributes } from 'react'
 
@@ -50,7 +49,7 @@ const workshops = [
 const sections: ScheduleSection[] = [
   {
     tagline: 'Morning',
-    headline: 'Grounding and foundation',
+    headline: 'MORNING: Grounding and Foundation',
     text: 'A progressive start centered on safety, nervous system regulation, and embodied self-trust.',
     image: { src: imgMorning, alt: 'Unleashed morning session' },
     topCards: [
@@ -105,7 +104,7 @@ const sections: ScheduleSection[] = [
 
   {
     tagline: 'Afternoon',
-    headline: 'Exploration and choice',
+    headline: 'AFTERNOON: Exploration and Choice',
     text: 'Education, practical tools, and immersive rotations where you choose what to explore.',
     image: { src: imgAfternoon, alt: 'Unleashed workshop experience' },
     topCards: [
@@ -151,34 +150,34 @@ const sections: ScheduleSection[] = [
     ),
   },
 
-  {
-    tagline: 'Closing',
-    headline: 'Integration and community',
-    text: 'A ceremonial close devoted to reflection, integration, and being seen.',
-    image: { src: imgClosing, alt: 'Unleashed closing circle' },
-    topCards: [
-      { label: 'Closing ritual and integration', icon: IconSparkles },
-      { label: 'Community-centered', icon: IconUsers },
-    ],
-    items: [
-      {
-        title: 'Sacred Circle: Witnessing and Feminine Wisdom',
-        subtitle: 'Reflection, integration, and embodied closure in community.',
-        facilitator: 'Josephine Lauer',
-        icon: IconUsers,
-      },
-    ],
-    extra: (
-      <div className="bg-void-500 mt-6 rounded-2xl px-5 py-6 ring-1 ring-white/10">
-        <p className="text-base font-semibold text-white">
-          This experience is not about doing everything
-        </p>
-        <p className="text-void-200 mt-1 text-base">
-          It’s about listening, choosing, and trusting your body.
-        </p>
-      </div>
-    ),
-  },
+  // {
+  //   tagline: 'Closing',
+  //   headline: 'Integration and community',
+  //   text: 'A ceremonial close devoted to reflection, integration, and being seen.',
+  //   image: { src: imgClosing, alt: 'Unleashed closing circle' },
+  //   topCards: [
+  //     { label: 'Closing ritual and integration', icon: IconSparkles },
+  //     { label: 'Community-centered', icon: IconUsers },
+  //   ],
+  //   items: [
+  //     {
+  //       title: 'Sacred Circle: Witnessing and Feminine Wisdom',
+  //       subtitle: 'Reflection, integration, and embodied closure in community.',
+  //       facilitator: 'Josephine Lauer',
+  //       icon: IconUsers,
+  //     },
+  //   ],
+  //   extra: (
+  //     <div className="bg-void-500 mt-6 rounded-2xl px-5 py-6 ring-1 ring-white/10">
+  //       <p className="text-base font-semibold text-white">
+  //         This experience is not about doing everything
+  //       </p>
+  //       <p className="text-void-200 mt-1 text-base">
+  //         It’s about listening, choosing, and trusting your body.
+  //       </p>
+  //     </div>
+  //   ),
+  // },
 ]
 
 function ItemRow({ item }: { item: ScheduleItem }) {
@@ -212,14 +211,9 @@ export const SchedulePreview = () => {
     <section className="px-4 pb-8 sm:px-6 md:pb-12 lg:px-8">
       <div className="mx-auto w-full max-w-(--breakpoint-xl)">
         <div className="mx-auto max-w-3xl text-center">
-          <Chip>Schedule</Chip>
-          <h2 className="mt-3 text-3xl font-extrabold text-white sm:text-4xl">
-            One-day full immersion
-          </h2>
-          <p className="text-void-200 mt-3 text-lg">
-            A full-day experience centered on embodiment, choice, and
-            self-trust.
-          </p>
+          <Chip className="text-[1.8rem]">
+            Saturday, Feb 21, 2026 <br /> One-Day Full Immersion
+          </Chip>
         </div>
 
         {sections.map((section, i) => (
@@ -230,25 +224,17 @@ export const SchedulePreview = () => {
             )}
           >
             <div className={clsx(i % 2 === 1 && 'lg:order-2', 'col-span-2')}>
-              <Chip>{section.tagline}</Chip>
+              <div
+                className={clsx(
+                  'mt-3 rounded-2xl px-5 py-5 shadow-xl ring-1 ring-white/10',
+                  i === 0 ? 'bg-blue-500/55' : 'bg-pink-500/55',
+                )}
+              >
+                <h3 className="text-3xl font-extrabold text-white">
+                  {section.headline}
+                </h3>
 
-              <h3 className="mt-3 text-3xl font-extrabold text-white">
-                {section.headline}
-              </h3>
-
-              <p className="text-void-200 mt-3 text-lg">{section.text}</p>
-
-              <div className="mt-6 flex flex-col gap-4 sm:flex-row">
-                {section.topCards.map((c, j) => (
-                  <div key={j} className="flex items-center gap-3">
-                    <div className="from-void-400 to-void-500 flex h-10 w-10 items-center justify-center rounded-2xl bg-linear-to-r">
-                      <c.icon className="text-gold-600 h-5 w-5" stroke={1.5} />
-                    </div>
-                    <div className="text-base font-semibold text-white">
-                      {c.label}
-                    </div>
-                  </div>
-                ))}
+                <p className="text-void-200 mt-3 text-lg">{section.text}</p>
               </div>
 
               <div className="bg-void-500 mt-6 space-y-4 rounded-2xl px-5 py-6 ring-1 ring-white/10">

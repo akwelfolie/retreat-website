@@ -4,38 +4,36 @@ export const CallToAction = () => {
   return (
     <section className="mx-auto max-w-(--breakpoint-2xl) px-4 py-12 sm:px-6 md:py-16 lg:px-8">
       {/* CTA card */}
-      <div className="relative rounded-3xl bg-void-500 border border-gold-600/30 py-16 lg:py-20 shadow-xl sm:overflow-hidden">
+      <div className="bg-void-500 border-gold-600/30 relative rounded-3xl border py-16 shadow-xl sm:overflow-hidden lg:py-20">
         {/* Right background diagonal */}
         <svg
-          className="absolute inset-y-0 right-1/4 z-20 h-full w-1/4 text-void-500"
+          className="text-void-500 absolute inset-y-0 right-1/4 z-20 h-full w-1/4"
           preserveAspectRatio="none"
           viewBox="0 0 100 100"
           fill="currentcolor"
         >
           <polygon points="0,0 100,0 0,100" />
         </svg>
-        <div className="absolute inset-y-0 left-1/2 z-10 h-full w-1/2 rounded-r-3xl bg-void-700" />
+        <div className="bg-void-700 absolute inset-y-0 left-1/2 z-10 h-full w-1/2 rounded-r-3xl" />
 
         {/* CTA content */}
         <div className="relative z-30 mx-auto flex flex-col items-center justify-center px-4 text-center sm:px-16 lg:flex-row lg:text-left">
           <div className="max-w-lg lg:w-1/2">
-            <p className="mb-3 text-base font-medium tracking-wide text-void-200">
+            <p className="text-void-200 mb-3 text-base font-medium tracking-wide">
               February 21, 2026 · Le Loft — Chicago, IL
             </p>
             <h5 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-              Join us for Unleashed
+              Join us for UNLEASHED
             </h5>
-            <p className="mt-4 text-xl text-void-200">
-            A one-day immersion for women ready to step into embodied self-trust. 
-            Designed to
-            leave a lasting impact long after the retreat ends.
+            <p className="text-void-200 mt-4 text-xl">
+              A one-day immersion for women ready to step into embodied
+              self-trust. Designed to leave a lasting impact long after the
+              retreat ends.
             </p>
           </div>
 
           <div className="mt-10 flex max-w-lg justify-center lg:mt-0 lg:w-1/2 lg:justify-end">
-            <PrimaryButton href="/details">
-              Tickets & Details
-            </PrimaryButton>
+            <PrimaryButton href="/details">Tickets & Details</PrimaryButton>
           </div>
         </div>
       </div>

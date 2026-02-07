@@ -124,7 +124,7 @@ export const EmailCapture = ({
               )}
 
               <p className="mt-4 text-xs text-void-200/80">
-                We’ll only email you about Unleashed. Unsubscribe anytime.
+                We’ll only email you about UNLEASHED. Unsubscribe anytime.
               </p>
             </form>
           )}
@@ -136,7 +136,7 @@ export const EmailCapture = ({
                 You’re in!
               </p>
               <p className="mt-3 text-xs text-void-200/80">
-                We’ll only email you about Unleashed. Unsubscribe anytime.
+                We’ll only email you about UNLEASHED. Unsubscribe anytime.
               </p>
             </div>
           )}

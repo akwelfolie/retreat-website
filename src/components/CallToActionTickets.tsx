@@ -24,10 +24,10 @@ export const CallToActionTickets = () => {
               Tickets available now · Limited capacity
             </p>
             <h5 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-              Tickets are live. Become Unleashed.
+              Tickets are live. Become UNLEASHED.
             </h5>
             <p className="mt-4 text-xl text-void-200">
-              Secure your spot for Unleashed — an immersive retreat
+              Secure your spot for UNLEASHED — an immersive retreat
               designed for connection, embodiment, and self-expression.
             </p>
           </div>

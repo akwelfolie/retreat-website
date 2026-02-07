@@ -3,44 +3,44 @@ import clsx from 'clsx'
 import { Chip } from './ui/Chip'
 import imgBreakBarriers from '/public/stock/break-barrier.png'
 import imgAshAndNora from '/public/stock/ashandnora.png'
-import imgMeg from '/public/stock/meg.png'
-import imgBecome from '/public/stock/become-unleashed.png'
-import imgGroup from '/public/stock/retreat-group-shot.jpg'
+import imgCovers from '/public/stock/under-covers.jpg'
+import imgSpiral from '/public/stock/color-spiral.jpg'
+import imgChurch from '/public/stock/spiritual-church-2.png'
 
 const features = [
   {
-    tagline: 'The Experience',
+    tagline: 'The Retreat',
     headline: 'What makes UNLEASHED different',
     text: 'UNLEASHED is not a one-size-fits-all retreat. It’s a carefully held container that offers structure and choice, guidance and permission, depth and regulation. Come for the facilitators. Stay for the movement. Choose the depth that’s calling you.',
     image: {
-      src: imgBecome,
+      src: imgBreakBarriers,
       alt: 'Women connecting in a retreat setting',
     },
   },
   {
     tagline: 'The Experience',
     headline: 'A container for connection — built to last.',
-    text: 'Unleashed is a one-day immersive experience designed to help women move beyond internal limits and into embodied self-trust. Rather than offering a fleeting retreat high, it creates space for depth, connection, and honest exploration. Participants leave with experiences, language, and insight meant to integrate into real life — not stay contained to a single day.',
+    text: 'UNLEASHED is a one-day immersive experience designed to help women move beyond internal limits and into embodied self-trust. Rather than offering a fleeting retreat high, it creates space for depth, connection, and honest exploration. Participants leave with experiences, language, and insight meant to integrate into real life — not stay contained to a single day.',
     image: {
-      src: imgBecome,
+      src: imgSpiral,
       alt: 'Women connecting in a retreat setting',
     },
   },
   {
     tagline: "Who it's for",
-    headline: 'Who Unleashed welcomes.',
-    text: 'Unleashed welcomes women 21+, including trans women and non-binary or gender-nonconforming individuals who feel connected to womanhood. This experience is for those at any stage of their journey — whether exploring desire for the first time, deepening embodiment, or seeking meaningful connection. Curiosity, openness, and a willingness to be present are the only prerequisites.',
+    headline: 'Who UNLEASHED welcomes.',
+    text: 'UNLEASHED welcomes women 21+, including trans women and non-binary or gender-nonconforming individuals who feel connected to womanhood. This experience is for those at any stage of their journey — whether exploring desire for the first time, deepening embodiment, or seeking meaningful connection. Curiosity, openness, and a willingness to be present are the only prerequisites.',
     image: {
-      src: imgBreakBarriers,
+      src: imgChurch,
       alt: 'Supportive group setting',
     },
   },
   {
     tagline: 'The Container',
     headline: 'Trauma-informed. Consent-forward. Held with care.',
-    text: 'Unleashed is intentionally designed as a trauma-informed, consent-forward space. Emotional safety, autonomy, and respect are non-negotiable. Mental health providers will be on-site for grounding and support, and discrimination, boundary violations, or harmful behavior of any kind will result in immediate removal.',
+    text: 'UNLEASHED is intentionally designed as a trauma-informed, consent-forward space. Emotional safety, autonomy, and respect are non-negotiable. Mental health providers will be on-site for grounding and support, and discrimination, boundary violations, or harmful behavior of any kind will result in immediate removal.',
     image: {
-      src: imgGroup,
+      src: imgCovers,
       alt: 'Safe and respectful retreat environment',
     },
   },

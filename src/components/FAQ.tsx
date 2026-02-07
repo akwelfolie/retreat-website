@@ -11,7 +11,7 @@ type FaqItem = {
 
 const faqs: FaqItem[] = [
   {
-    question: 'Who can attend Unleashed?',
+    question: 'Who can attend UNLEASHED?',
     answer: (
       <>
         All women and woman-aligned individuals, including non-binary and trans

@@ -72,7 +72,7 @@ export const speakers: Person[] = [
       },
       { name: 'website', href: 'https://www.freeformcoaching.com' },
     ],
-    bio: "Nicole Sonnefeldt (she/her) is an alternative relationship coach & consultant & the founder of Freeform Coaching: Relationship Coaching for Conscious Non-Monogamy. A former trauma & couple's therapist with a Master's in Counseling Psychology from the Chicago School of Professional Psychology, she brings her experience and training in the psychology & physiology of trauma with her to Unleashed, along with her pleasure-positive, poly & kink-affirming stance as an alternative relationship coach. She assisted in curating the experiences and workshops at Unleashed with this background and knowledge, and looks forward to utilizing these skills to help create a trauma-informed, safe container for exploration and play for all presenters & attendees.",
+    bio: "Nicole Sonnefeldt (she/her) is an alternative relationship coach & consultant & the founder of Freeform Coaching: Relationship Coaching for Conscious Non-Monogamy. A former trauma & couple's therapist with a Master's in Counseling Psychology from the Chicago School of Professional Psychology, she brings her experience and training in the psychology & physiology of trauma with her to UNLEASHED, along with her pleasure-positive, poly & kink-affirming stance as an alternative relationship coach. She assisted in curating the experiences and workshops at UNLEASHED with this background and knowledge, and looks forward to utilizing these skills to help create a trauma-informed, safe container for exploration and play for all presenters & attendees.",
   },
   {
     name: 'Albe Gutierrez (Ms. Albe), MAATC (she/her/ella)',
@@ -108,8 +108,8 @@ export const speakers: Person[] = [
     bio: 'Josephine Lauer (she/her) is an Embodiment Guide, trauma-informed Somatic Intimacy Coach, Tantric Practitioner and Food Systems Consultant. She curates bold, brave, safe and sacred spaces for humans to explore their fullest, most authentic expressions, in order to achieve a more embodied existence via the harmonization of the mental, physical and emotional body. She is the founder of CUR8Chicago, a boutique consulting firm for embodied leaders, and Temple of Loha, an esoteric arts production house.  Josephine resides in Chicago, IL, is a Mother of 3 sons and travels often. Her podcast, Universal Intimacy, explores connections with the self, others, nature, and the cosmos via the intersection of Science, Spirituality and Sexuality.',
   },
   {
-    name: 'Mistress Sophia Chase, MSW (she/her)',
-    role: 'Pro-Domme',
+    name: 'Lady Sophia Chase, MSW (she/her)',
+    role: 'Pro-Domme Mistress',
     bigImage: bigSophia,
     squareImage: squareSophiaChase,
     socials: [

@@ -9,9 +9,9 @@ import { Analytics } from '@vercel/analytics/next';
 
 
 export const metadata: Metadata = {
-  title: 'Unleashed — Women’s Empowerment Retreat',
+  title: 'UNLEASHED — Women’s Empowerment Retreat',
   description:
-    "Unleashed is a women’s empowerment retreat focused on embodiment, confidence, sensuality, and self-expression through workshops, speakers, and immersive experiences.",
+    "UNLEASHED is a women’s empowerment retreat focused on embodiment, confidence, sensuality, and self-expression through workshops, speakers, and immersive experiences.",
 }
 
 export default function RootLayout({

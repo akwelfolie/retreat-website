@@ -13,7 +13,7 @@ export const Team = () => {
         <div className="mx-auto w-full max-w-xl text-center md:max-w-2xl lg:max-w-3xl">
           <Chip>Who will guide you</Chip>
           <h2 className="mt-6 text-3xl font-extrabold text-white sm:text-4xl md:text-5xl">
-            Meet the voices of Unleashed
+            Meet the voices of UNLEASHED
           </h2>
           <p className="text-void-200 mt-6 text-xl">
             Our speakers and guides are licensed clinicians, somatic

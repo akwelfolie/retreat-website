@@ -8,7 +8,7 @@ import { TicketsHero } from "@/components/TicketsHero"
 
 
 export const metadata = {
-  title: 'Details — Unleashed',
+  title: 'Details — UNLEASHED',
   description:
     '[Ticket details, pricing, and booking information will be available here.]',
 }

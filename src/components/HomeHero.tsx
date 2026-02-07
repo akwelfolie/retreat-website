@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { PrimaryButton } from '@/components/ui/buttons/PrimaryButton'
 import { SecondaryButton } from '@/components/ui/buttons/SecondaryButton'
-import heroImage from '/public/stock/spiritual-church-2.png'
+import imgBecome from '/public/stock/become-unleashed.png'
 
 export const HomeHero = () => {
   return (
@@ -23,13 +23,13 @@ export const HomeHero = () => {
         <div className="relative mx-auto max-w-(--breakpoint-xl) px-4 py-14 sm:px-6 sm:py-18 lg:grid lg:auto-rows-max lg:grid-cols-2 lg:gap-x-10 lg:px-8 lg:py-24 xl:gap-x-12">
           {/* Text */}
           <div className="flex flex-col items-center justify-center lg:items-start">
-            <p className="z-30 inline-flex items-center justify-center rounded-tl-full rounded-r-full bg-linear-to-r from-blue-700 to-pink-800 px-6 py-2 text-xl font-bold tracking-wide text-white/90">
+            <p className="z-30 inline-flex items-center justify-center rounded-tl-full rounded-r-full bg-linear-to-r from-blue-700 to-pink-800 px-6 py-2 text-[1.6rem] font-bold tracking-wide text-white/90">
               February 21, 2026 · Chicago, IL
             </p>
 
             <div className="z-30 mx-auto mt-6 w-full max-w-xl text-center lg:mx-0 lg:max-w-none lg:text-left">
               <h1 className="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
-                Unleashed
+                UNLEASHED
               </h1>
 
               <div className="text-void-200 mt-6 space-y-4 text-left text-lg sm:text-xl lg:text-left">
@@ -38,10 +38,17 @@ export const HomeHero = () => {
                     UNLEASHED
                   </span>{' '}
                   is a full-day immersive experience for women and women-aligned
-                  people ready to give themselves permission to reconnect with
-                  their bodies, explore desire and expression, and release
-                  what’s been held back all within a safe, intentional
-                  container.
+                  people ready to give themselves permission to:
+                </p>
+
+                <ul className="mt-3 list-disc space-y-2 pl-6 text-white/95">
+                  <li>Reconnect with their bodies</li>
+                  <li>Explore desire and self-expression</li>
+                  <li>Release what’s been held back</li>
+                </ul>
+
+                <p className="mt-3 text-white/90">
+                  All within a safe, intentional container.
                 </p>
 
                 <p>
@@ -79,7 +86,7 @@ export const HomeHero = () => {
           {/* Image */}
           <div className="relative mx-auto mt-12 flex w-full max-w-xl items-center justify-center sm:mt-16 lg:mt-0 lg:max-w-none">
             <Image
-              src={heroImage}
+              src={imgBecome}
               alt="Unleashed retreat atmosphere"
               priority
               className="ring-void-300/20 z-30 h-full w-auto rounded-3xl object-cover shadow-md ring-1"
