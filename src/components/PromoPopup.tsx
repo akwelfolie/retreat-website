@@ -107,7 +107,9 @@ export const PromoPopup = () => {
           </h2>
 
           <p className="mt-2 text-sm font-medium tracking-wide text-void-300">
-            Wednesday, May 6, 2026 · 6:30–9:30 PM · Studio 205, Chicago IL
+            Wednesday, May 6, 2026 · 6:30–9:30 PM
+            <br />
+            Studio 205 · 1821 W Hubbard St · Chicago, IL
           </p>
 
           <p className="mt-4 text-base text-void-200">
