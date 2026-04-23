@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { SocialLink } from '@/components/SocialLink'
-import { LINKS } from '@/config/links'
+import { LINKS, NAV_LINKS } from '@/config/links'
 
 const contact = {
   address: {
@@ -13,11 +13,7 @@ const contact = {
   email: 'info@thisisunleashed.com',
 }
 
-const footerLinks = [
-  { label: 'Home', href: '/' },
-  { label: 'Details', href: "/details" },
-  { label: 'About', href: '/about' },
-]
+const footerLinks = NAV_LINKS
 
 export const Footer = () => {
   return (

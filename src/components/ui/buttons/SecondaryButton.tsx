@@ -2,7 +2,7 @@ import Link from 'next/link'
 import clsx from 'clsx'
 import type { LinkProps } from 'next/link'
 
-type PrimaryButtonProps = {
+type SecondaryButtonProps = {
   className?: string
   children: React.ReactNode
   size?: 'sm' | 'lg'
@@ -28,7 +28,7 @@ export function SecondaryButton({
   gradient = 'from-pink-500 to-pink-700/20',
   children,
   ...props
-}: PrimaryButtonProps) {
+}: SecondaryButtonProps) {
   const containerClass = clsx(containerStyles, sizeStyles[size], className)
   const circleClass = clsx(circleStyles, gradient)
 

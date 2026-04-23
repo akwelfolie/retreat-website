@@ -23,62 +23,44 @@ export const HomeHero = () => {
         <div className="relative mx-auto max-w-(--breakpoint-xl) px-4 py-14 sm:px-6 sm:py-18 lg:grid lg:auto-rows-max lg:grid-cols-2 lg:gap-x-10 lg:px-8 lg:py-24 xl:gap-x-12">
           {/* Text */}
           <div className="flex flex-col items-center justify-center lg:items-start">
-            <p className="z-30 inline-flex items-center justify-center rounded-tl-full rounded-r-full bg-linear-to-r from-blue-700 to-pink-800 px-6 py-2 text-[1.6rem] font-bold tracking-wide text-white/90">
-              February 21, 2026 · Chicago, IL
-            </p>
-
-            <div className="z-30 mx-auto mt-6 w-full max-w-xl text-center lg:mx-0 lg:max-w-none lg:text-left">
+            <div className="z-30 mx-auto w-full max-w-xl text-center lg:mx-0 lg:max-w-none lg:text-left">
               <h1 className="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
                 UNLEASHED
               </h1>
 
               <div className="text-void-200 mt-6 space-y-4 text-left text-lg sm:text-xl lg:text-left">
                 <p className="text-white/95">
-                  <span className="font-semibold tracking-wide text-white">
-                    UNLEASHED
-                  </span>{' '}
-                  is a full-day immersive experience for women and women-aligned
-                  people ready to give themselves permission to:
+                  <span className="font-semibold tracking-wide text-white">UNLEASHED</span> is a
+                  movement of immersive experiences for women and women-aligned people ready to give
+                  themselves permission to:
                 </p>
 
                 <ul className="mt-3 list-disc space-y-2 pl-6 text-white/95">
                   <li>Reconnect with their bodies</li>
                   <li>Explore desire and self-expression</li>
-                  <li>Release what’s been held back</li>
+                  <li>Release what&apos;s been held back</li>
                 </ul>
 
-                <p className="mt-3 text-white/90">
-                  All within a safe, intentional container.
-                </p>
+                <p className="mt-3 text-white/90">All within a safe, intentional container.</p>
 
                 <p>
-                  Guided by a powerful lineup of 7 women facilitators trained in
-                  psychology, somatics and movement, coaching, and
-                  trauma-informed care.
+                  Guided by a curated lineup of women facilitators trained in psychology, somatics
+                  and movement, coaching, and trauma-informed care.
                 </p>
 
-                <p>Ground, move, and connect together in the morning.</p>
+                <p>Move, connect, and explore together.</p>
 
-                <p>
-                  Choose three immersive workshops in the afternoon to explore
-                  what’s calling you.
-                </p>
+                <p>Choose the depth and path that&apos;s calling you.</p>
 
-                <p className="text-void-100 font-semibold">
-                  This is not passive listening.
-                </p>
+                <p className="text-void-100 font-semibold">This is not passive listening.</p>
 
-                <p className="font-semibold text-white">
-                  This is a lived, embodied experience.
-                </p>
+                <p className="font-semibold text-white">This is a lived, embodied experience.</p>
               </div>
             </div>
 
             {/* CTA buttons */}
             <div className="z-30 mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">
-              <PrimaryButton href="/details">
-                Tickets &amp; Detailed Schedule
-              </PrimaryButton>
+              <PrimaryButton href="/next-up">Tickets &amp; Detailed Schedule</PrimaryButton>
               <SecondaryButton href="/about">Presenters</SecondaryButton>
             </div>
           </div>

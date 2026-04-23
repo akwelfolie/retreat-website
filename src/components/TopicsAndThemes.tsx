@@ -47,8 +47,8 @@ export const TopicsAndThemes = () => {
           </div>
           <div className="lg:col-span-2">
             <p className="text-xl text-void-200">
-              These are themes that will show up throughout the day — not
-              rigid “sessions”.
+              These are themes that show up throughout our events — not
+              rigid sessions.
             </p>
           </div>
         </div>

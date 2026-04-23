@@ -2,7 +2,7 @@ import Image from 'next/image'
 import clsx from 'clsx'
 import { Chip } from './ui/Chip'
 import { SocialLink } from '@/components/SocialLink'
-import { getSpeakers } from '@/content/people'
+import type { Person } from '@/content/people'
 
 function RenderBio({ text }: { text: string }) {
   return (
@@ -22,8 +22,12 @@ function RenderBio({ text }: { text: string }) {
   )
 }
 
-export const SpeakerDetails = () => {
-  const speakers = getSpeakers()
+type Props = {
+  people: Person[]
+}
+
+export const SpeakerDetails = ({ people }: Props) => {
+  const speakers = people
 
   return (
     <section className="px-4 pb-12 pt-10 sm:px-6 md:pb-16 md:pt-14 lg:px-8 lg:pt-20">

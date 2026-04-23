@@ -35,7 +35,7 @@ function ItemRow({ item }: { item: ScheduleItem }) {
   )
 }
 
-export const SchedulePreview = ({ dateLabel, formatLabel, sections }: Props) => {
+export const PastEventSchedule = ({ dateLabel, formatLabel, sections }: Props) => {
   return (
     <section className="px-4 pb-8 sm:px-6 md:pb-12 lg:px-8">
       <div className="mx-auto w-full max-w-(--breakpoint-xl)">
@@ -46,7 +46,7 @@ export const SchedulePreview = ({ dateLabel, formatLabel, sections }: Props) => 
         </div>
 
         {sections.length === 0 ? (
-          <p className="text-void-300 mt-12 text-center text-lg">Schedule coming soon.</p>
+          <p className="text-void-300 mt-12 text-center text-lg">No schedule available.</p>
         ) : (
           sections.map((section, i) => (
             <div
@@ -73,10 +73,6 @@ export const SchedulePreview = ({ dateLabel, formatLabel, sections }: Props) => 
                 </div>
 
                 {section.extra}
-
-                {i === sections.length - 1 && (
-                  <p className="text-void-200 mt-6 text-xs">**Schedule subject to change</p>
-                )}
               </div>
 
               <div className="col-span-1 mt-8 flex items-center lg:mt-0">

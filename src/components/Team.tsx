@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import { SocialLink } from '@/components/SocialLink'
 import { Chip } from './ui/Chip'
-import { getAllPeople } from '@/content/people'
+import { getPeople } from '@/content/people'
 
-const team = getAllPeople()
+const team = getPeople()
 
 export const Team = () => {
   return (

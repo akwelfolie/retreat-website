@@ -1,25 +1,21 @@
 import clsx from 'clsx'
 import { Chip } from './ui/Chip'
 
-type LocationTeaserProps = {
-  flip?: boolean // optional: put image on left if true
+type Props = {
+  flip?: boolean
 }
 
-export const LocationTeaser = ({ flip = false }: LocationTeaserProps) => {
+export const LocationPreview = ({ flip = false }: Props) => {
   const feature = {
     tagline: 'Location',
-    headline: 'Le Loft — Chicago, IL',
-    text: `This unique women-owned space in Logan Square combines modern flair and luxe amenities with local, creative spirit. There will be areas for rest and relaxation within the retreat space.`,
+    headline: 'Studio 205 — 1821 W. Hubbard, Chicago, IL',
+    text: 'Join us in the heart of Chicago for an intimate, carefully held evening. The space is curated to support presence, safety, and a fully immersive sensory experience.',
   }
 
   return (
     <section className="px-4 py-12 sm:px-6 sm:pb-24 md:pt-16 lg:px-8">
       <div className="mx-auto max-w-(--breakpoint-xl)">
-        <div
-          className={clsx(
-            'relative lg:grid lg:auto-rows-max lg:grid-cols-2 lg:gap-x-12',
-          )}
-        >
+        <div className={clsx('relative lg:grid lg:auto-rows-max lg:grid-cols-2 lg:gap-x-12')}>
           {/* Text */}
           <div
             className={clsx(
@@ -28,19 +24,15 @@ export const LocationTeaser = ({ flip = false }: LocationTeaserProps) => {
             )}
           >
             <div className="w-full max-w-lg text-left md:max-w-2xl md:text-center lg:text-left">
-              <Chip>
-                {feature.tagline}
-              </Chip> 
+              <Chip>{feature.tagline}</Chip>
               <h2 className="mt-4 text-2xl font-extrabold text-white sm:text-3xl md:text-4xl lg:mt-6">
                 {feature.headline}
               </h2>
-              <p className="mt-4 text-lg text-void-200 lg:mt-6">
-                {feature.text}
-              </p>
+              <p className="mt-4 text-lg text-void-200 lg:mt-6">{feature.text}</p>
             </div>
           </div>
 
-          {/* Image */}
+          {/* Map embed */}
           <div
             className={clsx(
               'relative mx-auto mt-10 w-full max-w-lg lg:mt-0 lg:max-w-none',
@@ -49,8 +41,9 @@ export const LocationTeaser = ({ flip = false }: LocationTeaserProps) => {
           >
             <div className="overflow-hidden rounded-3xl shadow-xl ring-1 ring-void-300/20">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.174875068614!2d-87.6906192879771!3d41.91059927111823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd38f072449f1%3A0x80885911b30de485!2sLe%20Loft!5e0!3m2!1sen!2sus!4v1768157770590!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.1747631960407!2d-87.67541892330941!3d41.88909847124049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2dd607e8e44f%3A0xe8e02fde89065446!2sStudio%20205!5e0!3m2!1sen!2sus!4v1776971014834!5m2!1sen!2sus"
                 className="h-[450px] w-full border-0"
+                allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />

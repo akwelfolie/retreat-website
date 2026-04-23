@@ -66,5 +66,11 @@
   ::file-selector-button {
     border-color: var(--color-void-200, currentcolor);
   }
+
+  html,
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
 }
 

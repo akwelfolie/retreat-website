@@ -22,15 +22,15 @@ function InfoCard({ children, index }: CardProps) {
   )
 }
 
-export const PracticalInfo = ({ includedItems }: Props) => {
+export const PastEventInfo = ({ includedItems }: Props) => {
   return (
     <section className="mb-10 px-4 py-10 sm:px-6 md:py-12 lg:px-8">
       <div className="mx-auto w-full max-w-(--breakpoint-xl)">
         <div className="mt-10">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-extrabold text-white sm:text-4xl">What&apos;s included</h2>
+            <h2 className="text-3xl font-extrabold text-white sm:text-4xl">What was included</h2>
             <p className="text-void-200 mt-4 text-xl">
-              Your ticket covers the full UNLEASHED experience — no add-ons, no surprises.
+              Every ticket covered the full UNLEASHED experience — no add-ons, no surprises.
             </p>
           </div>
 

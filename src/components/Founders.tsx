@@ -2,7 +2,7 @@ import Image from 'next/image'
 import clsx from 'clsx'
 import { Chip } from '@/components/ui/Chip'
 import { SocialLink } from '@/components/SocialLink'
-import { getFounders } from '@/content/people'
+import { getPeople } from '@/content/people'
 
 function RenderBio({ text }: { text: string }) {
   // Optional: if you store bios with \n\n for paragraphs
@@ -24,7 +24,7 @@ function RenderBio({ text }: { text: string }) {
 }
 
 export const Founders = () => {
-  const founders = getFounders()
+  const founders = getPeople().filter((p) => p.isFounder)
 
   return (
     <section className="px-4 py-12 sm:px-6 md:py-16 lg:px-8">

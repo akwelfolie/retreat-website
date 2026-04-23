@@ -39,8 +39,9 @@ export async function POST(req: Request) {
         ? (body as { email?: unknown }).email
         : undefined
 
-    if (!email || typeof email !== 'string') {
-      return NextResponse.json({ error: 'Email is required' }, { status: 400 })
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if (!email || typeof email !== 'string' || !emailRegex.test(email)) {
+      return NextResponse.json({ error: 'A valid email is required' }, { status: 400 })
     }
 
     const mlRes = await fetch('https://connect.mailerlite.com/api/subscribers', {

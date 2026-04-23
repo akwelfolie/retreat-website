@@ -1,28 +1,20 @@
 import { HomeHero } from '@/components/HomeHero'
-import { TopicsAndThemes } from '@/components/TopicsAndThemes'
-import { CallToAction } from '@/components/CallToAction'
+import { WhyUnleashed } from '@/components/WhyUnleashed'
+import { NextPreview } from '@/components/NextPreview'
 import { WhatIsIt } from '@/components/WhatIsIt'
 import { EmailCapture } from '@/components/EmailCapture'
-import { ServiceList } from '@/components/ServiceList'
-import { Team } from '@/components/Team'
-import { SchedulePreviewShort } from '@/components/SchedulePreviewShort'
-import { LocationTeaser } from '@/components/LocationTeaser'
-import { WhyUnleashed } from '@/components/WhyUnleashed'
-import { SchedulePreview } from '@/components/SchedulePreview'
-import { FullscreenHeroCarousel } from '@/components/FullscreenHeroCarousel'
+import { TopicsAndThemes } from '@/components/TopicsAndThemes'
+import { CallToAction } from '@/components/CallToAction'
 
 export default function HomePage() {
   return (
     <>
-      <FullscreenHeroCarousel />
       <HomeHero />
+      <NextPreview />
       <WhyUnleashed />
-      <SchedulePreviewShort />
       <WhatIsIt />
       <EmailCapture />
-      <ServiceList />
-      <Team />
-      <LocationTeaser />
+      <TopicsAndThemes />
       <CallToAction />
     </>
   )

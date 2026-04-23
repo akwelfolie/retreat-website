@@ -20,7 +20,7 @@ const features = [
   {
     tagline: 'The Experience',
     headline: 'A container for connection — built to last.',
-    text: 'UNLEASHED is a one-day immersive experience designed to help women move beyond internal limits and into embodied self-trust. Rather than offering a fleeting retreat high, it creates space for depth, connection, and honest exploration. Participants leave with experiences, language, and insight meant to integrate into real life — not stay contained to a single day.',
+    text: 'UNLEASHED is an immersive experience designed to help women move beyond internal limits and into embodied self-trust. Rather than offering a fleeting retreat high, it creates space for depth, connection, and honest exploration. Participants leave with experiences, language, and insight meant to integrate into real life — long after each event ends.',
     image: {
       src: imgSpiral,
       alt: 'Women connecting in a retreat setting',

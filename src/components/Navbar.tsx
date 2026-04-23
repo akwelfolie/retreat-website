@@ -4,21 +4,16 @@ import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import clsx from 'clsx'
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
+import { IconChevronDown } from '@tabler/icons-react'
 import { PrimaryButton } from '@/components/ui/buttons/PrimaryButton'
-import { LINKS } from '@/config/links'
+import { LINKS, NAV_LINKS } from '@/config/links'
+import { pastRetreats } from '@/content/retreats'
 import Image from 'next/image'
 import logo from '/public/stock/logo.png'
 
-const navbar = {
-  navigation: [
-    { label: 'Home', href: '/' },
-    { label: 'Details', href: '/details' },
-    { label: 'About', href: '/about' },
-  ],
-  action: {
-    label: 'Buy Ticket',
-    href: LINKS.tickets,
-  },
+const action = {
+  label: 'Buy Ticket',
+  href: LINKS.tickets,
 }
 
 export const Navbar = () => {
@@ -49,26 +44,53 @@ export const Navbar = () => {
             as="div"
             className="absolute top-0 left-0 z-40 flex h-screen w-screen items-center justify-center bg-linear-to-tr from-blue-800 to-pink-900 data-closed:-translate-y-full data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"
           >
-            <div className="mx-auto flex w-full flex-col items-center justify-evenly space-y-8 p-4 text-xl">
-              {navbar.navigation.map((link, index) => (
-                <Link
-                  href={link.href}
-                  key={`mobile-nav-link-${index}`}
-                  className={clsx(
-                    'block rounded-full px-6 py-2 font-medium sm:inline-block',
-                    pathname === link.href
-                      ? 'bg-void-700 text-white'
-                      : 'text-void-300 hover:bg-void-700 transition duration-200 ease-in-out hover:text-white',
-                  )}
-                >
-                  {link.label}
-                </Link>
-              ))}
+            {({ close }) => (
+              <div className="mx-auto flex w-full flex-col items-center justify-evenly space-y-8 p-4 text-xl">
+                {NAV_LINKS.map((link) => (
+                  <Link
+                    href={link.href}
+                    key={link.href}
+                    onClick={() => close()}
+                    className={clsx(
+                      'block rounded-full px-6 py-2 font-medium sm:inline-block',
+                      pathname === link.href
+                        ? 'bg-void-700 text-white'
+                        : 'text-void-300 hover:bg-void-700 transition duration-200 ease-in-out hover:text-white',
+                    )}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
 
-              <PrimaryButton href={navbar.action.href} className="h-14 text-lg">
-                {navbar.action.label}
-              </PrimaryButton>
-            </div>
+                {/* Past Events section */}
+                {pastRetreats.length > 0 && (
+                  <div className="flex flex-col items-center gap-3">
+                    <span className="text-void-400 text-sm font-semibold uppercase tracking-widest">
+                      Past Events
+                    </span>
+                    {pastRetreats.map((retreat) => (
+                      <Link
+                        key={retreat.slug}
+                        href={`/events/${retreat.slug}`}
+                        onClick={() => close()}
+                        className={clsx(
+                          'block rounded-full px-6 py-2 font-medium sm:inline-block',
+                          pathname === `/events/${retreat.slug}`
+                            ? 'bg-void-700 text-white'
+                            : 'text-void-300 hover:bg-void-700 transition duration-200 ease-in-out hover:text-white',
+                        )}
+                      >
+                        {retreat.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+
+                <PrimaryButton href={action.href} className="h-14 text-lg">
+                  {action.label}
+                </PrimaryButton>
+              </div>
+            )}
           </PopoverPanel>
         </Popover>
       </div>
@@ -92,22 +114,18 @@ export const Navbar = () => {
               />
 
               <span className="text-4xl font-black transition duration-200 ease-in-out">
-                <span className="text-pink-400 group-hover:text-pink-200">
-                  UN
-                </span>
-                <span className="text-blue-400 group-hover:text-blue-200">
-                  LEASHED
-                </span>
+                <span className="text-pink-400 group-hover:text-pink-200">UN</span>
+                <span className="text-blue-400 group-hover:text-blue-200">LEASHED</span>
               </span>
             </Link>
           </div>
 
-          {/* Main menu for large screens */}
+          {/* Desktop nav */}
           <div className="text-void-300 hidden items-center justify-between text-xl font-medium md:flex md:space-x-0.5 md:text-base lg:space-x-2">
-            {navbar.navigation.map((link, index) => (
+            {NAV_LINKS.map((link) => (
               <Link
                 href={link.href}
-                key={`desktop-nav-link-${index}`}
+                key={link.href}
                 className={clsx(
                   'block rounded-full px-4 py-1 sm:inline-block',
                   pathname === link.href
@@ -118,12 +136,50 @@ export const Navbar = () => {
                 {link.label}
               </Link>
             ))}
+
+            {/* Past Events dropdown */}
+            {pastRetreats.length > 0 && (
+              <Popover className="relative">
+                <PopoverButton
+                  className={clsx(
+                    'group flex cursor-pointer items-center gap-1 rounded-full px-4 py-1 focus:outline-hidden',
+                    'hover:bg-void-700 duration-200 ease-in-out hover:text-white',
+                  )}
+                >
+                  Past Events
+                  <IconChevronDown
+                    className="h-4 w-4 transition-transform duration-200 group-data-open:rotate-180"
+                    stroke={2}
+                  />
+                </PopoverButton>
+
+                <PopoverPanel className="bg-void-800 absolute left-0 top-full z-50 mt-2 w-64 rounded-2xl p-2 shadow-xl ring-1 ring-white/10">
+                  {({ close }) => (
+                    <div className="flex flex-col gap-1">
+                      {pastRetreats.map((retreat) => (
+                        <Link
+                          key={retreat.slug}
+                          href={`/events/${retreat.slug}`}
+                          onClick={() => close()}
+                          className="hover:bg-void-700 flex flex-col rounded-xl px-4 py-3 transition-colors"
+                        >
+                          <span className="text-sm font-semibold text-white">{retreat.name}</span>
+                          <span className="text-void-300 text-xs">
+                            {retreat.dateShort} · {retreat.venue}
+                          </span>
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </PopoverPanel>
+              </Popover>
+            )}
           </div>
+
           <div className="hidden md:block">
-            <PrimaryButton href={navbar.action.href}>
-              {navbar.action.label}
-            </PrimaryButton>
+            <PrimaryButton href={action.href}>{action.label}</PrimaryButton>
           </div>
+
           <MobileNav />
         </div>
       </nav>

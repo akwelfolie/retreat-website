@@ -5,27 +5,23 @@ type Props = {
   tiers: PricingTier[]
 }
 
-export const Pricing = ({ tiers }: Props) => {
+export const PastEventPricing = ({ tiers }: Props) => {
   return (
     <section className="mt-10 px-4 pt-10 pb-12 sm:px-6 md:pt-12 md:pb-16 lg:px-8">
       <div className="mx-auto w-full max-w-(--breakpoint-xl)">
-        {/* Section header */}
         <div className="mx-auto w-full max-w-xl text-center md:max-w-2xl lg:max-w-3xl">
           <Chip>Pricing</Chip>
 
           <h2 className="mt-6 text-3xl font-extrabold text-white sm:text-4xl md:text-5xl">
-            An intentionally held immersion
+            What attendees paid
           </h2>
 
           <p className="text-void-200 mt-6 text-xl">
-            Led by licensed clinicians and expert practitioners, UNLEASHED is held in an
-            intentionally capped, consent-centered container designed for depth, safety, and real
-            integration. All sessions are optional. You choose your level of participation
-            throughout the day.
+            UNLEASHED was held in an intentionally capped, consent-centered container. All sessions
+            were optional — attendees chose their own level of participation throughout the day.
           </p>
         </div>
 
-        {/* Pricing cards */}
         <div className="mt-12 grid gap-y-8 sm:grid-cols-2 lg:mt-16 lg:grid-cols-2 lg:gap-x-6 2xl:gap-x-12">
           {tiers.map((item, index) => (
             <div
@@ -41,9 +37,6 @@ export const Pricing = ({ tiers }: Props) => {
             </div>
           ))}
         </div>
-        <p className="text-l text-void-200 mt-6">
-          ** base price does not include taxes and processing fees.
-        </p>
       </div>
     </section>
   )
