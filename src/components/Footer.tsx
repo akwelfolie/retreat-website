@@ -9,7 +9,6 @@ const contact = {
     state: 'IL',
   },
   phone: '(708) 522-3520',
-  phone2: '(773) 494-6776',
   email: 'info@thisisunleashed.com',
 }
 
