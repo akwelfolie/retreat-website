@@ -3,12 +3,12 @@ import { LINKS } from '@/config/links'
 
 export const CallToAction = () => (
   <CTACard
-    eyebrow="May 6, 2026 · 6:30–9:30 PM · Chicago, IL"
-    title="Awaken Your Senses"
-    body="Step out of the noise and into your body. A 3-hour immersive experience guided by Josephine Lauer and Ash Summers — consent-based, safely held, and designed to reconnect you to yourself and others."
-    buttonLabel="Buy Tickets"
-    buttonHref={LINKS.tickets}
-    secondButtonLabel="More Details"
-    secondButtonHref="/next-up"
+    eyebrow="Something is always brewing"
+    title="Don't miss what's next."
+    body="UNLEASHED keeps growing — new events, new experiences, new ways to connect. Check out what's coming up and grab your spot before it's gone."
+    buttonLabel="See What's Next"
+    buttonHref="/next-up"
+    secondButtonLabel="About Us"
+    secondButtonHref="/about"
   />
 )

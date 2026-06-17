@@ -8,7 +8,7 @@ import { getPeople } from '@/content/people'
 export const metadata = {
   title: 'About us - UNLEASHED',
   description:
-    '[This page will introduce the vision behind UNLEASHED, its founders, and the intention of the retreat.]',
+    'Learn about UNLEASHED — the vision, founders, and values behind our immersive events for women and women-aligned communities.',
 }
 
 export default function AboutPage() {

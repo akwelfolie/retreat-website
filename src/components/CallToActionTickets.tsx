@@ -3,10 +3,10 @@ import { LINKS } from '@/config/links'
 
 export const CallToActionTickets = () => (
   <CTACard
-    eyebrow="Tickets available now · Limited capacity"
-    title="Tickets are live. Become UNLEASHED."
-    body="Secure your spot for UNLEASHED — an immersive retreat designed for connection, embodiment, and self-expression."
-    buttonLabel="I want a ticket"
+    eyebrow="Tickets available now · Space is limited"
+    title="Get your daubers ready."
+    body="Grab your ticket before they're gone — Pride Drag Plant Bingo with ROZBOT is one night only. All proceeds benefit Center On Halsted and Howard Brown."
+    buttonLabel="Get Tickets"
     buttonHref={LINKS.tickets}
   />
 )

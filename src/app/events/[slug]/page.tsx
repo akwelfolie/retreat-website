@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation'
 import { retreat as retreat21feb26 } from '@/content/retreats/21feb26'
+import { retreat as retreat06may26 } from '@/content/retreats/06may26'
 import { pastRetreats } from '@/content/retreats'
 import type { RetreatContent } from '@/content/retreats/types'
 import { PastEventHero } from '@/components/PastEventHero'
@@ -12,6 +13,7 @@ import { CallToAction } from '@/components/CallToAction'
 // Add each past retreat here as new events are archived
 const retreatMap: Record<string, RetreatContent> = {
   '21feb26': retreat21feb26,
+  '06may26': retreat06may26,
 }
 
 export function generateStaticParams() {

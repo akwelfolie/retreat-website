@@ -22,7 +22,7 @@ export const retreat: RetreatContent = {
   dateShort: 'May 6, 2026',
   venue: 'Studio 205',
   city: 'Chicago, IL',
-  status: 'upcoming',
+  status: 'past',
 
   hero: {
     title: 'Mini-UNLEASHED : Awaken Your Senses',

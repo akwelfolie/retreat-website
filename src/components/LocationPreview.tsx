@@ -9,7 +9,7 @@ export const LocationPreview = ({ flip = false }: Props) => {
   const feature = {
     tagline: 'Location',
     headline: 'Studio 205 — 1821 W. Hubbard, Chicago, IL',
-    text: 'Join us in the heart of Chicago for an intimate, carefully held evening. The space is curated to support presence, safety, and a fully immersive sensory experience.',
+    text: 'Join us in the West Loop for a night of drag, plants, and Pride. Studio 205 is an intimate, vibrant space perfect for an unforgettable evening.',
   }
 
   return (

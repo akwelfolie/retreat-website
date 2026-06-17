@@ -47,7 +47,7 @@ export const ServiceList = () => {
                 </div>
 
                 <div className="mt-8 flex text-left lg:mt-10">
-                  <SecondaryButton size="sm" href="/details">
+                  <SecondaryButton size="sm" href="/next-up">
                     Tickets & Details
                   </SecondaryButton>
                 </div>

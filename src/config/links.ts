@@ -1,5 +1,5 @@
 export const LINKS = {
-  tickets: 'https://www.tickettailor.com/events/ashleysummersphotography/2161253',
+  tickets: 'https://buytickets.at/ashleysummersphotography/2263264',
 }
 
 export const NAV_LINKS = [
